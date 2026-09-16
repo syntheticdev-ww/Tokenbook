@@ -1,0 +1,8 @@
+.superpowers/
+.tools/
+.runtime/
+game/.godot/
+game/addons/
+artifacts/
+game/native/*.dylib
+*.DS_Store

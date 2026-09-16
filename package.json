@@ -1,0 +1,18 @@
+{
+  "name": "tokenbook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "probe:account": "node scripts/codex-account-usage-probe.mjs",
+    "probe:desktop": "node scripts/codex-desktop-capabilities-probe.mjs",
+    "probe:codex": "node scripts/codex-usage-probe.mjs --once",
+    "audit:codex": "node scripts/codex-rollout-audit.mjs",
+    "test": "node --test",
+    "game:setup": "node scripts/game.mjs setup",
+    "game": "node scripts/game.mjs run",
+    "game:test": "node scripts/game.mjs test",
+    "game:smoke": "node scripts/game.mjs smoke",
+    "game:music": "node scripts/ambient-music.mjs"
+  }
+}

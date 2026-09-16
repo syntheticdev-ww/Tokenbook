@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="addons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.tools/godot-sqlite-4.9/addons.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
