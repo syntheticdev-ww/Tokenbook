@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "status": "static_material_candidate_only",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-7758ed71-4741-4705-8007-de36ffd83eab.png",
+  "references": [
+    "res://assets/art/gardener-v18/frames/idle.png",
+    "exec-37a66508-5951-4b4c-a364-0c977b6239ad.png",
+    "artifacts/pixel-v25/in-game-0.png"
+  ],
+  "prompt": "Create ONE refined production-quality STATIC standing pixel-art character PNG on a truly transparent background, for a cozy richly detailed pixel-art farm game. This is MATERIAL ART ONLY, no sprite sheet, no extra poses, no animation. Reference 1 is the original heroine and EXACT pose, proportions, identity, clothing colors to preserve; reference 2 illustrates sharper pixel construction only, do NOT copy its lengthened proportions or its extra saturated shirt. Reference 3 is the actual farm scene whose fine pixel density and small color clusters this heroine must sit naturally within. Repaint reference 1 faithfully as exceptionally polished fine pixel art: same relaxed three-quarter front facing left standing pose, same head-to-body proportion, boots in exactly same positions, natural brown single ponytail and turquoise bow, warm brown expressive eyes, modest teal sleeveless buttoned top, tan cuffed shorts, brown belt and gold buckle, brown ankle boots, waist pouch. Preserve original pleasant warm color values. Mandatory facial detail: two legible almond eyes with pupils and highlights, tiny understated nose, and a clearly visible warm terracotta smiling mouth with a 3-4 pixel curved stroke, mouth darker than blush, NOT omitted. Mouth must still read on a 125-pixel-tall full body. Treat full character as around 160-180 deliberate fine art pixels high, clean individually authored pixel clusters enlarged uniformly; details are richer than a coarse 64/88 pixel sprite, never mosaic blocks. Build hair in articulated smooth stair-step tapered clusters, small fabric folds, buckle/boot seams and readable fingers; minimal one-art-pixel dark brown outline with selective lighter lit edges; no heavy black outline. No photographic brushwork, blurry gradients, antialiasing, noise, dithering, pixelation filter, muddy recolor, or sculpted glossy 3D surface. Pixel edge rhythm and controlled volume of a premium modern 16-bit-style life sim. Use exactly one uniform crisp pixel grid everywhere. Keep the original body silhouette, hands, face and head arrangement and relaxed pose; no anatomical exaggeration, no movement. On a 1254 x 1254 transparent square put the character within the same original bounds approximately x375..890 y175..1116, both boots soles near y1113, foot anchor x599. Entire head and both boots visible, empty transparent padding, no cast shadow, no text, no scenery. Render a SINGLE full body sprite, not a comparison sheet.",
+  "processing": "Exact copy of generated full-resolution RGBA; no quantization, resizing, palette filter or animation synthesis.",
+  "scope": "One standing material. v25 withdrawn. Runtime returns to v24 movement and desktop-pet-v1. No gait controller, phase timing, walking PNG or digging PNG is changed.",
+  "acceptance": "Static candidate only; user visual acceptance pending. No claim that historical walking issues are fixed.",
+  "sha256": "337039104373678f4aa835241321207bf430a4ea4f72ae423ddff7ab538abdd4",
+  "static_registration": {
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json",
+    "anchor": [
+      619.403259277344,
+      1129.97216796875
+    ],
+    "motion_controller_sha256": "9cc37e9d1a3cced014d4b24e8141d10dbce4af8a67598bc4306a820fec204705",
+    "sampling": "same v24 renderer, original full-resolution RGBA, no recolor",
+    "scale": 0.0328620786555329,
+    "scope": "frozen static proof only",
+    "source_bounds": [
+      395,
+      172,
+      500,
+      960
+    ],
+    "world_height": 31.5475955093116
+  },
+  "verification": {
+    "character_checks": 181,
+    "character_failures": 0,
+    "desktop_pet_checks": 32,
+    "desktop_pet_failures": 0,
+    "motion_controller_and_active_manifests": "unchanged from this turn baseline",
+    "visual_acceptance": "pending; checks validate rollback and loading only"
+  }
+}

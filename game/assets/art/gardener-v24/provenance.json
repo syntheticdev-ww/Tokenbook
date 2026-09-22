@@ -1,0 +1,18 @@
+{
+  "version": 24,
+  "generator": "OpenAI built-in image_gen; targeted whole-character leg corrections",
+  "scope": "Five authored crossing cels replace three poor crossing cels. Three duplicate or reversing return cels removed. Forty-eight walk drawings, eight departure/settle drawings. Opt-in forward route only.",
+  "sources": "candidates.json records source PNGs, parents, references and prompts. Additional experimental generations rejected in artifacts/walk-v24/rejected.json.",
+  "protection": "Whole upper body above y768 restored byte-for-byte from front-04a after existing skin calibration. Whole 1254x1254 cels at runtime; no temporal blending or independent limb transforms. No v17-v23 assets changed.",
+  "presentation": "v23 palette and pixelization presentation removed from the active manifest and desktop pet. Original sprite coverage renderer retained. This is not an authored pixel-art restyle.",
+  "timing": "63 display intervals per 1.05-second cycle; each drawing visible for at most two samples at 60 Hz. Opposite steps are balanced at 31/32 intervals. First passing segment uses one interval per cel, avoiding a sorted-boot identity swap being mistaken for extra travel.",
+  "build": [
+    "swiftc tools/pixel_cleanup/Raster.swift tools/pixel_cleanup/Palette.swift tools/pixel_cleanup/Patch.swift tools/pixel_cleanup/smooth-walk.swift -o /tmp/tokenbook-smooth-walk",
+    "/tmp/tokenbook-smooth-walk game <new output frames folder> gardener-v24",
+    "Place outputs in gardener-v24/frames; preserve original generated source files",
+    "Godot --headless --path game --script res://tests/finalize_departure_art.gd -- --walk-v24",
+    "Godot --headless --path game --script res://tests/build_smooth_walk.gd -- --walk-v24"
+  ],
+  "quality": "Protected pixels, asset hashes, source-color presentation, pose exposure, balanced step duration, departure cancellation, root motion, native controls and normal-scale review. Frame counts and difference metrics do not certify aesthetic quality.",
+  "production_eligible": false
+}

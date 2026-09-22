@@ -1,0 +1,34 @@
+
+> tokenbook@0.1.0 game:material-test
+> node scripts/game.mjs material-test
+
+Static material preview; isolated test data: <isolated-temp-path>
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/art/gardener-v57/idle.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2780)
+     GDScript backtrace (most recent call first):
+         [0] check_density (res://tests/character_material_tests.gd:44)
+         [1] run (res://tests/character_material_tests.gd:15)
+Material render: {"art_grid":[160.0,188.0],"cell_screen_pixels":0.5,"display_density":1,"downsample_phase":[0.0,0.0],"eyes":[{"highlight":4,"pupil":13},{"highlight":4,"pupil":10}],"face_sampling_override":false,"lip_cells":2,"original_rgb_errors":0,"passed":true,"physical_canvas":[80,94],"tooth_cells":0,"transparent_edge_errors":0,"uniform_grid_errors":0}
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/art/gardener-v57/idle.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2780)
+     GDScript backtrace (most recent call first):
+         [0] check_density (res://tests/character_material_tests.gd:44)
+         [1] run (res://tests/character_material_tests.gd:15)
+         [2] check_density (res://tests/character_material_tests.gd:97)
+Material render: {"art_grid":[160.0,188.0],"cell_screen_pixels":1.0,"display_density":2,"downsample_phase":[0.0,0.0],"eyes":[{"highlight":16,"pupil":45},{"highlight":16,"pupil":38}],"face_sampling_override":false,"lip_cells":6,"original_rgb_errors":0,"passed":true,"physical_canvas":[160,188],"tooth_cells":0,"transparent_edge_errors":0,"uniform_grid_errors":0}
+1x uses unchanged native cells: 0 mismatches
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/art/gardener-v57/idle.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2780)
+     GDScript backtrace (most recent call first):
+         [0] run (res://tests/character_material_preview.gd:35)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/art/gardener-v56/idle.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2780)
+     GDScript backtrace (most recent call first):
+         [0] run (res://tests/character_material_preview.gd:82)
+Static material preview: {"background_asset":"res://assets/art/farm-background-landscape-v3.png","background_checked_pixels":11403,"background_crisp_motion":true,"background_grid_density":2.0,"background_grid_errors":0,"background_source_color_errors":0,"body_logical_pixels":90.4827586206897,"body_pixels":180.965517241379,"canvas_pixels":[160.0,188.0],"cell_screen_pixels":1.0,"changed_pixels_outside_character_area":0,"display_sampling_offset":[0,0],"display_sampling_step":1.0,"face_grid_region":[28,16,13,12],"face_sample_offset":[0.200000002980232,0.800000011920929],"face_sampling_override":false,"grid_cells":[160.0,188.0],"height_ratio_to_previous":1.00152671755725,"motion_distance":0.0,"motion_kind":"idle","physical_top_left":[1062.0,371.0],"real_scene_checked_colors":9361,"real_scene_color_errors":0,"sample_offset":[0.25,0.25],"scope":"static material preview only","source_sha256":"66515450f9d84a70bff319abc2cc9b946b39e447a72c62ee4c50b46f817a0328","window_physical_size":[2240,1480]}

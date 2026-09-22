@@ -1,0 +1,20 @@
+
+> tokenbook@0.1.0 game:test
+> node scripts/game.mjs test
+
+Isolated test data: <isolated-temp-path>
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR:  --> SQL error: file is not a database
+   at: prepare_statement (src/gdsqlite.cpp:259)
+   GDScript backtrace (most recent call first):
+       [0] open_store (res://save_store.gd:17)
+       [1] run (res://tests/run.gd:60)
+Whole-body registration: worst cut=0.0000341196901 px, travel quantization=0.0 px
+Source face palette: worst adjacent RGB distance=7.03692980110645 / 255
+Registration jumps: sampled eye=0.19062109291553 calibrated waist=0.22082987427711 world px
+Source head silhouette: worst adjacent centroid jump=0.31776607036591 world px
+Source torso: worst adjacent centroid jump=0.31681513786316 world px
+Compact camera unexpected step: 0.00000928137524 world px
+Rear registration: head=0.15440259873867 shirt=0.15440298616886 sole=0.53507165527343
+Tokenbook checks: 262, failures: 0

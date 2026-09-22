@@ -1,0 +1,71 @@
+{
+  "baseline": "v7 approved 2026-09-16. The eight baseline PNG files are unmodified copies.",
+  "mode": "built-in image_gen",
+  "additions": [
+    {
+      "name": "near-support-bridge",
+      "ref": "front-a.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE extra hand-drawn full-character walk in-between for an existing HD pixel-art farm game. Image 1 is the exact approved character and pixel style reference, a 2x2 sprite sheet. Create a SINGLE full-body pose halfway between its TOP-RIGHT pose and BOTTOM-LEFT pose, NOT a sheet. Same adult female gardener, face, head size, brown ponytail with teal bow, teal sleeveless buttoned shirt, tan shorts, belt with square gold buckle, teal pouch on viewer-right hip, socks and brown boots. Walk front-three-quarter facing LEFT. The NEAR leg (attached to the viewer-right hip under the pouch) remains planted forward to viewer-left with a nearly straight shin. The FAR leg (viewer-left hip, behind that leg) lifts and folds forward from the trailing position: rear boot now just behind the planted shin, NOT in front, halfway along its travel between those two specified source poses. Keep head, shoulders, torso, wrists, shorts and pouch anatomically consistent, low relaxed walk, no running/kicking. Entire body including both feet, no ground shadow. Pixel clusters and crisp stepped outlines, not smooth painting. Flat pure magenta #ff00ff background, no labels. Square image 1254x1254, single character centered, approximate head top y=160, gold buckle center (602,605), sole bottom y=1050. Preserve the character body proportions, colors, clothing shapes and art detail of the reference; only draw that small actual gait advancement. Upper body follows halfway between these two reference poses; never exaggerate head bob.",
+      "mode": "built-in",
+      "output": "near-support-bridge.png"
+    },
+    {
+      "name": "far-extension-bridge",
+      "ref": "front-b.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE extra hand-drawn full-character walk in-between for an existing HD pixel-art farm game. Image 1 is the exact approved character and pixel style reference, a 2x2 sprite sheet. Create a SINGLE full-body pose halfway between its TOP-RIGHT pose and BOTTOM-LEFT pose, NOT a sheet. Same adult female gardener, face, head size, brown ponytail with teal bow, teal sleeveless buttoned shirt, tan shorts, belt with square gold buckle, teal pouch on viewer-right hip, socks and brown boots. Walk front-three-quarter facing LEFT. The FAR leg attached to the viewer-left hip is swinging ahead to screen-left: knee unbending, boot lowering toward ground, intermediate between lifted upper-right and extended lower-left reference poses. The NEAR leg attached to viewer-right hip under the pouch is still the support leg, roughly vertical and trailing slightly toward screen-right. Keep head, shoulders, torso, wrists, shorts and pouch anatomically consistent, low relaxed walk, no running/kicking. Entire body including both feet, no ground shadow. Pixel clusters and crisp stepped outlines, not smooth painting. Flat pure magenta #ff00ff background, no labels. Square image 1254x1254, single character centered, approximate head top y=160, gold buckle center (602,605), sole bottom y=1050. Preserve body proportions, colors, clothing shapes and art detail of the reference; only draw this small gait advancement. Upper body halfway between those two reference poses; never exaggerate head bob.",
+      "mode": "built-in",
+      "output": "far-extension-bridge.png"
+    },
+    {
+      "name": "near-lift-bridge",
+      "refs": [
+        "front-10.png",
+        "front-11.png"
+      ],
+      "prompt": "Use case: identity-preserve. Make ONE full-body pixel-art walk in-between of the exact same female farm character, half way between Image 1 and Image 2 (both are pose references). Same view front-three-quarter facing LEFT, same adult character, original chibi proportions, every clothing and face detail unchanged, crisp pixel-art clusters not painting. Head, shoulders, chest, wrists and hips midway between the two poses with their identical volumes. Far leg at viewer-left remains planted, boot flat on ground. Near leg attached to viewer-right hip directly below teal pouch swings forward FROM behind: heel is lifted, knee gently bending, trailing boot HALF WAY between Image 1's low boot and Image 2's higher folded boot. It remains behind the support leg; NOT crossing in front yet, no long stride or kicking. Consistent low relaxed walk. Single figure centered in square 1254x1254 canvas, same source character scale and approximate composition as Image 2 (head top about160, belt about600, support sole about1050). Pure magenta #ff00ff background, no ground shadow, no labels, no extra poses. Preserve exact reference colors, teal bow and tank top, tan shorts, square gold buckle, teal pouch and brown boots.",
+      "mode": "built-in",
+      "output": "near-lift-bridge.png"
+    },
+    {
+      "name": "near-contact-bridge",
+      "refs": [
+        "front-d.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type ONE additional complete pixel-art walk in-between for approved farm game. Image 1 is the exact approved style/character and a 2x2 sprite sheet. Make ONE full-body pose halfway between TOP-RIGHT and BOTTOM-LEFT poses, NOT a sheet. The near leg (viewer-right hip under teal pouch) is stepping forward diagonally to viewer-left IN FRONT of the far leg. Near boot is between the two referenced poses, extended forward and lowering heel toward ground. The far leg (viewer-left hip behind the crossing near thigh) trails with boot supporting behind to viewer-right. Preserve correct leg identity and overlap. Same adult female character, brown ponytail teal bow, teal sleeveless shirt, square gold buckle, tan shorts, teal pouch, socks and brown boots, exactly original crisp pixel art aesthetic, proportions, colors. Head, shoulders, torso, hips and hands match halfway between the two source poses, no exaggerated bounce, no head or torso redesign. Square1254x1254, one centered character full body including boots, approximately head top y160, belt center(602,605), support sole y1050, pure magenta #ff00ff background, no shadow, no text.",
+      "mode": "built-in",
+      "output": "near-contact-bridge.png"
+    },
+    {
+      "name": "far-rise-bridge",
+      "refs": [
+        "front-a.png",
+        "front-b.png"
+      ],
+      "prompt": "Use case: identity-preserve. ONE new full-body pixel-art in-between for the SAME approved female farmer. Image1 is pose sheet: use ONLY BOTTOM-RIGHT pose as the BEFORE pose. Image2 is pose sheet: use ONLY TOP-LEFT pose as AFTER pose. Draw one single sprite halfway between these poses, not a sheet. Facing front-three-quarter LEFT. FAR leg attached at viewer-left hip swings ahead, its knee lifts a little forward, boot halfway between folded passing in before pose and raised forward in after pose; lifted boot remains to screen-left of the support leg. NEAR leg on viewer-right under the teal pouch stays planted nearly vertically, weight-bearing. Preserve the exact adult character, original head and torso proportions, face, pixel clusters, brown ponytail teal bow, teal tanktop, tan shorts, brown belt gold buckle, teal pouch brown boots. Smooth gentle relaxed walk no jumping/running. Head and upper body settle at the intermediate posture, not a resized head. Full body on flat pure magenta #ff00ff, no floor or shadow or text. SINGLE centered sprite, square1254x1254, approximately head top y160, belt center x602 y605, planted sole y1050. No anatomy/style redesign. Clear separate feet, no third limb.",
+      "mode": "built-in",
+      "firstResult": "rejected: foot too extended",
+      "revision": "Use case: precise-object-edit. Edit this ONE sprite as an intermediate walk animation pose. Change ONLY the far swinging leg on viewer LEFT. Its foot is extended too far forward/down. Bend that knee more: move the center of the LEFTMOST raised boot about 65 pixels to the RIGHT and 55 pixels UP. The raised boot should sit closer underneath the pelvis, toe still facing left. Keep the far knee in its current gently raised forward position and redraw the bent shin naturally to connect to the raised boot. Preserve its exact boot size and art detail. Do NOT move the grounded support leg/boot on viewer right. Keep literally the whole upper body (head, neck, shoulders, arms, shirt, belt, shorts, pouch), image framing, colors and scale unchanged. Same crisp pixel art, adult character and pure magenta background, no other edits, 1254x1254 single full-body character. This is a LOW bent-knee passing-to-rise pose, not an extended step or kick.",
+      "output": "far-rise-bridge.png"
+    },
+    {
+      "name": "near-rise-bridge",
+      "refs": [
+        "front-c.png",
+        "front-d.png"
+      ],
+      "prompt": "Use case: identity-preserve. ONE new full-body pixel-art in-between for the SAME approved female farmer. Image1 is pose sheet: use ONLY BOTTOM-RIGHT pose as BEFORE. Image2 is pose sheet: use ONLY TOP-LEFT pose as AFTER. Draw one single sprite halfway between these two poses, not a sheet. Facing front-three-quarter LEFT. NEAR leg attached at viewer-right hip directly under the teal pouch swings ahead diagonally to screen-left in FRONT of the far leg, knee bent and slightly raised, boot midway between the passing pose and its small forward raise. FAR leg attached at viewer-left hip remains weight-bearing, its shin and grounded boot visible behind the swinging near leg toward lower-screen-right. Do NOT swap the two legs. Both feet visible with correct overlap. Preserve exact original adult character, head/torso proportions, face, pixel clusters, brown ponytail teal bow, teal tanktop, tan shorts, brown belt gold buckle, teal pouch brown boots. Low gentle relaxed walk, no jumping/running. Head and shoulders gently at intermediate posture; no head resizing. Full body, pure flat magenta #ff00ff, no floor/shadow/text. SINGLE centered sprite, square1254x1254 approximately head top y160, belt center(602,605), planted sole y1050. No anatomy/style redesign.",
+      "mode": "built-in",
+      "firstResult": "rejected: foot too extended",
+      "revision": "Use case: precise-object-edit. Edit this ONE sprite as an intermediate walk animation pose. Change ONLY the near swinging leg that crosses IN FRONT of the other leg toward viewer LEFT, attached to the hip below the teal pouch. Its raised foot is too far forward and down. Bend the raised knee more: move the center of the LEFTMOST raised boot about 70 pixels RIGHT and 70 pixels UP, keeping the raised knee at its current forward location. The raised boot should hang almost directly under the belt buckle, around x580,y860, NOT farther ahead. Redraw only the bent shin to connect naturally, do not stretch foot, preserve boot size/detail. Keep the grounded support leg on viewer right behind it unchanged. Keep literally the whole upper body (head, neck, shoulders, arms, shirt, belt, shorts, pouch), framing and scale unchanged. Same exact crisp pixel art and adult character, pure magenta background, no other edits, 1254x1254, single full-body sprite. This is a bent-knee passing/rise pose, not a kick or extended step.",
+      "output": "near-rise-bridge.png"
+    }
+  ],
+  "reference": "artifacts/gait-v8/inbetween-contact-sheet.png",
+  "animation": {
+    "status": "v8 rejected. Production now plays only the 18 approved v7 drawings; six additions retained for provenance, not used at runtime.",
+    "activeDrawings": 18,
+    "drawings": 24,
+    "renderFPS": 60,
+    "keptApprovedDrawings": 18
+  }
+}

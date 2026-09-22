@@ -1,0 +1,18 @@
+{
+  "version": 23,
+  "generator": "OpenAI built-in image_gen; whole-character endpoint-guided cel edits",
+  "scope": "Five additional walking cels, three departure cels. Forty-nine walk poses and eight departure/settle poses in the forward cabin-to-first-field preview.",
+  "sources": "candidates.json includes prompts, parent identities and source PNGs. Rejected initial versions remain separate; revisions.json records the second pass.",
+  "protection": "Use PixelPatch and SkinPalette, restore original head or upper-body RGBA with Godot, then hash. No original v17-v22 images are overwritten. Runtime draws one intact image, with no ghost blend or limb stretch.",
+  "presentation": "farm-fine-v1 uses foot-anchored 0.25-world-unit art pixels (132 pixels per 33-unit body), a shared 36-color warm earth/green palette and binary silhouette coverage. The farm background is unchanged. Desktop pet uses the same shader at 1.4 logical units per art pixel. Per-cel spatial sampling only, no temporal blending.",
+  "timing": "Sixty-three one-or-two-tick intervals per 1.05-second cycle, based on boot and hand motion. Existing distance-driven route, acceleration and braking remain unchanged.",
+  "build": [
+    "swiftc tools/pixel_cleanup/Raster.swift tools/pixel_cleanup/Palette.swift tools/pixel_cleanup/Patch.swift tools/pixel_cleanup/smooth-walk.swift -o /tmp/tokenbook-smooth-walk",
+    "/tmp/tokenbook-smooth-walk game <new output frames folder> gardener-v23",
+    "Place outputs in gardener-v23/frames; keep rejected builds separately",
+    "Godot --headless --path game --script res://tests/finalize_departure_art.gd -- --walk-v23",
+    "Godot --headless --path game --script res://tests/build_smooth_walk.gd -- --walk-v23"
+  ],
+  "quality": "Protected pixels, hashes, phase exposure, departure cancellation, route/root motion, native window interactions, normal-scale scene review and paired rendering. Pixel-difference metrics across palette styles are not directly comparable and do not certify aesthetic quality.",
+  "production_eligible": false
+}

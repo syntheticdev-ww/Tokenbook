@@ -1,0 +1,140 @@
+{
+  "frames" : [
+    {
+      "base" : "front-00.png",
+      "file" : "front-00.png",
+      "phase" : 0,
+      "sha256" : "c8caa99c0c8208d5357524127b92859b44ead72bd1d0954f02e629e234a67a17"
+    },
+    {
+      "base" : "front-01.png",
+      "file" : "front-01.png",
+      "phase" : 1,
+      "sha256" : "e6d5e5bfcf8d62cbed80201016b5cb58c13596371cdd2475cdfcbd81bfd02897"
+    },
+    {
+      "base" : "front-02.png",
+      "file" : "front-02.png",
+      "phase" : 2,
+      "sha256" : "ccf0c74ef1596ce7f7094e425975a231d79720b0997c7e9f329ab4e045a5040b"
+    },
+    {
+      "base" : "front-03.png",
+      "file" : "front-03.png",
+      "phase" : 3,
+      "sha256" : "f18c206b815a227b8b8e08bdba623528ef1e42d031486aa8ade2ab0aea9b1935"
+    },
+    {
+      "base" : "front-04.png",
+      "file" : "front-04.png",
+      "phase" : 4,
+      "sha256" : "6798d6fd969113cbfbd421eda2bc76857a29d26401f0fd10a428eb4948e55ad1"
+    },
+    {
+      "base" : "front-04.png",
+      "edit_sha256" : "8e36506cb3fafc9dd32c7aaf99b06c3144ead7029399d81428453701086cbcbc",
+      "edit_source" : "front-04a.png",
+      "file" : "front-04a.png",
+      "phase" : 4.5,
+      "protected_pixels_exact" : true,
+      "sha256" : "4348d7f98e91fda7f6744dda537ef9f34201e260229b0c5f5106eb9980e4e48d"
+    },
+    {
+      "base" : "front-05.png",
+      "file" : "front-05.png",
+      "phase" : 5,
+      "sha256" : "b6e4d63cacd02d364f2159f50b2af43fd1ea3e687f07d3f69f380d4a17afa207"
+    },
+    {
+      "base" : "front-06.png",
+      "file" : "front-06.png",
+      "phase" : 6,
+      "sha256" : "85b37010a68c2acf23758b1260ac27de374fe72c9e0155a13270121e55823bd7"
+    },
+    {
+      "base" : "front-07.png",
+      "file" : "front-07.png",
+      "phase" : 7,
+      "sha256" : "1c3f292bd5054f858542e672f05b8585f7d959d178a6e9e1bd22f756ae6f80cf"
+    },
+    {
+      "base" : "front-08.png",
+      "file" : "front-08.png",
+      "phase" : 8,
+      "sha256" : "0fe9994d2b5e9b90d51fbfcc0e33b38eb020e0e5c29860444436d6f06229f8cd"
+    },
+    {
+      "base" : "front-09.png",
+      "edit_sha256" : "372fedc4e038ce9ef9fc12f11286a0ac9235a523fe13f361d0608e94dde9fe23",
+      "edit_source" : "front-09.png",
+      "file" : "front-09.png",
+      "phase" : 9,
+      "protected_pixels_exact" : true,
+      "sha256" : "44969c8f50d8a293babd938e9e3ddfb23121c0d46ac1e686b1e1ca2973826fc6"
+    },
+    {
+      "base" : "front-10.png",
+      "edit_sha256" : "294dafd8454df4bba7e2ed409f302a0469e952c983fcfd4b80da5a9bf29668da",
+      "edit_source" : "front-10.png",
+      "file" : "front-10.png",
+      "phase" : 10,
+      "protected_pixels_exact" : true,
+      "sha256" : "b312cd98de7af96e2e7cc0c03458863be3949569fc42bf5f14832da70ebbaacb"
+    },
+    {
+      "base" : "front-10.png",
+      "edit_sha256" : "d97c1e7e2faea233d6c05c83dffe144e8da8351742c543c4db896e5357ee2eab",
+      "edit_source" : "front-10a.png",
+      "file" : "front-10a.png",
+      "phase" : 10.333333333333334,
+      "protected_pixels_exact" : true,
+      "sha256" : "c5fa7116a48a8925da5d0c1344bd53c74ba5e93b2687d8e9d99ed598ff7926c2"
+    },
+    {
+      "base" : "front-10.png",
+      "edit_sha256" : "dee5e90204ea30d1ca33c94995d743f4a065ae7a16eb114ecae4d6fe6e3d38d9",
+      "edit_source" : "front-10b.png",
+      "file" : "front-10b.png",
+      "phase" : 10.666666666666666,
+      "protected_pixels_exact" : true,
+      "sha256" : "1e9451c30304c3f9f576b8fd95fe16f629641e14186af902c9feae783c8e3506"
+    },
+    {
+      "base" : "front-11.png",
+      "edit_sha256" : "ef826634b456f37bf7d7252ac09ec5eed618520ac86edb03b942cbca1cb31ca0",
+      "edit_source" : "front-11.png",
+      "file" : "front-11.png",
+      "phase" : 11,
+      "protected_pixels_exact" : true,
+      "sha256" : "4ca452aee2c238fc7a1630d221a993ce0eacd46c4fa4d8faa1fac8ff735c32b4"
+    },
+    {
+      "base" : "front-12.png",
+      "file" : "front-12.png",
+      "phase" : 12,
+      "sha256" : "8da2be24311eb8aec8e2f09ba919b982c6becb5d8de1957b4d5deaec1463b651"
+    },
+    {
+      "base" : "front-13.png",
+      "file" : "front-13.png",
+      "phase" : 13,
+      "sha256" : "eae871b0f5f708efefb6e108d36868cc4ebef36ec403504f3d5468032f31bb0a"
+    },
+    {
+      "base" : "front-14.png",
+      "file" : "front-14.png",
+      "phase" : 14,
+      "sha256" : "4e7b772da49e7ddad67dd058d375c3de0e94bac208d4c1b493b1aef70b334ece"
+    },
+    {
+      "base" : "front-15.png",
+      "file" : "front-15.png",
+      "phase" : 15,
+      "sha256" : "6573a521334e90f556540a6f12a4ff7258a117d325b143737078cc18394761c2"
+    }
+  ],
+  "method" : "Localized authored paint corrections with protected original pixels; no temporal blending or runtime limb assembly",
+  "period_seconds" : 1.05,
+  "phase_units" : 16,
+  "production_eligible" : false
+}

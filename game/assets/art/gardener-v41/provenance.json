@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "static_head_face_and_tank_revision",
+  "animation_integrated": false,
+  "parent": "gardener-v40",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-004a14bd-a142-46ed-83e2-5beb31a92173.png",
+  "references": [
+    "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-da0c45aa-5d96-45db-b04a-e25b98217927.png",
+    "artifacts/character-reference-v40/user-reference.png"
+  ],
+  "generation_record": "artifacts/character-reference-v41/generation.json",
+  "sha256": "99c2f5a1f0de9ffa20bd47035be2874427c9f8a069815941d24ca8375539f13b",
+  "scope": "Static adult heroine only. Refine head silhouette, bangs and tapered jaw; cream scoop-neck tank with a slightly fuller bust and subtle cleavage; modestly stronger authored pixel clusters. Preserve pose, scale, ponytail identity and remaining outfit. No animation or scene changes.",
+  "processing": "Exact generated PNG copy; same uniform display grid across face and body, no palette alteration, blur, or local face filter.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      659.7486113446388,
+      1156.43
+    ],
+    "source_bounds": [
+      449,
+      156,
+      473,
+      1016
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.5,
+      0.55
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Pending user visual review.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v41/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 0.997055937193327,
+    "visual_acceptance": "pending user review"
+  }
+}

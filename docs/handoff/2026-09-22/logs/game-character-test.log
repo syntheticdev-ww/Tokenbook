@@ -1,0 +1,26 @@
+
+> tokenbook@0.1.0 game:character-test
+> node scripts/game.mjs character-test
+
+New character in the real game; isolated test data: <isolated-temp-path>
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Farm character motion checks: 16, failures: 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Farm character art checks: 35, failures: 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+front-10a arm progress=0.40878197367551; swing boot progress=0.46218323894901; boot=(733.2794, 971.2093)
+front-10b arm progress=0.73386562943406; swing boot progress=0.63711547558391; boot=(715.7189, 968.0993)
+Limb timing checks: 6, failures: 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Character departure checks: 33, failures: 0; joined-pose hold: 0 frames
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Character root motion checks: 72, failures: 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Farm character native checks: 19; failures: 0; sampled frames: 44; walk poses: 34

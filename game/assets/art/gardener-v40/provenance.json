@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "user_reference_static_character_sample",
+  "animation_integrated": false,
+  "parent": "gardener-v38",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-6778db29-deaf-4309-b31c-634282e177bb.png",
+  "references": [
+    "res://assets/art/gardener-v38/idle.png",
+    "artifacts/character-reference-v40/user-reference.png"
+  ],
+  "prompt": "Edit reference 1 (the current approved full-body heroine) into a TRUE LOW-RESOLUTION PIXEL SPRITE, using reference 2 (user-supplied chunky pixel heroine) as the exact target for pixel craftsmanship AND FACE SHAPE. This request is ONLY ONE static standing sprite, never a spritesheet or animation.\n\nREFERENCE ROLES:\nReference 1 determines her existing hairstyle, ponytail silhouette, clothing design, clothing COLORS, body pose, proportions and placement. KEEP those.\nReference 2 determines the distinctly pixelated art language, pixel cluster size, pixel outlines, face outline/jaw/cheeks/chin and facial feature treatment. MATCH those visibly. Do NOT copy reference 2's gray clothing or messy curled bangs.\n\nMust keep from reference 1:\n- chestnut brown SINGLE high ponytail with the existing three broad connected tapered lower locks, simple swept bangs and cheek locks, no new curls or loops. Keep the current hair volume and hairdo.\n- muted berry-red bow, cream-yellow sleeveless fitted button blouse, deep indigo cuffed shorts, brown belt and brass buckle, green hip pouch, ivory socks and brown boots. Same clothing shapes and color family.\n- her full adult feminine figure, same relaxed standing posture and same front three-quarter left view. Hands hanging naturally, knees soft. No larger head, no chibi proportion change, no different leg pose.\n\nFACE: carefully emulate reference 2. A small soft face with gently rounded cheeks, a short subtly tapered jaw and compact rounded chin; simple expressive vertical dark-brown pixel eyes with modest ivory flecks, tiny pixel nose, soft cheek color and a tiny warm CLOSED-mouth smile. No teeth. The current reference 1 face is too glossy, too smooth and too anime-like with oversized bright white eyes. Redraw the WHOLE face in the same native pixel resolution as the body. Face outline, eyes, nose and mouth should feel like reference 2, with deliberately designed small blocks, not a smooth painted face pasted into a pixel body. Keep the face pretty, readable and friendly, not a broad rectangular jaw or baby face.\n\nPIXEL RESOLUTION IS THE MAIN CHANGE:\nMatch the clearly visible uniform square pixel units of reference 2. It looks like an ~85-pixel-high original character cleanly enlarged. Build the new character as approximately 86 native pixels high, about40 nativepixelswide. Canvas about112x104 nativepixels. The facial skin region is about12x12 nativepixels, eyes 2x4 each with restrained highlights; thin1nativepixel dark-walnut contour, connected2-5pixel light/shadow clusters. Scale the finished sprite by a clean integer for output, so actual large square pixel cells and staircase edges are obvious everywhere. NOT a high-resolution anime illustration with tiny texture pixels, NOT smoother/more detailed than reference2, NOT blur or a pixelation/mosaic filter.\nUse a concise cohesive palette and solid connected lit/midtone/shadow regions. Keep the warm lighting and overall colors ofreference1; simplify shading, don't recolor. Hair, face, arms, blouse, shorts and boots ALL share the same obvious pixel size. Remove tiny noisy colored specks, smooth gradients, fractional anti-aliasing and glossy highlights. Crisp1pixel-to-1pixel geometric stepping on jaw, hair, hands, knees and boots, still with graceful silhouettes.\n\nCOMPOSITION / OUTPUT:\nOnly ONE isolated complete character on a genuinely TRANSPARENT background, no checkerboard, no beige card, no shadow, no ground, no text or frame. Keep wide padding around her, similar to reference1. Aim for1120x1040 output with10x10pixelcells, visible figure roughlyy150..1010? Leave at least30px below boots and generous top margin. Whole head, bow, hands and boots fully inside canvas. Keep the current body height/proportions, original outfit and current ponytail. Deliver the exact clearly pixel-art feeling of reference2 while preserving reference1's identity and wardrobe.",
+  "sha256": "a3d7a016b27f34f525bd1c48a41453c58121ed073cb24841a9af7c8f687a538c",
+  "scope": "Static character only: reference-sized pixel clusters and rounded compact face; preserve v38 hair design, cream-yellow blouse, indigo shorts and berry bow. No walking/pet replacement.",
+  "processing": "Exact generated PNG copy. Existing 224x208 display sampling grid, with uniform .5,.55 phase across the entire character to preserve the left-eye ivory pixel at 1x as well as Retina. Chunkier pixel shapes are authored in the artwork, not produced by blurring, palette filtering or a coarser runtime grid.",
+  "palette": {
+    "blouse": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      662.25341796875,
+      1159.43
+    ],
+    "source_bounds": [
+      443,
+      156,
+      483,
+      1019
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.5,
+      0.55
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Candidate based on user-supplied pixel and facial reference; pending user visual acceptance.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v40/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.00493096646943,
+    "visual_acceptance": "pending user review"
+  }
+}

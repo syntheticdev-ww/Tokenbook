@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "status": "restrained_y_neckline_shading",
+  "animation_integrated": false,
+  "default_preview_integrated": true,
+  "parent": "gardener-v55",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-776ca6c7-c654-445f-9a41-d6a1046f0b42.png",
+  "references": [
+    "game/assets/art/gardener-v55/idle.png"
+  ],
+  "generation_record": "artifacts/character-reference-v56/generation.json",
+  "sha256": "af937eee9431a911c206193dea3e62210be4707baa5d9fdf61eb6ad08bca7507",
+  "scope": "Refine the small chest-center shadow inside the existing tank neckline into a shallow restrained Y suggestion, with subtly fuller upper-bust shading. Keep the existing neckline coverage, approved character and pixel-art strength. Static preview only; small incidental generative differences may remain outside the edit.",
+  "processing": "Exact generated PNG copy; portrait drawing grid 160x188 follows the selected image aspect ratio and retains approximately the previous 90-logical-pixel character height. Same uniform .25,.25 phase, no blur or local face filter.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red",
+    "skin": "slightly lighter warm peach"
+  },
+  "static_registration": {
+    "anchor": [
+      581.2655819141527,
+      1309.8266666666668
+    ],
+    "source_bounds": [
+      316,
+      19,
+      602,
+      1310
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      160,
+      188
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      80,
+      94
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Restrained Y-shaped neckline refinement pending visual review.",
+  "previous_static_material": "gardener-v55",
+  "prior_acceptance": "User approved the v54 character, then requested localized chest shading refinements through v55.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v56/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.00076394194041,
+    "detail_preview": "v55 left, restrained Y-shaped neckline refinement v56 right; same game material at 4x integer magnification.",
+    "visual_acceptance": "pending user review"
+  }
+}

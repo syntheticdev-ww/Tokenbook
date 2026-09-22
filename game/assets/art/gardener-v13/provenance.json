@@ -1,0 +1,112 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-16",
+  "purpose": "Replace rejected modular puppet arms with anatomically cohesive whole-body drawings at the original limb proportions.",
+  "assets": [
+    {
+      "asset": "front.png",
+      "source_output": "exec-a25655f9-31dc-41b6-9154-541a1fb62ee2.png",
+      "sha256": "58e14198a6f4940baa6c7a55df1c0923943f51af6cdd340b2afd117e64f15acd",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached exact 1642x958, 6-column x3-row whole-body pixel-art walk sheet. This is a subtle animation cleanup, NOT redesign. Each cell remains ONE complete organically drawn person, not modular puppet limbs. Change ONLY the arms' elbow/wrist pose to add natural, small, alternating arm swing synchronized with the existing leg pose. Keep shoulder flesh flowing naturally from the torso: same original rounded deltoid, original upper-arm/forearm thickness, hand size, outline weight and warm skin ramp. Do NOT make the arms smaller or thinner. Near arm moves forward when its same-side leg moves back, far arm the reverse; elbows softly flex, wrists relaxed; no rigid pendulum, marching or outstretched arms. Keep excursions understated, shoulders near their existing positions. Both leading-leg halves must have opposite arm positions, with gradual passing poses. Preserve ALL head/face/hair pixels, neck length, teal shirt silhouette, hips, shorts, legs, feet, all leg poses, figure scale, exact cell layout, padding and pure magenta background. Do not brighten or recolor skin. Full-body cells only: no detached arm pieces, no circles or joints, no slicing, no ghosting. Output exact same canvas and eighteen cell positions, no text.",
+      "layout": {
+        "width": 1642,
+        "height": 958,
+        "columns": 6,
+        "rows": 3,
+        "order": "row-major"
+      },
+      "selected_zero_based_cells": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "asset": "front-gesture-repair.png",
+      "source_output": "exec-3273cb00-aca2-44f9-abca-8dd0cd2ecd0c.png",
+      "sha256": "ad86ee891ddbea0eb2ad3582ad40f653592bf7c28df341b50b88a0c7ee53afa1",
+      "prompt": "Use case: precise-object-edit. Edit ONLY two cells of image1, the exact18-cell 1642x958 whole-body sheet: row2 column3 and row2 column6 (1-based). Their near forearms suddenly curl across the shorts, making an abrupt gesture rather than walking. In those two cells ONLY, restore a relaxed lowered near forearm with gentle elbow bend, hand outside the hip, continuous with the immediately preceding and following cells. Use image2 as the exact original anatomical arm-thickness, outline and lowered-hand reference. These two poses should be smooth small steps in a modest walk-arm arc, NOT hands over the belly/shorts. Keep the upper arm organically attached to the shoulder. Match the existing skin ramp, arm size and hand size. Preserve ALL remaining pixels in image1: every other cell, ALL heads, faces, torsos, legs, feet, colors, positions, dimensions and magenta background. No detached limbs or compositing layers; each cell a complete cohesive person. Change only those two near forearm/hand poses.",
+      "layout": {
+        "width": 1642,
+        "height": 958,
+        "columns": 6,
+        "rows": 3,
+        "order": "row-major"
+      },
+      "selected_zero_based_cells": [
+        8
+      ]
+    },
+    {
+      "asset": "back.png",
+      "source_output": "exec-06f82d3d-42a3-44c7-aa13-6a7c927d484e.png",
+      "sha256": "a7614f1e5134b0054454e32089d6a7194944b34cc03eb4662b0deb9d0b68451c",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: exact 1254x1254 4x4 rear walk animation sheet. Image2 is ONLY a reference for the original full-size fleshy arm proportions, warm skin colors, organic shoulder/torso continuity and pixel-outline style, NOT for cell layout or leg poses. Restore naturally integrated full-size arms on every figure in image1. They must be drawn as part of the complete person, never look like small replacement parts attached at the shoulder circles. Replace those circular shoulder sockets with a natural continuous shoulder-to-upper-arm silhouette matching image2. Preserve original character's arm thickness, length, hand size and perspective, roughly wrists beside upper shorts; no skinny baby arms. Small relaxed alternating swing coordinated against each cell's existing leg pose, softly bending elbow/wrist; no stiff straight pendulum arms. Keep head, hair, torso, shorts, existing leg poses, boots, figure size, colors and exact cell positions of image1 unchanged. Fixed original warm light, no palette change or head reshaping. One complete cohesive full-body sprite per cell. Exact same 1254x1254 magenta canvas, 4x4 grid, no text, shadows, ghosting or detached pieces.",
+      "layout": {
+        "width": 1254,
+        "height": 1254,
+        "columns": 4,
+        "rows": 4,
+        "order": "row-major"
+      },
+      "selected_zero_based_cells": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "asset": "settle.png",
+      "source_output": "exec-21185b13-b521-40ef-bda2-1836806aad8b.png",
+      "sha256": "9dc2a0e9adacaa6475869f7bd607b3fe28e63bce39078cc90326d193d9ced466",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: exact1254x1254 4x4 whole-body stopping pose sheet. Images2 and3 are references ONLY for the original natural arm thickness, shoulder anatomy, hand size, skin ramp and cohesive pixel-art style. Restore full-size naturally integrated arms to ALL16 figures of image1. Remove the ball-like shoulder sockets and draw shoulders, arms and torso as one unified anatomical figure. Same normal arm proportions as reference, never undersized thin glued-on arms. For each8-pose front/rear sequence, have the arms soften naturally toward relaxed standing beside hips, softly bent elbows, hands at about upper-thigh level. Keep all heads, faces, hair, torso sizes, legs/feet, figure scale, exact positions and original image1 palette unchanged. Do not add new body bob or motion. Preserve all16 leg poses and exact4x4 layout. No ghosting, detached pieces, joint circles, labels or shadows. Same1254x1254 pure magenta background. Each cell one completely drawn full-body sprite.",
+      "layout": {
+        "width": 1254,
+        "height": 1254,
+        "columns": 4,
+        "rows": 4,
+        "order": "row-major"
+      },
+      "selected_zero_based_cells": [
+        5,
+        6,
+        7,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "retained_complete_drawings": {
+    "gardener-v10/front": [
+      2,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17
+    ],
+    "gardener-v11/front-continuity": [
+      16
+    ]
+  },
+  "notes": "Every consumed pose is one intact whole-body image and one draw call. No image slicing, isolated limb sprites, independent arm scaling, shoulder rotations, runtime deformation, raster editing or temporal blending. Imagegen outputs are copied byte-for-byte. Whole-drawing selection rejects excessive hand curling, changed face palette and adjacent head-volume discontinuities. Existing 60 FPS continuous world/camera motion and coverage shader retained. Rear/settle source landmarks recalibrated against new images. Image generation is not assumed to preserve pixels exactly; each candidate was measured and reviewed."
+}

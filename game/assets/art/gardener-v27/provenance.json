@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "status": "static_material_candidate_only",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-3527db2a-55d5-4611-9f6b-8a5b3c9af47b.png",
+  "references": [
+    "first v27 candidate (exec-acc8c448-dd30-4ba0-8dcf-878040687408.png)",
+    "res://assets/art/farm-background-landscape-v1.png",
+    "first v27 static-context.png"
+  ],
+  "prompt": "Refine this ONE standing sprite so it genuinely belongs to the pixel-art farm background. Reference 1 is the current pixel heroine candidate; reference 2 is the environment whose pixel material rendering must be matched; reference 3 is the same character in the actual scene where its remaining stylistic mismatch is visible. Create one transparent standalone full-body sprite only.\n\nThe character still reads as an outlined anime cartoon with large smooth hair partitions. Strongly correct THAT specific problem. Repaint the hair, face, fabric and boots with the environment's densely crafted, broken PIXEL CLUSTERS and colored lighting, while preserving her identity, costume and pleasant base colors. Make it visibly hand-pixelled on a 128-pixel-tall character grid enlarged about 8x, not a 1000px anime painting. Use a crisp regular grid with 1px steps, many carefully organized 2–3px angular highlight clusters, 3–5 colors per material ramp. No continuous drawn lines around hair sections, arms, face or legs; delimit forms by adjacent color planes. Keep a few darkest brown pixels only at contact points. On lit edges use local-color pixels connected seamlessly to highlight planes, no thick black eyeliner/sticker border. Pixelate by AUTHORING pixel geometry, never by applying a filter to smooth art. Make the chestnut hair richly textured using short, nonuniform tapered gold-and-brown pixel clusters inspired by the roof wood and warm barrels, with no huge empty bands or long smoothly curved dark strand-lines. Teal blouse should have tiny economical angled pixel highlights/folds and warm upper-left light, with very subtle cooler teal shadow. Leather boots have small lit stitches and angular worn highlights, tan shorts have readable seams. Keep the current bright warm original colors and clean readable face, do not wash out, mute or darken the whole character. In the face remove the large black anime eyelash triangles; instead carefully place slim brown eye edges, visible brown pupils, 1px ivory highlights, one simple nose pixel and a CLEAR terracotta 3px smiling mouth that will survive a 125px-tall in-game display. Facial features must remain expressive and cute, not dot eyes or missing mouth. Pixel shading must give real volume without smooth gradients or fuzzy edges.\n\nMatch warm top-left sun direction and the cottage/grass scene's detailed 16-bit pixel art scale. Preserve the standing pose, silhouette and 3-to-3.5 head body proportion of reference 1, torso and leg lengths, relaxed hands, single chestnut ponytail attached by turquoise bow, teal sleeveless blouse with gold buttons, tan shorts, dark belt, gold buckle, waist pouch and brown boots. No new action or gesture, no second pose or sheet. Exact character proportions stay intact. One body, two legs, two hands, no extra limbs. Clean professional pixel sprite, no arbitrary speckle, no excessive dithering, no paint brushwork, no antialiasing, no glossy anime/cel shading, no vector curves, no line-art look. Detailed yet clearly visibly PIXEL ART.\n\nDeliver centered on a truly transparent 1254x1254 PNG, with character approximately x395..890 y170..1135, no ground, no cast shadow, no backdrop, no text, no comparisons. Only the character asset.",
+  "processing": "Exact full-resolution generated RGBA copy. No destructive resampling, palette filters or blur.",
+  "scope": "One static standing material; runtime code, walk manifests and animation timings frozen.",
+  "acceptance": "Pending user visual review; not an animation update.",
+  "generation_history": [
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-acc8c448-dd30-4ba0-8dcf-878040687408.png",
+      "prompt": "Redraw ONE static full-body heroine sprite in unmistakable, finely crafted GAME PIXEL ART, native approximately 128 pixels tall, shown enlarged on a transparent square canvas. It must look as if painted by the artist of reference 1, the pixel farm environment. Reference 2 is ONLY the character design and standing pose to preserve, NOT its illustration style. Reference 3 shows the current visual mismatch which MUST be corrected.\n\nCRITICAL STYLE CHANGE: the current heroine resembles a smooth anime illustration with a continuous dark sticker outline and large flat shiny areas; this is specifically rejected. Make a substantial visual style change into actual small pixel clusters with consistent visible square steps everywhere. Use a real small-sprite vocabulary: 1-pixel details, 2-to-4-pixel clusters, economical 3-to-5 tone material ramps, designed broken highlights, irregular warm and cool clusters within the hair, cloth, leather. Hair should have textured angular strands and pixel flecks like the nearby wooden crates and grass, not giant smooth glossy anime locks. Cloth has restrained fine pixel folds and small asymmetric highlights; skin has crisp compact pixel planes, never gradients. Square stair-step silhouette made from the same grid as the interior shading. Preserve volume and fine craft, do not make it blocky or crude. At about 128-pixel full-body height the mouth must be a readable separate 3-pixel smile, eyes must have clear pupils plus 1-pixel highlights; keep nose, fingers, cuff folds, belt buckle, boot seams legible.\n\nRemove the heavy continuous near-black boundary. Use SELECTIVE thin colored contour pixels: honey brown on lit hair, ochre on skin edges, teal on cloth; deep brown only in contact shadows and the shadowed lower/right silhouette, broken lighter top-left edges. Match the environment's sunlight from upper left, soft earthy ambient lighting and very subtle green reflected light under clothes; do NOT desaturate or globally recolor, and do NOT tint the face green. Preserve chestnut single ponytail tied by turquoise bow, warm brown eyes, friendly clear smiling mouth, original pleasant skin tone, original muted teal sleeveless buttoned blouse, tan shorts with cuffs, dark brown belt and gold buckle, brown leather ankle boots with light cuffs, small teal waist pouch. Keep same relaxed three-quarter front facing viewer-left standing posture, both feet planted, both arms hanging relaxed, EXACT original head-to-body ratio and limb lengths and body silhouette. No new motion and no pose change.\n\nThis is fine sprite art of a cozy premium farming sim, with hand-placed pixel clusters at working resolution. NOT vector linework, NOT a high-resolution painting with a mosaic filter, NOT smooth anime key art, NOT a 3D render, NOT thick outlined chibi art, NOT noisy dithering, NOT blur, NOT antialiasing. One crisp uniform pixel grid, each art pixel enlarged approximately 8x. Aim for roughly 128 art pixels body height and about 66 art pixels width, then uniformly enlarge for delivery without smoothing. On a 1254 x 1254 transparent PNG, center the full figure with ample transparent padding, approximately x375..890 and y170..1135. No background, no ground, no cast shadow, no text, no samples, no comparison panels, no animation sheet. Just one beautifully integrated pixel character material.",
+      "references": [
+        "res://assets/art/farm-background-landscape-v1.png",
+        "res://assets/art/gardener-v26/idle.png",
+        "artifacts/character-material-v26/static-context.png"
+      ]
+    },
+    {
+      "prompt": "Refine this ONE standing sprite so it genuinely belongs to the pixel-art farm background. Reference 1 is the current pixel heroine candidate; reference 2 is the environment whose pixel material rendering must be matched; reference 3 is the same character in the actual scene where its remaining stylistic mismatch is visible. Create one transparent standalone full-body sprite only.\n\nThe character still reads as an outlined anime cartoon with large smooth hair partitions. Strongly correct THAT specific problem. Repaint the hair, face, fabric and boots with the environment's densely crafted, broken PIXEL CLUSTERS and colored lighting, while preserving her identity, costume and pleasant base colors. Make it visibly hand-pixelled on a 128-pixel-tall character grid enlarged about 8x, not a 1000px anime painting. Use a crisp regular grid with 1px steps, many carefully organized 2–3px angular highlight clusters, 3–5 colors per material ramp. No continuous drawn lines around hair sections, arms, face or legs; delimit forms by adjacent color planes. Keep a few darkest brown pixels only at contact points. On lit edges use local-color pixels connected seamlessly to highlight planes, no thick black eyeliner/sticker border. Pixelate by AUTHORING pixel geometry, never by applying a filter to smooth art. Make the chestnut hair richly textured using short, nonuniform tapered gold-and-brown pixel clusters inspired by the roof wood and warm barrels, with no huge empty bands or long smoothly curved dark strand-lines. Teal blouse should have tiny economical angled pixel highlights/folds and warm upper-left light, with very subtle cooler teal shadow. Leather boots have small lit stitches and angular worn highlights, tan shorts have readable seams. Keep the current bright warm original colors and clean readable face, do not wash out, mute or darken the whole character. In the face remove the large black anime eyelash triangles; instead carefully place slim brown eye edges, visible brown pupils, 1px ivory highlights, one simple nose pixel and a CLEAR terracotta 3px smiling mouth that will survive a 125px-tall in-game display. Facial features must remain expressive and cute, not dot eyes or missing mouth. Pixel shading must give real volume without smooth gradients or fuzzy edges.\n\nMatch warm top-left sun direction and the cottage/grass scene's detailed 16-bit pixel art scale. Preserve the standing pose, silhouette and 3-to-3.5 head body proportion of reference 1, torso and leg lengths, relaxed hands, single chestnut ponytail attached by turquoise bow, teal sleeveless blouse with gold buttons, tan shorts, dark belt, gold buckle, waist pouch and brown boots. No new action or gesture, no second pose or sheet. Exact character proportions stay intact. One body, two legs, two hands, no extra limbs. Clean professional pixel sprite, no arbitrary speckle, no excessive dithering, no paint brushwork, no antialiasing, no glossy anime/cel shading, no vector curves, no line-art look. Detailed yet clearly visibly PIXEL ART.\n\nDeliver centered on a truly transparent 1254x1254 PNG, with character approximately x395..890 y170..1135, no ground, no cast shadow, no backdrop, no text, no comparisons. Only the character asset.",
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-3527db2a-55d5-4611-9f6b-8a5b3c9af47b.png",
+      "references": [
+        "first v27 candidate (exec-acc8c448-dd30-4ba0-8dcf-878040687408.png)",
+        "res://assets/art/farm-background-landscape-v1.png",
+        "first v27 static-context.png"
+      ],
+      "reason": "Further replace large outlined hair sections with finer angular material highlights and keep the mouth readable."
+    }
+  ],
+  "sha256": "1b1cdae3aa0d57bd345371cd434b9839c443416f86320c9e6f610b810dc08bf8",
+  "static_registration": {
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json",
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "motion_controller_sha256": "9cc37e9d1a3cced014d4b24e8141d10dbce4af8a67598bc4306a820fec204705",
+    "sampling": "same v24 renderer, original full-resolution RGBA, no recolor",
+    "scale": 0.0315475955093116,
+    "scope": "frozen static proof only",
+    "source_bounds": [
+      411,
+      163,
+      473,
+      1000
+    ],
+    "world_height": 31.5475955093116
+  },
+  "verification": {
+    "real_farm_render": "rendered both v26 and v27 in the same frozen FarmView at equal world height with the unchanged runtime renderer",
+    "runtime_integrity": "all seven frozen runtime/manifest SHA256 checks passed",
+    "visual_review": "mouth and eyes visible in the scene crop; angular hair and cloth highlights inspected",
+    "visual_acceptance": "pending user feedback"
+  },
+  "pixel_preview": {
+    "command": "npm run game:material-preview",
+    "shader": "res://character_material.gdshader",
+    "grid_canvas": [
+      128,
+      120
+    ],
+    "sample_offset": [
+      0.6,
+      0.35
+    ],
+    "source_modified": false,
+    "color_sampling": "direct original texel with no RGB averaging or palette mapping",
+    "registration": "Each cell spans one logical pixel (2x2 physical pixels at 2x Retina); full canvas 256x240 physical pixels, body approximately 191 physical pixels high, width increased by 6.7 percent from the previous preview; quad aligned to integer pixels.",
+    "static_only": true,
+    "verification": {
+      "command": "npm run game:material-test",
+      "nonuniform_grid_pixels": 0,
+      "recolored_cells": 0,
+      "mouth_cells": [
+        [
+          58,
+          41
+        ],
+        [
+          56,
+          42
+        ],
+        [
+          57,
+          42
+        ]
+      ],
+      "motion_distance": 0,
+      "real_scene_checked_colors": 11072,
+      "real_scene_color_errors": 0,
+      "background_checked_pixels": 11160,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0
+    },
+    "proof": "artifacts/character-material-v27/pixel-grid/comparison.png",
+    "framing": {
+      "window_logical": [
+        1120,
+        740
+      ],
+      "world_center": [
+        224,
+        173
+      ],
+      "world_scale": 2.8522972556275055,
+      "view_aspect": [
+        1,
+        0.94
+      ],
+      "background_sampling": "one square cell per logical display pixel; original RGB in static areas; existing temporal coverage within animated cells",
+      "proof": "artifacts/farm-focus-v2/after-scene.png"
+    }
+  }
+}

@@ -11,8 +11,16 @@
     "test": "node --test",
     "game:setup": "node scripts/game.mjs setup",
     "game": "node scripts/game.mjs run",
+    "game:motion-preview": "node scripts/game.mjs motion-preview",
+    "game:character-preview": "node scripts/game.mjs character-preview",
+    "game:character-test": "node scripts/game.mjs character-test",
+    "game:material-preview": "node scripts/game.mjs material-preview",
+    "game:material-test": "node scripts/game.mjs material-test",
+    "game:environment-test": "node scripts/game.mjs environment-test",
     "game:test": "node scripts/game.mjs test",
     "game:smoke": "node scripts/game.mjs smoke",
-    "game:music": "node scripts/ambient-music.mjs"
+    "game:raster-test": "node scripts/game.mjs raster-test",
+    "game:music": "node scripts/ambient-music.mjs",
+    "game:pet-test": "node scripts/game.mjs pet-test"
   }
 }

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "front-contact-soften",
+    "prompt": "Edit this ONE whole-body cel. Keep exact1254x1254 transparent canvas, character size, registration, head, hair, face, colors, outfit, proportions. Technical tiny pose cleanup only: keep ALL pixels above y768 unchanged unless arms explicitly mentioned. Clean fine pixel contours, full opaque anatomical limbs, no ghosting or blending. Do not create a bigger step. Move the foreground SCREEN-LEFT boot only 22 pixels RIGHT, from brown centroidx485,y1045 to x507,y1047. Keep heel shape and boot tilt almost unchanged, tiny roll flatter. Near knee stays bent lightly and shifts right only10px. Rear boot atx774,y979 stays exact. This is a VERY SMALL next frame. Foreground boot must NOT reach x530. Fullbody single cel.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-00.png",
+    "generated_file": "exec-1bb7b43a-2391-4e7b-9f59-ea8bdc3d33be.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-00.png"
+    ]
+  },
+  {
+    "name": "front-reach-ease",
+    "prompt": "Edit this ONE whole-body cel. Keep exact1254x1254 transparent canvas, character size, registration, head, hair, face, colors, outfit, proportions. Technical tiny pose cleanup only: keep ALL pixels above y768 unchanged unless arms explicitly mentioned. Clean fine pixel contours, full opaque anatomical limbs, no ghosting or blending. Do not create a bigger step. This is a TINY EARLIER pose. Near hand fingertips on screen-right currently centeredx765,y754 move ONLY10pixels LEFT and4pixels UP to x755,y750. Far screen-left fingertips move12px RIGHT. Slightly less arm spread, preserve elbows/proportions, not shrink hands. Near boot screen-left currently centerx488,y994 moves7px RIGHT and3px UP to x495,y991. Rear boot currentlyx695,y1046 moves5px RIGHT and10px UP to x700,y1036. Keep head/torso exactly same. Output whole character.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-13.png",
+    "generated_file": "exec-218ea75f-f93c-4f22-a458-d330341907f9.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-13.png"
+    ]
+  },
+  {
+    "name": "depart-ease-02",
+    "prompt": "Edit this ONE whole-body cel. Keep exact1254x1254 transparent canvas, character size, registration, head, hair, face, colors, outfit, proportions. Technical tiny pose cleanup only: keep ALL pixels above y768 unchanged unless arms explicitly mentioned. Clean fine pixel contours, full opaque anatomical limbs, no ghosting or blending. Do not create a bigger step. Early beginning of first step. Near leg attached to SCREEN-RIGHT shorts gently moves inward LEFT, near boot center fromx660,y1050 to x638,y1048. Far support leg attached SCREEN-LEFT shorts gently moves RIGHT, far boot fromx578,y1050 to x595,y1042. Legs still almost parallel, not fully crossed. Near boot is in front and far boot behind, start overlap only15pixels. Keep arms upperbody exact. Tiny knee bend, no large striding pose.",
+    "parent_file": "res://assets/art/gardener-v20/frames/depart-01.png",
+    "generated_file": "exec-5d3077ac-47b7-486d-945f-a309af86a449.png",
+    "references": [
+      "res://assets/art/gardener-v20/frames/depart-01.png"
+    ]
+  }
+]

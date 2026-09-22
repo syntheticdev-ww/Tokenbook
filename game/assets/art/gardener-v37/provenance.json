@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "status": "static_material_authored_pixel_scene",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-830c88c4-15f3-43a4-b9d6-7ffb815b05f6.png",
+  "references": [
+    "res://assets/art/gardener-v36/idle.png",
+    "res://assets/art/farm-background-landscape-v2.png"
+  ],
+  "prompt": "Reconstruct the woman in reference 1 as a GENUINE HAND-DRAWN PIXEL GAME SPRITE that belongs in the crisp pixel farm of reference 2. This is a full stylistic redraw, not another small touch-up of the anime-looking original. The current smooth face and glossy eyes do not look like pixel art. Change the drawing language decisively while preserving her identity, pose, outfit, proportions and charm.\n\nDeliver a single transparent full-body character, standing in exactly the same pose and facing direction, with approximately the same silhouette placement and body size on a 1254x1254 transparent canvas (body roughly x410..890, y150..1175). This will be displayed about 170 screen pixels tall.\n\nArt direction: authentic detailed 16-bit / modern pixel RPG character art. Deliberately authored, crisp contiguous pixel clusters and stepped contours, drawn on ONE consistent fine grid across every region. Visually about 120-140 native pixels full-body height, enlarged cleanly for output. Around 8-9 source pixels per visible pixel step. Use a compact cohesive palette of about 40-50 colors, not hundreds of smooth gradient colors. Hard clean color-cluster boundaries, purposeful small details, selective warm outlines. No image blur, no block/mosaic filter, no glossy high-resolution anime face, no vector eyes or feathered skin. Avoid noisy dithering and isolated random pixels.\n\nFACE is essential: redraw the eyes, eyebrows, closed smiling lips, nose, cheeks and jaw AS PIXEL ART on exactly the same grid as her arms, clothes and hair. Both warm brown eyes should be bright and open, with clean small pupils, restrained ivory eye whites and one tiny glint per eye. Natural 3/4 perspective, pleasant balanced features, no huge white wedges, heavy black lash blocks, tiny unreadable dots, sleepy eyes or smooth painted eyelashes. A gentle readable CLOSED-MOUTH SMILE, no teeth. A modest, tasteful stepped lip curve integrated with cheek warmth. The face must look made of the same deliberate pixel clusters as the body, not an anime sticker pasted onto a pixel body.\n\nKeep her chestnut single ponytail, berry-red hair bow, cream-yellow sleeveless button blouse, deep-indigo cuffed shorts, brown belt/gold buckle and buttons, green hip pouch, ivory socks and brown boots. Preserve young adult feminine proportions and present figure, head size, standing stance and arm positions. Match the warm sunlight and rich but natural colors of the reference farm.\n\nShape hair into clear stepped locks and compact highlights. Shape skin with 4-5 connected warm shades across face, neck, shoulders, arms and legs. Clothes use clean pixel seam/fold planes. Boots have concise pixel laces/soles. Stronger pixel authorship should be obvious at game size, while the result stays polished, attractive, detailed and coherent with the cottage and meadow.\n\nOnly the complete transparent sprite. No background, captions, checkerboard, extra poses, frame, ground or baked shadow.\n",
+  "processing": "Exact generated PNG copy. One point-sampled drawing cell per physical display pixel on Retina; same phase for face and body, no color blending or blur.",
+  "scope": "Reconstruct the entire heroine in deliberate pixel clusters, including eyes, lips and skin; match the redrawn crisp cottage and meadow. Preserve costume, standing placement, display grid and scene layout.",
+  "palette": {
+    "selected_option": 1,
+    "blouse": "cream yellow #EACB76",
+    "shorts": "deep indigo #46566F",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      409,
+      139,
+      492,
+      1037
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas_at_retina": [
+      224,
+      208
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.25,
+      0
+    ],
+    "face_sampling_override_at_retina": false,
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 172.00637958532695,
+    "comparison_artifact": "artifacts/pixel-scene-v37/pixel-grid/comparison.png",
+    "one_x_display": {
+      "grid": [
+        112,
+        104
+      ],
+      "sample_offset": [
+        0.5,
+        0.5
+      ],
+      "face_sampling_override": false
+    },
+    "display_canvas_at_retina": [
+      224,
+      208
+    ],
+    "logical_body_height": 86.0031897926635,
+    "height_ratio_to_v36": 1.0146771037182
+  },
+  "acceptance": "Reviewed in native game viewport at the unchanged doorstep registration: stepped face, hair and clothing clusters, closed-mouth smile, and coherent cottage context. Awaiting user aesthetic review; static character only, no animation integration.",
+  "sha256": "6b2716b4980399a285d6e4c75bf54acaed9f744f536128404cd506ad4ef326c2",
+  "background": {
+    "asset": "res://assets/art/farm-background-landscape-v2.png",
+    "bitmap_changed": true,
+    "rendering_change": "Redrawn crisp pixel-art texture; point-sampled moving foliage replaces color interpolation in the landscape renderer. World geometry and animation timing preserved."
+  },
+  "verification": {
+    "commands": [
+      "npm run game:material-test",
+      "npm run game:environment-test"
+    ],
+    "status": "passed",
+    "material_scene": {
+      "background_asset": "res://assets/art/farm-background-landscape-v2.png",
+      "background_checked_pixels": 11403,
+      "background_crisp_motion": true,
+      "background_grid_density": 2.0,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_logical_pixels": 86.0031897926635,
+      "body_pixels": 172.006379585327,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1.0,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.200000002980232,
+        0.800000011920929
+      ],
+      "face_sampling_override": false,
+      "grid_cells": [
+        224.0,
+        208.0
+      ],
+      "height_ratio_to_previous": 1.0146771037182,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9333,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.25,
+        0.0
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "6b2716b4980399a285d6e4c75bf54acaed9f744f536128404cd506ad4ef326c2",
+      "window_physical_size": [
+        2240,
+        1480
+      ]
+    },
+    "one_x": {
+      "art_grid": [
+        112.0,
+        104.0
+      ],
+      "display_density": 1,
+      "eyes": [
+        {
+          "highlight": 1,
+          "pupil": 8
+        },
+        {
+          "highlight": 5,
+          "pupil": 3
+        }
+      ],
+      "face_sampling_override": false,
+      "lip_cells": 1,
+      "original_rgb_errors": 0,
+      "passed": true,
+      "tooth_cells": 0,
+      "transparent_edge_errors": 0,
+      "uniform_grid_errors": 0
+    },
+    "two_x": {
+      "art_grid": [
+        224.0,
+        208.0
+      ],
+      "display_density": 2,
+      "eyes": [
+        {
+          "highlight": 6,
+          "pupil": 35
+        },
+        {
+          "highlight": 13,
+          "pupil": 25
+        }
+      ],
+      "face_sampling_override": false,
+      "lip_cells": 8,
+      "original_rgb_errors": 0,
+      "passed": true,
+      "tooth_cells": 0,
+      "transparent_edge_errors": 0,
+      "uniform_grid_errors": 0
+    },
+    "landscape_motion": {
+      "checks": 9,
+      "failures": 0,
+      "grass": {
+        "mixed_color_pixels": 0,
+        "moving_pixels": 5018
+      },
+      "leaves": {
+        "mixed_color_pixels": 0,
+        "moving_pixels": 4035
+      },
+      "negative_control_mixed_pixels": 8811
+    }
+  },
+  "visual_evidence": [
+    "artifacts/pixel-scene-v37/pixel-grid/after-scene.png",
+    "artifacts/pixel-scene-v37/pixel-grid/comparison.png",
+    "artifacts/pixel-scene-v37/pixel-grid/material-card.png"
+  ]
+}

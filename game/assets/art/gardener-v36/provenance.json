@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "status": "static_material_face_repair_equal_display_pixels",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-d3ee1948-3c1b-4955-8d53-361feb6f490f.png",
+  "references": [
+    "res://assets/art/gardener-v35/idle.png",
+    "user rejected face closeup"
+  ],
+  "prompt": "Repair the exposed FACE of the heroine in reference 1 for a refined pixel-art game. Reference 2 is a REJECTED in-game close-up: it shows the failure to correct, not the target. In the rejected face the near eye has an excessive white wedge and mismatched pupil proportions, while the smile is an awkward long stepped red slash. Fix these visibly. Do not recreate the rejected result.\n\nDeliver ONE complete transparent full-body sprite, exactly the same 1254x1254 canvas, body pose, location, scale, hair, clothes, hands, legs and boots as reference 1. Her selected cream-yellow blouse and indigo shorts, berry bow and current figure are frozen. Only redraw facial features, the facial skin planes and a tiny amount of jaw/neck shading to integrate them. Keep recognizable identity, warm brown eyes and cheerful adult heroine appeal.\n\nFACE:\n- Both eyes remain large, open and expressive, but bring the near/far eyes into a natural 3/4 relationship. Increase the narrow far-eye brown iris a little and reduce the excessively wide near eye/white area a little. The far eye should be about 80% as wide as the near eye, with nearly equal opening height.\n- Each eye uses a clearly defined rich brown iris and dark pupil occupying most of its opening. Restrained ivory eye whites just at the outer sides, not a large bright wedge beneath/beside the iris. One small matched glint per eye, consistent gaze direction. No broad black eyeliner chunks, no malformed white rectangle, no surprised staring expression.\n- Draw brows and eyelids with deliberate economical pixel clusters. Keep the lovely open-eye expression without smooth vector curves or glossy anime portrait shading.\n- A SMALL SOFT CLOSED-LIP SMILE, about 20% narrower than now, centered naturally under the nose. Restrained warm rose-brown lip color. Gently lifted ends; a shallow pleasing curve, no harsh angular hook at either end, no long dark red slash, no bold lipstick, NO TEETH, NO open mouth or white mouth stripe. Avoid a pasted-on geometric U. A little coordinated cheek lift should make the smile warm.\n- Reduce the sharp white nose speck. Use a tiny soft warm peach light plane and a restrained nose shadow instead of a glowing white pixel.\n- Preserve a delicate softly oval jaw, healthy warm complexion, comfortable forehead and facial proportions. Integrate the chin/neck transition with the same warm skin shading as her shoulders. No heavy black necklace-like jaw outline or floating pasted face.\n- True fine PIXEL ART consistent with the arms and body: intentional small staircase edges and 4-5 warm connected skin shades, not smooth airbrush. Use coherent medium-size pixel clusters, about 6-8 source pixels per step at this output size. Preserve the beauty and readable expression of a carefully hand-drawn cozy-game sprite. Do not apply a mosaic filter or make arbitrary chunky square facial features.\n\nThe full sprite is displayed around 170 screen pixels tall: the face must remain balanced, pretty and readable at that size. Take special care with pupil/eye-white balance and the closed smile. Transparent background, no checkerboard, no scene, no ground shadow, no text.\n",
+  "processing": "Exact generated PNG copy. One point-sampled drawing cell per physical display pixel on Retina; same phase for face and body, no color blending or blur.",
+  "scope": "Correct eye and closed-mouth rendering; preserve costume, body registration and background. Restore equal physical pixel sizes to remove facial distortion from the former 4/3 sampling scale.",
+  "palette": {
+    "selected_option": 1,
+    "blouse": "cream yellow #EACB76",
+    "shorts": "deep indigo #46566F",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      409,
+      152,
+      483,
+      1022
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas_at_retina": [
+      224,
+      208
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.25,
+      0
+    ],
+    "face_sampling_override_at_retina": false,
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 169.51834130781498,
+    "comparison_artifact": "artifacts/character-material-v36/pixel-grid/comparison.png",
+    "one_x_display": {
+      "grid": [
+        112,
+        104
+      ],
+      "sample_offset": [
+        0.5,
+        0.5
+      ],
+      "face_sampling_override": false
+    },
+    "display_canvas_at_retina": [
+      224,
+      208
+    ],
+    "face_comparison_artifact": "artifacts/character-material-v36/pixel-grid/face-comparison.png",
+    "sampling_review_artifact": "artifacts/character-material-v36/face-phase-study.png"
+  },
+  "acceptance": "Reviewed actual in-scene face at 4x nearest-neighbor enlargement and the normal-size context, in addition to two display-density cards. Replaced the rejected 4/3 grid scale with equal physical pixels and selected a whole-sprite sample phase retaining the closed lip. No face/body sampling split. Awaiting user aesthetic judgment; static material only.",
+  "sha256": "be5cf8de2251d284607fdd86554b27ab35c51a475b2905169373592304fe3bea",
+  "background": {
+    "asset": "res://assets/art/farm-background-landscape-v1.png",
+    "bitmap_changed": false,
+    "rendering_change": "None in v36."
+  },
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11403,
+      "background_grid_density": 2.0,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_logical_pixels": 84.7591706539075,
+      "body_pixels": 169.518341307815,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1.0,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.200000002980232,
+        0.800000011920929
+      ],
+      "face_sampling_override": false,
+      "grid_cells": [
+        224.0,
+        208.0
+      ],
+      "height_ratio_to_previous": 1.0029440628066733,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9288,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.25,
+        0.0
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "be5cf8de2251d284607fdd86554b27ab35c51a475b2905169373592304fe3bea",
+      "window_physical_size": [
+        2240,
+        1480
+      ]
+    },
+    "feature_checks": [
+      {
+        "art_grid": [
+          112.0,
+          104.0
+        ],
+        "display_density": 1,
+        "eyes": [
+          {
+            "highlight": 1,
+            "pupil": 6
+          },
+          {
+            "highlight": 4,
+            "pupil": 7
+          }
+        ],
+        "face_sampling_override": false,
+        "lip_cells": 3,
+        "original_rgb_errors": 0,
+        "passed": true,
+        "tooth_cells": 0,
+        "transparent_edge_errors": 0,
+        "uniform_grid_errors": 0
+      },
+      {
+        "art_grid": [
+          224.0,
+          208.0
+        ],
+        "display_density": 2,
+        "eyes": [
+          {
+            "highlight": 3,
+            "pupil": 32
+          },
+          {
+            "highlight": 15,
+            "pupil": 36
+          }
+        ],
+        "face_sampling_override": false,
+        "lip_cells": 4,
+        "original_rgb_errors": 0,
+        "passed": true,
+        "tooth_cells": 0,
+        "transparent_edge_errors": 0,
+        "uniform_grid_errors": 0
+      }
+    ],
+    "scope_integrity": "Background art and renderer, world/window geometry, animation and previous sprite remain unchanged. Zero changed real-scene pixels outside the character area."
+  }
+}

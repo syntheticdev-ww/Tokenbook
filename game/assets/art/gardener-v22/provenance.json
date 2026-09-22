@@ -1,0 +1,18 @@
+{
+  "version": 22,
+  "generator": "OpenAI built-in image_gen, endpoint-guided intact-character cel edits",
+  "scope": "Front-route preview only. Eleven selected authored cels: eight additional in-betweens and three replacements, giving forty-four walking drawings. Old assets and manifests remain archived unchanged.",
+  "repairs": "Correct the returning arm overshoot at source phase 5.5; replace the backward swing at 11.5 and 12 with a continuous foreground leg crossing; add support roll, toe-off, swing-through and heel-lowering cels.",
+  "sources": "candidates.json records selected source images, reference identities, full prompts, protected parent and explicit replacement lineage. Raw selected image_gen PNGs remain in source/.",
+  "finalization": "Use the existing PixelPatch/SkinPalette path. Protect the complete upper body for leg edits and the original head for body edits. Restore exact straight-alpha protected bytes with the existing Godot finalizer before hashing to avoid CoreGraphics edge roundoff. Runtime draws one intact PNG without optical flow, ghosting, limb scaling or layering.",
+  "timing": "Read-only boot and hand measurements allocate 63 one-or-two-tick phase gaps per 1.05-second cycle. Larger moves receive two ticks; near-identical poses receive one. Nearest-pose midpoint ties resolve forward consistently across the wrap. Existing distance-driven controller, route, stride and departure/settle clips remain unchanged.",
+  "build": [
+    "swiftc tools/pixel_cleanup/Raster.swift tools/pixel_cleanup/Palette.swift tools/pixel_cleanup/Patch.swift tools/pixel_cleanup/smooth-walk.swift -o /tmp/tokenbook-finalize-smooth",
+    "/tmp/tokenbook-finalize-smooth game <new output frames folder>",
+    "Place finalized files in gardener-v22/frames, preserving previous builds separately",
+    ".tools/godot-4.7.2/Godot.app/Contents/MacOS/Godot --headless --path game --script res://tests/finalize_departure_art.gd -- --walk-v22",
+    ".tools/godot-4.7.2/Godot.app/Contents/MacOS/Godot --headless --path game --script res://tests/build_smooth_walk.gd"
+  ],
+  "quality": "Source hashes, protected RGBA, ordered returning hand, every drawing visible at 60 Hz, maximum two consecutive display samples, lifecycle and native-window regression, paired engine renders and real-main route capture. These checks do not establish user visual acceptance.",
+  "production_eligible": false
+}

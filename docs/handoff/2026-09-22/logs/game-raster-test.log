@@ -1,0 +1,52 @@
+
+> tokenbook@0.1.0 game:raster-test
+> node scripts/game.mjs raster-test
+
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+GPU silhouette travel / dpi=1 / mirror=false / rejected snap=false
+zoom=1.0 / head, torso, legs maximum travel error (physical pixels): [0.05218902296337, 0.03792486071789, 0.0669117615362]
+zoom=1.0 / vertical travel error (physical pixels): 0.03077821243501
+zoom=2.0 / head, torso, legs maximum travel error (physical pixels): [0.06123463084557, 0.04747013659745, 0.07592055761602]
+zoom=2.0 / vertical travel error (physical pixels): 0.02788719395971
+zoom=4.8 / head, torso, legs maximum travel error (physical pixels): [0.05183287727815, 0.04711108060192, 0.06157536041501]
+zoom=4.8 / vertical travel error (physical pixels): 0.04310501576622
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+GPU silhouette travel / dpi=2 / mirror=false / rejected snap=false
+zoom=1.0 / head, torso, legs maximum travel error (physical pixels): [0.06123463084557, 0.04747013659742, 0.075920557616]
+zoom=1.0 / vertical travel error (physical pixels): 0.02788719395974
+zoom=2.0 / head, torso, legs maximum travel error (physical pixels): [0.05662883604701, 0.0400264531445, 0.05023879846756]
+zoom=2.0 / vertical travel error (physical pixels): 0.02671517306898
+zoom=4.8 / head, torso, legs maximum travel error (physical pixels): [0.04189745801039, 0.04289800619877, 0.07092379400144]
+zoom=4.8 / vertical travel error (physical pixels): 0.03004317206844
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+GPU silhouette travel / dpi=1 / mirror=true / rejected snap=false
+zoom=1.0 / head, torso, legs maximum travel error (physical pixels): [0.05218902296337, 0.03792486071789, 0.0669117615362]
+zoom=1.0 / vertical travel error (physical pixels): 0.03077821243501
+zoom=2.0 / head, torso, legs maximum travel error (physical pixels): [0.06123463084557, 0.04747013659745, 0.07592055761602]
+zoom=2.0 / vertical travel error (physical pixels): 0.02788719395971
+zoom=4.8 / head, torso, legs maximum travel error (physical pixels): [0.05183287727815, 0.04711108060192, 0.06157536041501]
+zoom=4.8 / vertical travel error (physical pixels): 0.04310501576622
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+GPU silhouette travel / dpi=2 / mirror=true / rejected snap=false
+zoom=1.0 / head, torso, legs maximum travel error (physical pixels): [0.06123463084557, 0.04747013659742, 0.075920557616]
+zoom=1.0 / vertical travel error (physical pixels): 0.02788719395974
+zoom=2.0 / head, torso, legs maximum travel error (physical pixels): [0.05662883604701, 0.0400264531445, 0.05023879846756]
+zoom=2.0 / vertical travel error (physical pixels): 0.02671517306898
+zoom=4.8 / head, torso, legs maximum travel error (physical pixels): [0.04189745801038, 0.04289800619877, 0.07092379400144]
+zoom=4.8 / vertical travel error (physical pixels): 0.03004317206844
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Farm layer GPU comparison: 60 scenarios, dpi=1, mismatches=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Farm layer GPU comparison: 60 scenarios, dpi=2, mismatches=0

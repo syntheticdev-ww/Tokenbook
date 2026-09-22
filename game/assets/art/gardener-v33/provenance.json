@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "status": "static_material_cream_yellow_indigo_fine_pixels",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-3a06a198-5197-401b-aef6-1669756f2a9d.png",
+  "references": [
+    "res://assets/art/gardener-v32/idle.png",
+    "palette board option 1"
+  ],
+  "prompt": "Edit reference 1, the EXACT existing adult heroine transparent pixel-art sprite. Reference 2 is a color concept board ONLY: implement option 1 in its TOP LEFT, cream yellow blouse plus deep indigo blue shorts. Deliver ONE full-body sprite on transparent background, 1254x1254 canvas with precisely same pose, scale, placement, anchor and padding as reference 1, not a board.\n\nPreserve the current heroine's identity, lovely oval face, large open warm brown eyes and catchlights, gently parted happy smile with a small ivory tooth accent, all facial anatomy, body proportions, single chestnut ponytail, berry rose red hair bow, skin colors, brown belt and gold buckle/buttons, green hip pouch, ivory socks and brown boots. Do not change the face, hair silhouette, pose, figure, garment shapes or add accessories. This is a precise color and pixel-detail refinement, not a redesign.\n\nRecolor the sleeveless button-front blouse to soft warm CREAM YELLOW: midtone #EACB76, light buttery cream highlights, muted golden ochre shadows; soft summer fabric, not mustard, neon yellow or white gray. Recolor the cuffed shorts to DEEP INDIGO DENIM BLUE: midtone #46566F, deeper desaturated navy shadow, lighter blue-gray cuff and seam highlights. Keep clear contrast between blouse and shorts. Preserve berry red bow.\n\nImprove the definition and readability of the existing PIXEL ART: clean deliberate stepped pixel clusters, carefully placed hair ribbon highlights and dark strand separations, readable gold buttons and belt stitching, a few controlled fabric fold planes and denim cuff seams, boot laces and sole edges. Keep it elegant and clean, no extra noisy speckles, no heavy new black outlines, no sharpen halos, no blurry edges or painterly airbrush. Maintain a cohesive fine pixel-art look at around 170 rendered pixels full-body height, matching a detailed cozy pixel farm scene. Preserve the exact happy face from reference 1, do not substitute generic anime rendering. Remove stray near-transparent fringe pixels outside the silhouette and retain a clean alpha boundary. Transparent background, no ground shadow, no caption, no multiple views.\n",
+  "processing": "Exact generated PNG copy. Original source texels sampled at physical display resolution with hard alpha. No bitmap processing, sharpening, blur or global recoloring.",
+  "scope": "Implement approved palette option 1 and retain fine pixel detail at the same logical size. Preserve the face, pose, body and scene composition.",
+  "palette": {
+    "selected_option": 1,
+    "blouse": "cream yellow #EACB76",
+    "shorts": "deep indigo #46566F",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      405,
+      151,
+      491,
+      1023
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas_at_retina": [
+      224,
+      208
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.5,
+      0.5
+    ],
+    "face_sampling_override_at_retina": false,
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 169.68421052631578,
+    "comparison_artifact": "artifacts/character-material-v33/pixel-grid/comparison.png",
+    "one_x_display": {
+      "grid": [
+        112,
+        104
+      ],
+      "sample_offset": [
+        0.3,
+        0.1
+      ],
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.2,
+        0.8
+      ]
+    }
+  },
+  "acceptance": "Reviewed the generated sprite, two integer-grid cards and the real 2240x1480 viewport comparison. Fine grid clearly retains the open eyes, smile, hair and fabric edges at the same character size. Awaiting user aesthetic feedback; static material only.",
+  "sha256": "83f16a51db2679a9460c79f8df4b34dfc948b9386ab42c42d0615782f84a170f",
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11403,
+      "background_grid_density": 2.0,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_logical_pixels": 84.8421052631579,
+      "body_pixels": 169.684210526316,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.200000002980232,
+        0.800000011920929
+      ],
+      "face_sampling_override": false,
+      "grid_cells": [
+        224.0,
+        208.0
+      ],
+      "height_ratio_to_previous": 1.0,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9346,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.5,
+        0.5
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "83f16a51db2679a9460c79f8df4b34dfc948b9386ab42c42d0615782f84a170f",
+      "window_physical_size": [
+        2240,
+        1480
+      ]
+    },
+    "feature_checks": {
+      "density_1": {
+        "grid_errors": 0,
+        "color_errors": 0,
+        "eye_highlights": [
+          2,
+          4
+        ],
+        "eye_pupils": [
+          9,
+          7
+        ],
+        "connected_lip_and_tooth": true
+      },
+      "density_2": {
+        "grid_errors": 0,
+        "color_errors": 0,
+        "eye_highlights": [
+          5,
+          13
+        ],
+        "eye_pupils": [
+          37,
+          36
+        ],
+        "connected_lip_and_tooth": true
+      }
+    },
+    "environment": {
+      "command": "npm run game:environment-test",
+      "visual_checks": 20,
+      "grounding_checks": 9,
+      "real_window_checks": 11,
+      "failures": 0,
+      "artifact_directory": "artifacts/living-farm-v2/audit-RIUxKC"
+    },
+    "scope_integrity": "Nine baseline hashes unchanged: character, animation, farm geometry, window layout, background bitmap and v32 bitmap. Character-only intermediate capture has no changed pixels outside the avatar zone. Background sampling density is intentionally updated."
+  },
+  "background": {
+    "asset": "res://assets/art/farm-background-landscape-v1.png",
+    "bitmap_changed": false,
+    "rendering_change": "Use physical pixel alignment instead of a second logical-pixel reduction in the landscape view. Keep source RGB, camera, world geometry and wind/water animation unchanged."
+  }
+}

@@ -1,0 +1,11 @@
+
+> tokenbook@0.1.0 game:smoke
+> node scripts/game.mjs smoke
+
+Isolated test data: <isolated-temp-path>
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Native walking samples in 0.65s: 35; authored poses: 10; refresh cap: 60
+Motion frames over 0.65s: 35
+Native window smoke: PASS; windowId=0; compact physical size=(400, 420)

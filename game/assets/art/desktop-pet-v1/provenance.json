@@ -1,0 +1,11 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "reference": "game/assets/art/gardener-v18/frames/idle.png",
+  "source_generated": "exec-b8604881-05a2-47ac-a08d-72b26a497b9d.png",
+  "background_edit_generated": "exec-21b12258-a279-47bf-b2f3-5a199e72c203.png",
+  "prompt_summary": "12 complete poses in a 4x3 grid: relaxed single-ponytail gardener, crouch, dig soil with bare hands, stand up. Preserve teal vest, bow, beige shorts and boots. Second generation changes only background to flat magenta. No shovel or separate body parts.",
+  "import": "game/tests/build_pet_atlas.gd keys magenta, crops transparent padding, registers soles and records silhouette polygons; no artistic pixel retouching.",
+  "wide_background_generated": "exec-54c5b378-56b3-45a0-b63f-a60377ca01ec.png",
+  "wide_background_reference": "game/assets/art/farm-background-cohesive-v2.png",
+  "wide_background_prompt_summary": "Extend farm horizontally in the same pixel-art style, preserve a single cottage, river and open meadow; no characters, beds, labels or UI."
+}

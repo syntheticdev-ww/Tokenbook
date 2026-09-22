@@ -1,0 +1,31 @@
+
+> tokenbook@0.1.0 game:environment-test
+> node scripts/game.mjs environment-test
+
+Isolated environment audit: /private<isolated-temp-path>
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Environment water: 3615 changed physical pixels
+Environment water: 474 visibly changed logical pixels
+Environment leaves: 7488 changed physical pixels
+Environment leaves: 683 visibly changed logical pixels
+Environment grass: 4510 changed physical pixels
+Environment grass: 343 visibly changed logical pixels
+Environment smoke: 2114 changed physical pixels
+Environment smoke: 241 visibly changed logical pixels
+Smoke-only visible pixels: 179
+Environment native visual checks: 20, failures: 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Readable projected character shadow pixels: 191
+Grounding visual checks: 9, failures: 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Environment real-window checks: 11, failures: 0; idle draws in .8s: 24
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Crisp landscape checks: {"checks":9,"failures":0,"grass":{"mixed_color_pixels":0,"moving_pixels":5020},"leaves":{"mixed_color_pixels":0,"moving_pixels":4014},"negative_control_mixed_pixels":8782}

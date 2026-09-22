@@ -8,7 +8,7 @@ config/use_custom_user_dir=true
 config/custom_user_dir_name="Tokenbook-M0"
 
 [display]
-window/size/viewport_width=240
+window/size/viewport_width=200
 window/size/viewport_height=210
 window/size/resizable=false
 window/size/borderless=true

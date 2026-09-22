@@ -9,20 +9,65 @@ const Rules = preload("res://farm_rules.gd")
 const Geometry = preload("res://farm_geometry.gd")
 const Art = preload("res://pixel_art.gd")
 const Motion = preload("res://farm_motion.gd")
+const WalkArt = preload("res://walk_art.gd")
+const SpriteRaster = preload("res://sprite_raster.gd")
 var motion := Motion.new()
+var character: RefCounted
 var externally_driven := false
+# Explicitly enabled by the game; historical art-audit subclasses keep their
+# original renderer and can still reproduce the preserved v7 comparison.
+var refined_animation := false
+var ambient_enabled := false
 var pixel_ratio := 2.0
 var selected_plot := -1
 var compact := false
-var render_scale := 1
+var render_scale := 1.0
+# Presentation only: paths and simulation stay in the same world coordinates.
+var view_aspect := Vector2.ONE
+var view_center := Geometry.WORLD * 0.5
+var landscape := false
 var _state: Dictionary = {}
 var _clock := 0.0
 var _camera := Vector2.ZERO
 var _camera_ready := false
 var _hovered := -1
 var _pet_until := 0.0
+var _actor_layer: Node2D
+var _foreground_layer: Node2D
+var _environment_layer: Node2D
+var _shadow_layers: Array[Node2D] = []
 
 func _ready() -> void:
+    if ambient_enabled:
+        _environment_layer = preload("res://farm_environment.gd").new()
+        _environment_layer.extend_edges = landscape
+        add_child(_environment_layer)
+    if refined_animation:
+        if character == null:
+            WalkArt.warm_cache()
+        if character != null:
+            for contact in [false,true]:
+                var shadow := Node2D.new()
+                shadow.name = "SoleContact" if contact else "SunCastShadow"
+                var shadow_material := ShaderMaterial.new()
+                shadow_material.shader = preload("res://character_shadow.gdshader")
+                shadow_material.set_shader_parameter("contact_only",contact)
+                shadow.material = shadow_material
+                shadow.draw.connect(func(): _paint_actor_shadow(shadow))
+                add_child(shadow)
+                _shadow_layers.append(shadow)
+        # Only the moving character needs coverage filtering. Keep the farm's
+        # existing pixel rendering and its actor/crop/cat depth order intact.
+        _actor_layer = Node2D.new()
+        _actor_layer.name = "ActorCoverage"
+        _actor_layer.material = SpriteRaster.coverage_material()
+        _actor_layer.draw.connect(func(): _paint_actor(_actor_layer))
+        add_child(_actor_layer)
+        _foreground_layer = Node2D.new()
+        _foreground_layer.name = "FarmForeground"
+        _foreground_layer.material = Art.key_material()
+        _foreground_layer.draw.connect(_draw_foreground)
+        add_child(_foreground_layer)
     mouse_filter = Control.MOUSE_FILTER_STOP
     texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
     material = Art.key_material()
@@ -51,16 +96,32 @@ func _process(delta: float) -> void:
     queue_redraw()
 
 func actor_position() -> Vector2:
+    if character != null: return character.position()
     return motion.position()
 
 func actor_draw_position() -> Vector2:
-    return actor_position().snapped(Vector2.ONE / (pixel_ratio * (1 if compact else render_scale)))
+    if refined_animation: return actor_position()
+    return actor_position().snapped(Vector2.ONE / (pixel_ratio * view_scale()))
 
 func visual_pose() -> Dictionary:
-    return motion.pose()
+    if character != null: return character.pose()
+    var pose := motion.pose()
+    if refined_animation and pose.kind == "walk":
+        pose.frame = WalkArt.frame_at(walk_phase(),pose.back).drawing
+    if refined_animation and pose.has("settle_progress"):
+        pose.kind = "settle"
+    return pose
+
+func walk_phase() -> float:
+    return 3.0 + motion.distance() / motion.length * motion._walk_cycles * 16.0 if motion.length > 0 else 3.0
 
 func actor_sprite() -> Dictionary:
+    if character != null: return character.sprite()
     var pose := visual_pose()
+    if refined_animation and pose.kind == "walk":
+        return WalkArt.frame_at(walk_phase(),pose.back)
+    if refined_animation and pose.kind == "settle":
+        return WalkArt.settle_frame(pose.settle_progress,pose.back)
     return Art.animated_frame(pose.frame, pose.kind, pose.back)
 
 func _camera_target() -> Vector2:
@@ -69,22 +130,28 @@ func _camera_target() -> Vector2:
 
 func view_offset() -> Vector2:
     if not compact:
-        return ((size - Geometry.WORLD * render_scale) / 2.0).floor()
-    return -(_camera if _camera_ready else _camera_target()).snapped(Vector2.ONE / pixel_ratio)
+        return (size * 0.5 - view_center * view_scale()).floor()
+    var camera := _camera if _camera_ready else _camera_target()
+    # The actor already has continuous subpixel rendering. Snapping the shared
+    # camera reintroduces a whole-body jump, even with a completely held pose.
+    return -camera if refined_animation else -camera.snapped(Vector2.ONE / pixel_ratio)
+
+func view_scale() -> Vector2:
+    return Vector2.ONE if compact else view_aspect * render_scale
 
 func world_to_view(point: Vector2) -> Vector2:
-    return point * (1 if compact else render_scale) + view_offset()
+    return point * view_scale() + view_offset()
 
 func _gui_input(event: InputEvent) -> void:
     if compact:
         return
     if event is InputEventMouseMotion:
-        var point: Vector2 = (event.position - view_offset()) / render_scale
+        var point: Vector2 = (event.position - view_offset()) / view_scale()
         _hovered = Geometry.plot_at(point)
         mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND if _hovered >= 0 or Geometry.HOUSE.has_point(point) or point.distance_to(Geometry.CAT) < 15 else Control.CURSOR_ARROW
         queue_redraw()
     if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-        var point: Vector2 = (event.position - view_offset()) / render_scale
+        var point: Vector2 = (event.position - view_offset()) / view_scale()
         var id := Geometry.plot_at(point)
         if id >= 0:
             selected_plot = id
@@ -99,26 +166,45 @@ func _gui_input(event: InputEvent) -> void:
         queue_redraw()
 
 func _draw() -> void:
-    draw_set_transform(view_offset(), 0, Vector2.ONE * (1 if compact else render_scale))
-    draw_texture_rect(Art.texture("farm-background-cohesive-v2"), Rect2(Vector2.ZERO, Geometry.WORLD), false)
+    draw_set_transform(view_offset(), 0, view_scale())
+    if ambient_enabled:
+        _environment_layer.sync(motion.clock,view_offset(),view_scale())
+    else:
+        draw_texture_rect(Art.texture("farm-background-cohesive-v2"), Rect2(Vector2.ZERO, Geometry.WORLD), false)
     _draw_river_light()
     _draw_paths()
     if not _state.is_empty():
         for id in range(8):
             _draw_plot(id)
     for item in scene_sprites():
-        draw_set_transform(view_offset(), 0, Vector2.ONE * (1 if compact else render_scale))
+        if refined_animation and item.kind == "actor": break
+        _draw_entity(self, item)
+    if refined_animation:
+        for shadow in _shadow_layers: shadow.queue_redraw()
+        _actor_layer.queue_redraw()
+        _foreground_layer.queue_redraw()
+
+func _draw_foreground() -> void:
+    var after_actor := false
+    for item in scene_sprites():
         if item.kind == "actor":
-            _draw_actor()
-        elif item.kind == "cat":
-            _draw_cat()
-        else:
-            var region := Art.source_rect("farm-atlas", item.cell)
-            var texture_size := Art.texture("farm-atlas").get_size()
-            var uv := PackedVector2Array([region.position, region.position + Vector2(region.size.x, 0), region.end, region.position + Vector2(0, region.size.y)])
-            for index in range(uv.size()):
-                uv[index] /= texture_size
-            draw_polygon(crop_quad(item.point), PackedColorArray([Color.WHITE]), uv, Art.texture("farm-atlas"))
+            after_actor = true
+        elif after_actor:
+            _draw_entity(_foreground_layer, item)
+
+func _draw_entity(canvas: CanvasItem, item: Dictionary) -> void:
+    canvas.draw_set_transform(view_offset(), 0, view_scale())
+    if item.kind == "actor":
+        _draw_actor()
+    elif item.kind == "cat":
+        _draw_cat(canvas)
+    else:
+        var region := Art.source_rect("farm-atlas", item.cell)
+        var texture_size := Art.texture("farm-atlas").get_size()
+        var uv := PackedVector2Array([region.position, region.position + Vector2(region.size.x, 0), region.end, region.position + Vector2(0, region.size.y)])
+        for index in range(uv.size()):
+            uv[index] /= texture_size
+        canvas.draw_polygon(crop_quad(item.point), PackedColorArray([Color.WHITE]), uv, Art.texture("farm-atlas"))
 
 func crop_quad(point: Vector2) -> PackedVector2Array:
     # Shear only the leaves; keep the planted edge and depth-sort point fixed.
@@ -170,14 +256,14 @@ func _draw_paths() -> void:
                 uv[index] /= texture_size
             draw_polygon(polygon, PackedColorArray([Color.WHITE]), uv, texture)
 
-func _draw_cat() -> void:
+func _draw_cat(canvas: CanvasItem = self) -> void:
     var cat_frame := 1 if fmod(_clock + 1.2, 6.3) < 0.18 or _clock < _pet_until else 0
-    draw_rect(Rect2(Geometry.CAT + Vector2(-4, -1), Vector2(8, 2)), Color(0.19, 0.25, 0.17, 0.18))
-    Art.sprite(self, "farm-atlas", Vector2i(cat_frame, 3), Rect2(Geometry.CAT + Vector2(-10, -16.25), Vector2(21, 21)))
+    canvas.draw_rect(Rect2(Geometry.CAT + Vector2(-4, -1), Vector2(8, 2)), Color(0.19, 0.25, 0.17, 0.18))
+    Art.sprite(canvas, "farm-atlas", Vector2i(cat_frame, 3), Rect2(Geometry.CAT + Vector2(-10, -16.25), Vector2(21, 21)))
     if _clock < _pet_until:
         var heart := Geometry.CAT + Vector2(-2, -23 - floor((_pet_until - _clock) * 2))
-        draw_rect(Rect2(heart, Vector2(5, 3)), Color("ee9c7a"))
-        draw_rect(Rect2(heart + Vector2(1, 3), Vector2(3, 2)), Color("ee9c7a"))
+        canvas.draw_rect(Rect2(heart, Vector2(5, 3)), Color("ee9c7a"))
+        canvas.draw_rect(Rect2(heart + Vector2(1, 3), Vector2(3, 2)), Color("ee9c7a"))
 
 func _draw_plot(id: int) -> void:
     var plot: Dictionary = _state.plots[id]
@@ -194,22 +280,41 @@ func _draw_plot(id: int) -> void:
         draw_polyline(polygon, Color("fff0b6") if id == selected_plot else Color("dfe6ac"), 1.5)
 
 func _draw_actor() -> void:
-    var scale_factor := 1 if compact else render_scale
+    _paint_actor(self)
+
+func _paint_actor_shadow(canvas: CanvasItem) -> void:
+    var zoom := view_scale()
+    var facing := -1.0 if visual_pose().right else 1.0
+    var transform := Transform2D(0,Vector2(facing,1)*zoom,0,world_to_view(actor_draw_position()))
+    if canvas.name == "SunCastShadow":
+        # Vertex shader flattens height to +Y; shear that projected ground
+        # plane toward +X independently of facing, with the same pixel scale.
+        transform.y = Vector2(2.0,1.0)*zoom
+    SpriteRaster.draw_sprite(canvas,actor_sprite(),transform)
+
+func _paint_actor(canvas: CanvasItem) -> void:
+    var scale_factor := view_scale()
     var point := actor_draw_position()
     var pose := visual_pose()
     # Sun direction belongs to the world, not the character's facing direction.
-    draw_set_transform(view_offset() + point * scale_factor, 0, Vector2.ONE * scale_factor)
-    draw_colored_polygon(PackedVector2Array([Vector2(-4, -1), Vector2(2, -2), Vector2(10, 2), Vector2(11, 4), Vector2(6, 5), Vector2(-3, 1)]), Color(0.24, 0.30, 0.21, 0.17))
-    draw_colored_polygon(PackedVector2Array([Vector2(-4,-0.5),Vector2(-2,-1.5),Vector2(2,-1.5),Vector2(4,-0.5),Vector2(3,1),Vector2(-3,1)]), Color(0.22, 0.25, 0.16, 0.21))
-    draw_rect(Rect2(-2, -0.5, 4, 1), Color(0.19, 0.25, 0.17, 0.18))
-    draw_set_transform(view_offset() + point * scale_factor, 0, Vector2(-1 if pose.right else 1, 1) * scale_factor)
+    canvas.draw_set_transform(view_offset() + point * scale_factor, 0, Vector2.ONE * scale_factor)
+    if _shadow_layers.is_empty():
+        canvas.draw_colored_polygon(PackedVector2Array([Vector2(-4, -1), Vector2(2, -2), Vector2(10, 2), Vector2(11, 4), Vector2(6, 5), Vector2(-3, 1)]), Color(0.24, 0.30, 0.21, 0.17))
+        canvas.draw_colored_polygon(PackedVector2Array([Vector2(-4,-0.5),Vector2(-2,-1.5),Vector2(2,-1.5),Vector2(4,-0.5),Vector2(3,1),Vector2(-3,1)]), Color(0.22, 0.25, 0.16, 0.21))
+        canvas.draw_rect(Rect2(-2, -0.5, 4, 1), Color(0.19, 0.25, 0.17, 0.18))
+    canvas.draw_set_transform(view_offset() + point * scale_factor, 0, Vector2(-1 if pose.right else 1, 1) * scale_factor)
     var sprite := actor_sprite()
     var destination: Rect2 = sprite.destination
     # Do not scale the whole pixel figure to fake breathing: that makes her
     # texture crawl and feet resize against the stationary environment.
-    draw_texture_rect_region(Art.texture(sprite.texture), destination, sprite.source)
+    if refined_animation:
+        var actor_transform := Transform2D(0, Vector2(-1 if pose.right else 1, 1) * scale_factor, 0, view_offset() + point * scale_factor)
+        SpriteRaster.draw_sprite(canvas, sprite, actor_transform)
+        canvas.draw_set_transform_matrix(actor_transform)
+    else:
+        canvas.draw_texture_rect_region(Art.texture(sprite.texture), destination, sprite.source)
     if pose.pour:
         for i in range(6):
             var progress := fmod(_clock * 1.05 + i / 6.0, 1.0)
             var drop: Vector2 = (sprite.spout + Vector2(-6 * progress, 19 * progress * progress)).snapped(Vector2.ONE / pixel_ratio)
-            draw_rect(Rect2(drop, Vector2(0.5, 1)), Color(0.82, 0.94, 0.95, 0.82))
+            canvas.draw_rect(Rect2(drop, Vector2(0.5, 1)), Color(0.82, 0.94, 0.95, 0.82))

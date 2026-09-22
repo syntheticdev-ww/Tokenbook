@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "status": "selected_image_one_refined",
+  "animation_integrated": false,
+  "default_preview_integrated": true,
+  "parent": "artifacts/character-reference-v54/selected-base.png",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-b27d6973-234e-4f98-bc65-8c7c33a88e2a.png",
+  "references": [
+    "artifacts/character-reference-v54/selected-base.png",
+    "artifacts/character-reference-v54/face-tank-reference.png"
+  ],
+  "generation_record": "artifacts/character-reference-v54/generation.json",
+  "sha256": "e224cb584fe854e98c9e22e8e45c78d1002a682c7dd4c506b9a9585493ae6c0b",
+  "scope": "Latest user explicitly selected Image 1 as the new base, retaining its pixel strength. Refine tank chest fabric shading, brighten all exposed skin slightly, shorten the neck minimally and soften the lower face toward Image 2. Static preview only.",
+  "processing": "Exact generated PNG copy; portrait drawing grid 160x188 follows the selected image aspect ratio and retains approximately the previous 90-logical-pixel character height. Same uniform .25,.25 phase, no blur or local face filter.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red",
+    "skin": "slightly lighter warm peach"
+  },
+  "static_registration": {
+    "anchor": [
+      582.2655819141527,
+      1309.8266666666668
+    ],
+    "source_bounds": [
+      315,
+      18,
+      599,
+      1311
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      160,
+      188
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      80,
+      94
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Latest selected model/style adopted; four local refinements pending visual review.",
+  "previous_static_material": "gardener-v52",
+  "prior_acceptance": "User explicitly selected the attached Image 1 in the latest request.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v54/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.00088459393227,
+    "canvas_aspect_error": 0.005199306759098743,
+    "detail_preview": "Selected Image 1 and refined v54 use the same portrait grid and integer enlargement.",
+    "visual_acceptance": "pending user review"
+  }
+}

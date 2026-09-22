@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-19",
+  "production_eligible": false,
+  "status": "front_cycle_source_screening_passed_full_game_acceptance_pending",
+  "generator": "Built-in image_gen image editing",
+  "frames_manifest": "frames/cycle.json",
+  "preprocessing": "Skin-ramp calibration followed by offline protected-region paint correction. Each output is one intact character PNG; no runtime limb compositing, warping or optical-flow blending.",
+  "outputs": {
+    "whole_character_frames": 19,
+    "new_intermediate_frames": 3,
+    "corrected_existing_poses": 3,
+    "unchanged_base_files": 13,
+    "canvas": [
+      1254,
+      1254
+    ],
+    "playback_hz": 60,
+    "cycle_seconds": 1.05
+  },
+  "sources": [
+    {
+      "file": "source/front-04a.png",
+      "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-cf5fb260-1c76-40ea-86cb-3c02803997db.png",
+      "sha256": "8e36506cb3fafc9dd32c7aaf99b06c3144ead7029399d81428453701086cbcbc",
+      "selected_for_candidate": true,
+      "prompt": "Use case: precise-object-edit.\nCreate ONE complete authored pixel-art in-between halfway between these two consecutive walking drawings of the SAME farmer. Input1 is the exact identity/palette master; input2 is the next limb pose.\nNear arm: the relaxed hand is halfway between the input hand locations, overlapping the RIGHT HALF of the teal hip pouch (near x704,y739), not all the way outside the pouch as input1 and not at its left edge as input2. Soft natural elbow, original full arm and hand thickness, seamless shoulder anatomy. Far arm is halfway returning toward the far thigh, still visible at viewer-left and normally shaded.\nLegs: make the relaxed midpoint between input1's narrow crossing stance and input2's wider stride. Boots must not jump directly to the wide endpoints. Keep a small low step, both knees relaxed, same boot sizes, solid whole-leg volumes and correct near/far occlusion. No rigid marching or high knees.\nPreserve input1's entire head/face/hair/bow, torso size, character position, outfit details and calibrated warm pixel palette. Same1254x1254 canvas; head top around y142 and lowest sole around y1115. Crisp authored pixel clusters, no smoothing/filtering, no image dissolve or ghost limbs.\nOne whole opaque character on genuine transparent alpha, no shadow, labels, panels, grid, new objects or extra figures."
+    },
+    {
+      "file": "source/front-09.png",
+      "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-2bd08f73-abd2-4a24-a320-5d3ba4e2cc9c.png",
+      "sha256": "372fedc4e038ce9ef9fc12f11286a0ac9235a523fe13f361d0608e94dde9fe23",
+      "selected_for_candidate": true,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact existing whole-body pixel farmer keyframe to EDIT. Change ONLY the FAR arm as it returns from the back of the swing toward the torso.\nThe far arm currently extends at viewer-right behind the teal hip pouch. Move that far forearm inward BEHIND the pouch and torso so its hand is fully concealed by the pouch, not visible sticking out to the right. Only a narrow naturally shaded portion of the upper far forearm may remain visible behind the near arm just above the pouch. Preserve the actual full size of the arm: the reduced visible area comes from OCCLUSION, never shrinking the hand/arm. Do not reveal a hand at viewer-left yet.\nAbsolutely preserve the near arm/hand crossing in front of the shorts, all head/face/hair/bow pixels and placement, torso, pouch, shorts, legs, boots and their exact current gait pose. Keep the existing calibrated warm pixel palette, solid shading, compact proportions and crisp pixel clusters. No redesign, pose change, resizing, deformation, cut-out limb layers, ghosting or blur.\nOne intact character, same1254x1254 canvas, genuine transparent alpha background. No ground shadow, writing, frames, extra figures or objects."
+    },
+    {
+      "file": "source/front-10.png",
+      "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-a73b6032-8da7-4e54-8429-db7cd3a763f7.png",
+      "sha256": "294dafd8454df4bba7e2ed409f302a0469e952c983fcfd4b80da5a9bf29668da",
+      "selected_for_candidate": true,
+      "prompt": "Use case: precise-object-edit.\nAsset: one animation key drawing for the existing Tokenbook pixel farmer. Input image 1 is the EXACT edit target, not merely a style reference.\nChange ONLY the FAR arm visibility: the far arm is returning from behind the character and at this instant must be fully OCCLUDED by the torso and hip pouch. Remove the exposed far forearm and hand currently visible behind the pouch at viewer-right (approximately x700-772, y565-714). The far shoulder's small skin patch at viewer-left remains unchanged. Do not put a new hand on the other side yet: the far hand is hidden in this phase.\nKeep absolutely unchanged the near arm and hand crossing in front of the shorts, the complete head/face/hair/bow, torso, pouch, shorts, both legs and boots, their exact pose and placement, original calibrated warm colors and crisp pixel texture. This is an occlusion correction, NOT a new pose, character redesign, or body-part rig.\nSame1254x1254 canvas, same complete character proportions, one intact opaque sprite on genuine transparent alpha background. No ghost limbs, shadow, labels, grid, other objects or extra characters."
+    },
+    {
+      "file": "source/front-10a-before-refine.png",
+      "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-7eb678c2-1155-4684-9a1f-44f5bddcd97f.png",
+      "sha256": "d97c1e7e2faea233d6c05c83dffe144e8da8351742c543c4db896e5357ee2eab",
+      "selected_for_candidate": false,
+      "prompt": "Use case: precise-object-edit.\nInput1 and Input2 show the SAME whole-body pixel farmer with IDENTICAL leg pose; only the near-arm gesture differs. Produce one exact halfway NEAR-ARM pose between them. Use input1 as the unchanged master for all other pixels and body pose.\nThe near shoulder stays at the same position. The near forearm and hand must occupy the halfway silhouette: less diagonal than input1, less vertical than input2. The relaxed near hand should overlap the boundary between the shorts and the pouch, halfway between the two input hand positions. Preserve full-size rounded hand and forearm, a soft elbow and seamless shoulder connection. It is one naturally drawn solid arm, not blended/transparent overlays. Keep the tiny FAR hand peeking at the left shorts edge exactly as input1.\nKeep all head/face/hair/bow, neck, shirt, belt, shorts, pouch design, legs and boots pixels and placement as input1. Same1254x1254 canvas, fixed compact character scale, original warm palette and crisp pixel texture. One intact sprite with genuine transparent alpha background, no shadow, text, grid, extra objects, duplicated arms or ghost outlines."
+    },
+    {
+      "file": "source/front-10a.png",
+      "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-0cdafd38-70bd-42d5-a0b9-dcf26c4aae0d.png",
+      "sha256": "e735b2da4489df4aba05765ebe5f1a4b48a5f467c8e2dffa34a356bd4fce7bb8",
+      "selected_for_candidate": true,
+      "prompt": "Edit this exact complete Tokenbook pixel-art game character. This is one specific walking in-between frame, not a new character design. Keep the canvas exactly 1254x1254 with real transparent background, same head position, face, hair, proportions, outfit, belt buckle, bag, lighting, skin palette and both legs. Change ONLY the anatomically connected near arm on the viewer's right: the hand now in front of the shorts must travel a SMALL amount to the viewer's RIGHT, about 22 source pixels. Put the bottom hand/palm center near x=632,y=739, with fingertips around y=760. The upper arm remains attached at the original shoulder around 674,493, the elbow near 669,622. Draw a relaxed smooth elbow bend, gentle forearm diagonal from the elbow toward the shifted wrist; no straight stiff stick, no pasted separate limb, no exaggerated elbow swing. This is between a forward-swinging hand centered around603 and a neutral hanging hand centered around663: it must be genuinely halfway between those silhouettes. The far arm stays completely occluded behind the torso/bag exactly as it is. Preserve the existing belt and all other art. One crisp opaque complete character with clean pixel edges, no motion blur, no ghosting, no added objects or text."
+    },
+    {
+      "file": "source/front-10b.png",
+      "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-8da5df8f-a1dd-4934-8fa3-501bd0491e2b.png",
+      "sha256": "dee5e90204ea30d1ca33c94995d743f4a065ae7a16eb114ecae4d6fe6e3d38d9",
+      "selected_for_candidate": true,
+      "prompt": "Use case: precise-object-edit. Input1 is the exact whole-body pixel-art frame to edit.\nMake ONE local pose correction: move the NEAR hand (the large hand now in front of the center of the shorts) about50 pixels toward VIEWER-RIGHT. The near hand must now hang almost directly below the right shoulder, in front of the LEFT EDGE OF THE TEAL HIP POUCH, not over the center of the shorts. Its center should be approximately x648,y729 on the1254x1254 canvas. Keep the hand the same size. Redraw the near forearm and softly flexed elbow to connect naturally from the unchanged near shoulder. The forearm is almost vertical, with a slight inward slope, not a diagonal slash across the belly.\nPreserve ALL other artwork and pixels: head/hair/face/bow, original torso and shirt, belt, shorts, hip pouch design, both legs/boots in this exact pose, and the tiny partly concealed FAR hand at the viewer-left shorts edge. Keep normal arm thickness and solid existing shading; no thin/pasted-on limb, no detached joint, no new clothing.\nSame1254x1254, identical character position and compact proportions, warm calibrated pixel colors, crisp pixel detail, genuine transparent background. No shadow, labels, frame, new object, blur, ghost limbs, motion trails or extra character."
+    },
+    {
+      "file": "source/front-11.png",
+      "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-0437aa80-2049-4632-9a8f-566acb20c41c.png",
+      "sha256": "ef826634b456f37bf7d7252ac09ec5eed618520ac86edb03b942cbca1cb31ca0",
+      "selected_for_candidate": true,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the EXACT whole-body pixel farmer animation frame to edit. Correct ONLY the FAR arm (the arm on viewer-left).\nThis is the instant the FAR arm begins emerging from behind the torso. Its hand should hang close to the outside of the viewer-left thigh, at approximately x516,y733 instead of the current x474,y741. Its upper arm is partly obscured by the torso; forearm hangs nearly vertically, softly bent elbow, normal full-thickness wrist and relaxed hand. Do not shrink the arm or make it look pasted on; draw a coherent shoulder-to-hand form with natural overlap and the existing warm skin shading. The hand must NOT reach far out to viewer-left yet.\nAbsolutely retain the near arm and hand beside the pouch at viewer-right, head/face/hair/bow pixels and position, torso, shorts, pouch, both legs and boots with exactly the same current pose. Keep the original compact proportions, pixel clusters, colors and complete-body placement.\nOne intact opaque pixel sprite on genuine transparent alpha, same1254x1254 canvas. No ground shadow, extra limb, ghosting, blur, labels, panels, grid or extra figures."
+    }
+  ],
+  "discarded_predecessor": {
+    "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-969d0c3c-602a-4ce6-8351-9cb935b56761.png",
+    "prompt": "Use case: precise-object-edit.\nAsset: ONE new whole-body pixel-art IN-BETWEEN drawing between consecutive walking poses, not a spritesheet. Input1 is the earlier corrected pose and identity/style master; input2 is the later corrected pose. They depict the SAME character.\nDraw the halfway pose, with correct anatomical overlap, not an image blend. Keep input1's complete head/face/hair/bow pixels and their position unchanged. Keep original torso size, clothing design, calibrated warm pixel palette, crisp pixel clusters and full rounded limb volumes.\nNEAR arm (viewer-right shoulder): relaxed hand halfway from input1's hand across the shorts to input2's hand beside pouch, centered around x642,y734. Natural shoulder and elbow attachment, softly flexed, normal arm thickness. FAR arm: still almost entirely concealed by torso; at most a tiny part of relaxed fingers begins peeking beside the viewer-left shorts edge at x518,y737. Do NOT show the full far arm reaching forward or a far hand behind the right pouch.\nLegs must also be halfway between the inputs. The far planted boot shifts halfway, staying flat near the common ground line (boot center about x568,y1070). Near trailing leg bends gently as it passes forward; its lifted boot is halfway horizontally between the input boot positions (near x721,y996), with a modest bent knee, not raised marching or kicking. Maintain coherent overlap, natural walking, same leg thickness and boot size.\nSame1254x1254 canvas and character scale, head top near y143, planted sole near y1120. One complete opaque sprite with genuine transparent alpha. No extra limbs, motion trails, blur, ghosts, scenery, shadows, text, grids or extra figures.",
+    "reason": "Near hand insufficiently advanced; edited before use."
+  },
+  "tool": "tools/pixel_cleanup/retouch.swift",
+  "preserved_originals": [
+    "../gardener-v14",
+    "../gardener-v15"
+  ],
+  "rejected_exports": {
+    "frames-rejected-wide-belt": "Rejected after visual inspection: preserving a wide belt rectangle reintroduced an old arm fragment. Never use in production.",
+    "frames-before-belt-fix": "Superseded before buckle stabilization and passing-pose refinement.",
+    "frames-buckle-only": "Superseded: one hand step still exceeded existing continuity limit.",
+    "frames-initial": "Initial 18-pose draft without opposite-half in-between."
+  }
+}

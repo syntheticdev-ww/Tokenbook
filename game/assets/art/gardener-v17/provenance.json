@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-19",
+  "request": "Remove only the marked top hair bun, preserving a natural single ponytail with a properly redrawn crown-to-tie transition.",
+  "status": "hairstyle_applied_to_19_front_candidate_frames; full_game_animation_acceptance_pending",
+  "production_eligible": false,
+  "generator": "Built-in image_gen, precise-object-edit",
+  "generated_path": "/Users/weilishuai.1/.codex/generated_images/01a084eb-698f-7550-8437-d8537cd3ed92/exec-ff469580-8406-41da-9a66-b02fa009f93b.png",
+  "source_file": "source/hair-master.png",
+  "source_sha256": "ef16de659d08bbd12d94d87ff63ee806f6b0c27f0e8a46f5a84f29290a5a5066",
+  "prompt": "Use case: precise-object-edit.\nAsset type: existing full-body pixel-art animation frame for the Tokenbook game.\nInput image 1 is the exact full-body edit target. Input image 2 is ONLY a user markup identifying the unwanted hair lump; do not copy its background or red rectangle.\nChange only the hairstyle at the very top: remove the small rounded brown bun protruding above the crown immediately to the left of the turquoise bow. The character should have just ONE natural high ponytail tied with the existing bow, not a bun plus ponytail.\nRedraw the small affected crown area as a gently rounded, flowing scalp-hair contour with coherent brown strands and highlights swept naturally toward the bow's root. No chopped-off straight edge, notch, bare gap, extra lump, detached bow, or flattened skull. Preserve the existing turquoise bow and the long full ponytail behind the head. Keep the fringe, side locks, face, expression, skin palette, hair color, head scale and position unchanged. Keep the entire body, outfit, arms, legs, walk pose, proportions, feet baseline and canvas framing exactly as image 1.\nKeep the original fine pixel-art shading and dark pixel outline. Output one complete character on actual transparent alpha, exactly 1254x1254, no checkerboard painted into the file, no labels, no red box, no ground shadow, no rescaling. The former bun space should become genuine transparent background above the newly painted natural crown.",
+  "edit_target": "../gardener-v16/frames/front-00.png",
+  "markup_role": "User's red-box image was localization guidance only, not source artwork or background.",
+  "processing": "Authored crown applied offline to the existing 19 complete PNGs with a protected face/body boundary. Not a mechanical shape erasure. No runtime hair layers, rescaling or pose changes.",
+  "crown_region": {
+    "x": 530,
+    "y": 96,
+    "width": 188,
+    "height": 169
+  },
+  "frame_manifest": "frames/cycle.json",
+  "preserved": [
+    "Face, skin, bangs, lower ponytail and body outside the bounded crown edit",
+    "Original pose ordering and phase values",
+    "1254 x 1254 canvas and renderer body scale",
+    "All original v16 PNGs"
+  ],
+  "preview_script": "game/tests/whole_body_visual.gd (internal-only default now v17)",
+  "formal_game_replaced": false
+}

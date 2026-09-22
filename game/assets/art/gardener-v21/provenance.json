@@ -1,0 +1,15 @@
+{
+  "version": 21,
+  "generator": "OpenAI built-in image_gen, endpoint-guided full-character pose edits",
+  "scope": "Front-route preview walking only. Nineteen existing poses plus seventeen authored in-betweens, including three crossing-step poses. Departure, idle, route, stride and 1.05-second period remain unchanged.",
+  "sources": "candidates.json records every selected source, pair of references and generation prompt. Original image_gen PNGs are retained in source/.",
+  "finalization": "The existing Swift PixelPatch and SkinPalette pipeline protects original head/face pixels. Small-arm-motion intervals retain the complete original upper body. Other intervals retain the head, ponytail and selected torso pixels. Runtime draws one intact PNG; no optical-flow warping, rescaled body parts, crossfade or runtime limb overlays.",
+  "timing": "36 equally exposed poses. The controller derives the entry/exit phase from the shared departure endpoint instead of assuming that it must always be 4.5. World movement and cycle duration are unchanged.",
+  "build": [
+    "swiftc tools/pixel_cleanup/Raster.swift tools/pixel_cleanup/Palette.swift tools/pixel_cleanup/Patch.swift tools/pixel_cleanup/dense-walk.swift -o /tmp/tokenbook-finalize-dense",
+    "/tmp/tokenbook-finalize-dense game <new output frames folder>",
+    ".tools/godot-4.7.2/Godot.app/Contents/MacOS/Godot --headless --path game --script res://tests/build_dense_walk.gd"
+  ],
+  "quality": "Whole-head pixel preservation, source hashes, visit every pose at 60 Hz, maximum two consecutive samples per pose, lifecycle/native-window regression, and paired engine-render contact/APNG comparison. Visual quality remains open to user review.",
+  "production_eligible": false
+}

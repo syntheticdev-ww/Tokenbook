@@ -47,6 +47,7 @@ static void command(void *data, GDExtensionClassInstancePtr instance,
             switch (operation) {
                 case 0:
                     window.hidesOnDeactivate = NO;
+                    window.hasShadow = NO;
                     window.level = NSFloatingWindowLevel;
                     window.collectionBehavior = NSWindowCollectionBehaviorCanJoinAllSpaces |
                         NSWindowCollectionBehaviorFullScreenAuxiliary;
@@ -54,6 +55,19 @@ static void command(void *data, GDExtensionClassInstancePtr instance,
                 case 1: [window orderOut:nil]; break;
                 case 2: [window orderFrontRegardless]; break;
                 case 3: break; // Query actual native visibility, not a shadow flag.
+                case 4:
+                    window.hidesOnDeactivate = NO;
+                    window.hasShadow = NO;
+                    window.level = NSNormalWindowLevel;
+                    window.collectionBehavior = NSWindowCollectionBehaviorDefault;
+                    [window makeKeyAndOrderFront:nil];
+                    break;
+                case 5:
+                    // Global button state is readable without accessibility
+                    // permissions; query only while our own window is dragged.
+                    visible = ([NSEvent pressedMouseButtons] & 1) != 0;
+                    from_bool(result, &visible);
+                    return;
                 default: break;
             }
             visible = window.isVisible;

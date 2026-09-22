@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "head_neck_and_expression_correction",
+  "animation_integrated": false,
+  "parent": "gardener-v42",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-2439049f-9660-4995-a98c-0f98b877a766.png",
+  "references": [
+    "artifacts/character-reference-v42/user-reference.png",
+    "artifacts/character-reference-v43/face-local-pass.png"
+  ],
+  "generation_record": "artifacts/character-reference-v43/reference-redraw.json",
+  "sha256": "d2b227b12ac2380a576d3ccff9b1a42c22d3ae3c4caa50c5849d107e82190614",
+  "scope": "Static heroine only. Restore some head volume, shorten the exposed neck and replace the open-mouth expression with a small closed smile. Preserve the approved cream tank and pixel-art direction. No animation or environment changes.",
+  "processing": "Exact generated PNG copy; fixed uniform display grid across face and body. No blur, palette alteration or local face filter.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.2486113446388,
+      1170.4179487179488
+    ],
+    "source_bounds": [
+      425,
+      145,
+      481,
+      1041
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Pending user visual review. v42 expression and small-head/long-neck proportions were rejected.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v43/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.01675432006011,
+    "visual_acceptance": "pending user review"
+  }
+}

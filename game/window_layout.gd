@@ -1,7 +1,7 @@
 extends RefCounted
 
-const COMPACT := Vector2i(240, 210)
-const EXPANDED := Vector2i(420, 520)
+const COMPACT := Vector2i(200, 210)
+const EXPANDED := Vector2i(1120, 740)
 
 func clamp_position(point: Vector2i, dimensions: Vector2i, usable: Rect2i) -> Vector2i:
 	var last := usable.position + (usable.size - dimensions).max(Vector2i.ZERO)

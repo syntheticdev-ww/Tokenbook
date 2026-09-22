@@ -1,0 +1,189 @@
+[
+  {
+    "phase": 0.5,
+    "file": "res://assets/art/gardener-v21/frames/front-00-half.png",
+    "source": "source/front-00-half.png",
+    "generated": "exec-b0b57136-17ad-430c-8fdc-018c93d80b45.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-00.png",
+      "game/assets/art/gardener-v17/frames/front-01.png"
+    ],
+    "prompt": "Precise half-way whole-body in-between of front-00 and front-01; same canvas, proportions, skin, face, hair and style; no blending or body-part deformation."
+  },
+  {
+    "phase": 1.5,
+    "file": "res://assets/art/gardener-v21/frames/front-01-half.png",
+    "source": "source/front-01-half.png",
+    "generated": "exec-fc3537da-96b6-44a1-959c-6acff7beb21f.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-01.png",
+      "game/assets/art/gardener-v17/frames/front-02.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Maintain the natural small arm swing opposite the legs. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint."
+  },
+  {
+    "phase": 2.5,
+    "file": "res://assets/art/gardener-v21/frames/front-02-half.png",
+    "source": "source/front-02-half.png",
+    "generated": "exec-f4955f84-6285-45e8-946f-6b585f018b38.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-02.png",
+      "game/assets/art/gardener-v17/frames/front-03.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Maintain the natural small arm swing opposite the legs. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint."
+  },
+  {
+    "phase": 3.5,
+    "file": "res://assets/art/gardener-v21/frames/front-03-half.png",
+    "source": "source/front-03-half.png",
+    "generated": "exec-1f97c601-b574-4984-a6bd-6e1c297047c6.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-03.png",
+      "game/assets/art/gardener-v17/frames/front-04.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nUse image 1 as the primary edit target. The near shoulder is at viewer-right x680,y510. Move the near forearm/hand SLIGHTLY toward viewer-left, 20 source pixels from image 1, so fingertips are at approximately (750,748); this is between image1 x770 and image2 x732. Do not move it farther right than image1. Keep this near hand on the viewer-right of the green pouch, with a slight elbow bend. Feet progress halfway from 3 to 4, not held at 3."
+  },
+  {
+    "phase": 4.625,
+    "file": "res://assets/art/gardener-v21/frames/front-04-pass-1.png",
+    "source": "source/front-04-pass-1.png",
+    "generated": "exec-37abdebb-7b1f-4b0d-a68c-16dd79f61f46.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-04a.png",
+      "game/assets/art/gardener-v17/frames/front-05.png"
+    ],
+    "prompt": "Use case: precise game animation in-between. Output ONE complete 1254x1254 transparent sprite. Preserve ALL pixels of image1 above y768: same head, face, ponytail, skin, teal shirt, arms, hands, belt, pouch, scale, position. Change ONLY the legs below the shorts hems to a new coherent passing-step pose one quarter between image1 and image2. Follow leg identity: NEAR leg attached to viewer-RIGHT shorts opening starts crossed toward viewer-left in image1, then travels BACK toward viewer-right in image2. FAR leg attached to viewer-LEFT shorts opening travels FORWARD toward viewer-left, passing behind the near shin. For this intermediate near boot center is about x600, sole y1105; far boot center about x650, sole y1090. Put both legs under the pelvis, knees naturally soft, preserve correct near leg in FRONT of far leg at overlap, no leg swapping. The near boot travels RIGHT from x550 to x750 across this interval; far boot travels LEFT from x715 to x450. This frame is a small relaxed step-through, no marching, no exaggerated knee lift, no double exposure. Preserve original boot size, warm skin palette, detailed pixel art, original body and canvas dimensions. No cropping, rescaling, ground, shadow or text."
+  },
+  {
+    "phase": 4.75,
+    "file": "res://assets/art/gardener-v21/frames/front-04-pass-2.png",
+    "source": "source/front-04-pass-2.png",
+    "generated": "exec-92fcbfd6-c44c-44ee-895d-d7f4e3ce8787.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-04a.png",
+      "game/assets/art/gardener-v17/frames/front-05.png"
+    ],
+    "prompt": "Use case: precise game animation in-between. Output ONE complete 1254x1254 transparent sprite. Preserve ALL pixels of image1 above y768: same head, face, ponytail, skin, teal shirt, arms, hands, belt, pouch, scale, position. Change ONLY the legs below the shorts hems to a new coherent passing-step pose halfway between image1 and image2. Follow leg identity: NEAR leg attached to viewer-RIGHT shorts opening starts crossed toward viewer-left in image1, then travels BACK toward viewer-right in image2. FAR leg attached to viewer-LEFT shorts opening travels FORWARD toward viewer-left, passing behind the near shin. For this intermediate near boot center is about x655, sole y1105; far boot center about x585, sole y1090. Put both legs under the pelvis, knees naturally soft, preserve correct near leg in FRONT of far leg at overlap, no leg swapping. The near boot travels RIGHT from x550 to x750 across this interval; far boot travels LEFT from x715 to x450. This frame is a small relaxed step-through, no marching, no exaggerated knee lift, no double exposure. Preserve original boot size, warm skin palette, detailed pixel art, original body and canvas dimensions. No cropping, rescaling, ground, shadow or text."
+  },
+  {
+    "phase": 4.875,
+    "file": "res://assets/art/gardener-v21/frames/front-04-pass-3.png",
+    "source": "source/front-04-pass-3.png",
+    "generated": "exec-5515827c-069b-405d-8e5c-0ab2332448ec.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-04a.png",
+      "game/assets/art/gardener-v17/frames/front-05.png"
+    ],
+    "prompt": "Use case: precise game animation in-between. Output ONE complete 1254x1254 transparent sprite. Preserve ALL pixels of image1 above y768: same head, face, ponytail, skin, teal shirt, arms, hands, belt, pouch, scale, position. Change ONLY the legs below the shorts hems to a new coherent passing-step pose three quarters between image1 and image2. Follow leg identity: NEAR leg attached to viewer-RIGHT shorts opening starts crossed toward viewer-left in image1, then travels BACK toward viewer-right in image2. FAR leg attached to viewer-LEFT shorts opening travels FORWARD toward viewer-left, passing behind the near shin. For this intermediate near boot center is about x700, sole y1105; far boot center about x515, sole y1090. Put both legs under the pelvis, knees naturally soft, preserve correct near leg in FRONT of far leg at overlap, no leg swapping. The near boot travels RIGHT from x550 to x750 across this interval; far boot travels LEFT from x715 to x450. This frame is a small relaxed step-through, no marching, no exaggerated knee lift, no double exposure. Preserve original boot size, warm skin palette, detailed pixel art, original body and canvas dimensions. No cropping, rescaling, ground, shadow or text."
+  },
+  {
+    "phase": 5.5,
+    "file": "res://assets/art/gardener-v21/frames/front-05-half.png",
+    "source": "source/front-05-half.png",
+    "generated": "exec-a74ec206-f2a9-4eb0-a87a-8c0469ff9625.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-05.png",
+      "game/assets/art/gardener-v17/frames/front-06.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nCritical arm direction: The NEAR arm is connected to the shoulder on viewer-RIGHT at (680,510). Its elbow bends toward viewer-LEFT; its hand must be in FRONT of the pouch near (640,730), between the two reference hands. The near arm is NOT straight down-right or behind the body. Far arm moves behind the body and is largely occluded by the torso in this in-between; do not add an arm sticking out to viewer-left. Foreground boot remains toward viewer-left (about x450,y1035), slightly forward of frame1 and slightly behind frame2. Keep upper head identical in placement and color. Do not reverse the arms."
+  },
+  {
+    "phase": 6.5,
+    "file": "res://assets/art/gardener-v21/frames/front-06-half.png",
+    "source": "source/front-06-half.png",
+    "generated": "exec-147a6a26-bc76-4e16-88cc-21f78de415df.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-06.png",
+      "game/assets/art/gardener-v17/frames/front-07.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nThe NEAR ARM is the arm attached to the viewer-right shoulder (near x680,y510). Preserve its reference swing direction, with its fingertips approximately at (592,738) on the 1254x1254 canvas, halfway between the references. This arm stays on the same side of the torso and in the same occlusion relationship as both endpoints; do not swap arms."
+  },
+  {
+    "phase": 7.5,
+    "file": "res://assets/art/gardener-v21/frames/front-07-half.png",
+    "source": "source/front-07-half.png",
+    "generated": "exec-f5503bea-c5ab-4c05-8520-06c0050bc25f.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-07.png",
+      "game/assets/art/gardener-v17/frames/front-08.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nThe NEAR ARM is the arm attached to the viewer-right shoulder (near x680,y510). Preserve its reference swing direction, with its fingertips approximately at (569,756) on the 1254x1254 canvas, halfway between the references. This arm stays on the same side of the torso and in the same occlusion relationship as both endpoints; do not swap arms."
+  },
+  {
+    "phase": 8.5,
+    "file": "res://assets/art/gardener-v21/frames/front-08-half.png",
+    "source": "source/front-08-half.png",
+    "generated": "exec-87b730be-a521-425d-b748-8cf8aa4c5366.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-08.png",
+      "game/assets/art/gardener-v17/frames/front-09.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nThe NEAR ARM is the arm attached to the viewer-right shoulder (near x680,y510). Preserve its reference swing direction, with its fingertips approximately at (574,758) on the 1254x1254 canvas, halfway between the references. This arm stays on the same side of the torso and in the same occlusion relationship as both endpoints; do not swap arms."
+  },
+  {
+    "phase": 9.5,
+    "file": "res://assets/art/gardener-v21/frames/front-09-half.png",
+    "source": "source/front-09-half.png",
+    "generated": "exec-065f1086-0806-4fbe-8939-f20cbf4c4889.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-09.png",
+      "game/assets/art/gardener-v17/frames/front-10.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nThe NEAR ARM is the arm attached to the viewer-right shoulder (near x680,y510). Preserve its reference swing direction, with its fingertips approximately at (591,749) on the 1254x1254 canvas, halfway between the references. This arm stays on the same side of the torso and in the same occlusion relationship as both endpoints; do not swap arms."
+  },
+  {
+    "phase": 11.5,
+    "file": "res://assets/art/gardener-v21/frames/front-11-half.png",
+    "source": "source/front-11-half.png",
+    "generated": "exec-df516dad-1a9e-4509-b09b-96516f5a11c5.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-11.png",
+      "game/assets/art/gardener-v17/frames/front-12.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nUse image 1 as the primary edit target. The near fingertips are currently x684,y721. Move them RIGHT by only 26 source pixels to approximately (710,726). This is only halfway to image2 hand x736,y730. Keep near elbow softly bent and hand just on the RIGHT EDGE of the pouch, not far outside the hip. Legs are halfway between these references, keeping exact foreground/background leg identity and occlusion. Preserve head position, eye shapes, and color."
+  },
+  {
+    "phase": 12.5,
+    "file": "res://assets/art/gardener-v21/frames/front-12-half.png",
+    "source": "source/front-12-half.png",
+    "generated": "exec-922ae1b5-96b6-4e22-bcad-c8e4196fc376.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-12.png",
+      "game/assets/art/gardener-v17/frames/front-13.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nNear hand is connected to the shoulder on the viewer-RIGHT, and its fingertips should end near (750,742), halfway between the reference positions. Keep the boots halfway between the corresponding reference boots; follow each actual connected leg, not screen left/right. Keep head completely stable. Both endpoint poses are the authority, do not invent a different walk."
+  },
+  {
+    "phase": 13.5,
+    "file": "res://assets/art/gardener-v21/frames/front-13-half.png",
+    "source": "source/front-13-half.png",
+    "generated": "exec-a25a3849-6dc6-48d5-84ea-4a2805759a76.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-13.png",
+      "game/assets/art/gardener-v17/frames/front-14.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nNear hand is connected to the shoulder on the viewer-RIGHT, and its fingertips should end near (766,747), halfway between the reference positions. Keep the boots halfway between the corresponding reference boots; follow each actual connected leg, not screen left/right. Keep head completely stable. Both endpoint poses are the authority, do not invent a different walk."
+  },
+  {
+    "phase": 14.5,
+    "file": "res://assets/art/gardener-v21/frames/front-14-half.png",
+    "source": "source/front-14-half.png",
+    "generated": "exec-0ffd30fa-a2b2-40b1-b233-ff5854a013ae.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-14.png",
+      "game/assets/art/gardener-v17/frames/front-15.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nNear hand is connected to the shoulder on the viewer-RIGHT, and its fingertips should end near (776,737), halfway between the reference positions. Keep the boots halfway between the corresponding reference boots; follow each actual connected leg, not screen left/right. Keep head completely stable. Both endpoint poses are the authority, do not invent a different walk."
+  },
+  {
+    "phase": 15.5,
+    "file": "res://assets/art/gardener-v21/frames/front-15-half.png",
+    "source": "source/front-15-half.png",
+    "generated": "exec-88814093-869b-4d36-9a1c-e9ed4711985a.png",
+    "refs": [
+      "game/assets/art/gardener-v17/frames/front-15.png",
+      "game/assets/art/gardener-v17/frames/front-00.png"
+    ],
+    "prompt": "Create ONE precise animation in-between for this existing full-body game character, exactly halfway between image 1 and image 2, as a new distinct pose. Preserve original 1254x1254 transparent RGBA canvas, exact character scale and placement. Same fine pixel-art sprite, no labels, shadow, ground or backdrop. Do not redesign or recenter. The head, face, single high ponytail with teal bow, warm skin, teal vest, belt and bag retain reference identity, palette, proportions and detail. Interpolate the actual reference walking poses: both boots, knees, hands and elbows halfway between their endpoint locations, preserving anatomically correct overlap. Do not invent a different arm swing. Match the exact same arm correspondence in the two reference frames. One complete coherent character, one solid pose; no double exposure, extra limbs, blur or rubbery deformation. Keep eyes at the same reference location and overall soles near reference ground level. This goes between adjacent existing frames; it must not just copy either endpoint.\nNear hand is connected to the shoulder on the viewer-RIGHT, and its fingertips should end near (784,731), halfway between the reference positions. Keep the boots halfway between the corresponding reference boots; follow each actual connected leg, not screen left/right. Keep head completely stable. Both endpoint poses are the authority, do not invent a different walk."
+  }
+]

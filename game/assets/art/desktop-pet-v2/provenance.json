@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "generator": "OpenAI built-in image_gen",
+  "prompt": "Redraw reference2 sprite sheet in the EXACT hand-authored PIXEL ART of reference1. Reference1 is the definitive character and visual style, reference2 gives ONLY exact poses, limb positions, facing and ordering. Idle to crouching and hand-digging desktop companion animation. No tools. Keep the lower crouching height. Layout EXACTLY 4 columns by 3 rows, TWELVE cells occupied, equally sized cells on transparent background. Keep every original pose, same row-major order and small motion differences. No poses added, removed, combined or reordered. Same girl in every cell: chestnut SINGLE ponytail and turquoise bow, muted original teal sleeveless blouse, tan shorts, green hip pouch, cream socks, brown boots, warm peach skin. Maintain the same cute face, 3-head-tall proportions, head size, color clusters and limb lengths across ALL cels. The pose differences MUST be preserved especially boot overlap and which leg passes in front. Redraw as actual low resolution 16-bit game sprites: character about 64 art pixels tall, visible uniform square pixels, carefully arranged flat 2-5-pixel clusters, one-pixel colored stair-step edges, compact readable eyes, no smooth outline, no painted gradients, no blur, no dither or microdetail. Stable head/face/hair design across cells; pixel shading colors chosen from reference1. Do not use a pixelation filter. Keep consistent canvas registration: head fixed within each walking cell and soles near bottom; complete character fits each cell with margin, no clipping. One PNG sheet, no cell border, labels, numbers, shadows or floor.",
+  "source": "source.png",
+  "generated_file": "exec-9ddc3632-4f63-4f19-aad4-63f57710c23e.png",
+  "import": "Complete authored cels imported on a 112x112 native pixel canvas. Same standing scale across crouch/dig/recovery. Idle reuses gardener-v25 idle for consistent identity between modes. Native outline hit polygons; source RGB retained.",
+  "rendering": "Nearest sampling. No color grading, palette filter or smoothing.",
+  "build": "res://tests/import_pixel_character.gd"
+}

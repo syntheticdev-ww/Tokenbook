@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "status": "front_hair_protrusion_removed",
+  "animation_integrated": false,
+  "default_preview_integrated": true,
+  "parent": "gardener-v45",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-1fc234f2-fa74-405c-9a7e-ffb658ae0332.png",
+  "references": [
+    "artifacts/character-reference-v46/hair-first-pass.png",
+    "artifacts/character-reference-v46/protrusion-reference.png"
+  ],
+  "generation_record": "artifacts/character-reference-v46/protrusion-removal.json",
+  "sha256": "2360abee61e6eba5f0c90502f4b74587da7ca497483d9cfc0e3ff86645849fed",
+  "scope": "Latest user correction: remove the marked outward protrusion from the front side lock, retaining the existing long tip and hairstyle. The separate shortened-lock experiment was not adopted. Keep the current pixel strength, face, costume and clean hand silhouette. Static preview only.",
+  "processing": "Exact generated PNG copy; unchanged uniform display grid and .25,.25 sample position. No blur, palette alteration, local face filter or coarser runtime grid.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      653.7486113446388,
+      1171.4179487179488
+    ],
+    "source_bounds": [
+      424,
+      140,
+      490,
+      1047
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Current pixel strength preserved; local protrusion removal pending visual review.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v46/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.00095602294455,
+    "detail_preview": "Native game material rendered at 4x integer magnification; latest user reference before/after.",
+    "visual_acceptance": "pending user review"
+  }
+}

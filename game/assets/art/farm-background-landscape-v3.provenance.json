@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-0fe8b7e5-a9f8-42e4-bba0-0fd03a87a773.png",
+  "reference": "res://assets/art/farm-background-landscape-v2.png",
+  "prompt": "Edit this existing 1536x1024 pixel-art farming-game background. The requested change is ONLY the grass meadow inside the fence, in the foreground and middle ground. Keep the same composition, pixel-art style, texture size, framing and landmark registration. Preserve the house, doorway, steps, roof, tools, fence, flowers, trees, river, bridge, distant village, mountains and sky as faithfully as possible. Do not globally recolor or soften the image.\n\nThe current meadow is too bright yellow-green, too saturated and visually loud; it looks like repeated decorative wave/scallop stamps instead of living grass. Repaint the grass itself with NATURAL GRASS STRUCTURE and restrained color hierarchy, entirely in crisp, hand-authored pixel-art language.\n\nMEADOW PALETTE: soft natural medium grass greens, muted leaf-green, subtle olive-green in sunlight, cooler moss/sage greens in shade. Make the yellow highlighter-like highlights and very dark teal contrast much less prominent. Reduce saturation moderately, around a third; lower peak grass brightness moderately. It must remain fresh living green in warm daylight, NOT gray, brown, desaturated dead lawn, fluorescent lime, artificial emerald or heavy dark green. Keep the cottage/hero as the visual focus; the meadow provides a calm supporting surface.\n\nMEADOW DRAWING: replace rows of repeated curved tuft stamps, equal-size dotted dashes and sparkly confetti highlights. A convincingly natural lightly walked garden lawn: mostly short fine blades in irregular low clumps, varied heights and orientations, a few slender bent blades leaning together, interwoven ground cover, restrained longer grass near the fence and flower borders. Organic uneven density and patches, no repeated motifs or concentric wavy bands. Small connected pixel shapes convey blades growing from the ground, rather than random single-pixel noise. About 65-75 percent calmer low-contrast short-grass areas with only selected sharper tuft accents. No large flat empty paint fields, no procedural speckling. A few subtle earth glimpses at naturally worn edges by the steps are fine, but do not create a new path, big bare dirt patches, new objects or flower beds. The central and lower meadow must remain unobstructed for existing farm overlays.\n\nCRISP PIXEL ART IS NON-NEGOTIABLE. Retain carefully placed pixel clusters, stepped contours, concise 2-4 shade ramps within grass patches, fine readable details at game-window size. Natural grass behavior and color, NOT photographic grass. NO blur, soft-focus, antialiasing haze, watercolor or oil-paint smears, color-grading filter, coarse mosaic, sharpening halos. Keep a clear consistent drawing grid matching the cottage and surroundings.\n\nReturn the full complete opaque background as a single image, same 1536x1024 canvas and same landmark positions. No characters, plots, user interface, labels or comparison layouts.\n",
+  "processing": "Exact generated PNG copy; no bitmap filtering, global recoloring or resizing.",
+  "scope": "Lower meadow saturation, yellow highlights and repeated tuft motifs; draw natural varied grass blades in crisp pixel art. Keep the existing composition and other landmarks.",
+  "world_rect": [
+    -78,
+    0,
+    512,
+    342
+  ],
+  "sha256": "070512b45a83dcfb322ba20478e900cb4a495a55b56abba24a303766b37a99c7",
+  "acceptance": "Reviewed in the native game viewport beside v2: grass has quieter greens, fewer bright yellow strips, varied slender bent blades and less repeated scalloped tuft structure. Cottage, meadow boundaries, doorstep and farming layout remain registered. Generated background may contain small incidental texture changes outside the meadow. Awaiting user aesthetic review.",
+  "integration": {
+    "resource": "Art.texture(LANDSCAPE), normal lossless imported texture",
+    "crisp_pixel_motion": true,
+    "shader_changed": false,
+    "world_geometry_changed": false,
+    "character_asset_changed": false,
+    "character_animation_changed": false
+  },
+  "verification": {
+    "commands": [
+      "npm run game:material-test",
+      "npm run game:environment-test"
+    ],
+    "status": "passed",
+    "environment_checks": 49,
+    "environment_failures": 0,
+    "landscape_motion": {
+      "checks": 9,
+      "failures": 0,
+      "grass": {
+        "mixed_color_pixels": 0,
+        "moving_pixels": 5020
+      },
+      "leaves": {
+        "mixed_color_pixels": 0,
+        "moving_pixels": 4014
+      },
+      "negative_control_mixed_pixels": 8782
+    },
+    "material_scene": {
+      "background_asset": "res://assets/art/farm-background-landscape-v3.png",
+      "background_checked_pixels": 11403,
+      "background_crisp_motion": true,
+      "background_grid_density": 2.0,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_logical_pixels": 86.0031897926635,
+      "body_pixels": 172.006379585327,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1.0,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.200000002980232,
+        0.800000011920929
+      ],
+      "face_sampling_override": false,
+      "grid_cells": [
+        224.0,
+        208.0
+      ],
+      "height_ratio_to_previous": 1.0,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9333,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.25,
+        0.0
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "6b2716b4980399a285d6e4c75bf54acaed9f744f536128404cd506ad4ef326c2",
+      "window_physical_size": [
+        2240,
+        1480
+      ]
+    }
+  },
+  "visual_evidence": [
+    "artifacts/grass-refinement-v3/pixel-grid/before-scene.png",
+    "artifacts/grass-refinement-v3/pixel-grid/after-scene.png"
+  ]
+}

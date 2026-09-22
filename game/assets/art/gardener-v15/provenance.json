@@ -1,0 +1,277 @@
+{
+  "date" : "2026-09-19",
+  "frames" : [
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.65799739921977,
+        200.84952628645738,
+        145.05796024521644
+      ],
+      "face_before" : [
+        251.65799739921977,
+        200.84952628645738,
+        145.05796024521644
+      ],
+      "file" : "front-00.png",
+      "source" : "front-00.png",
+      "source_sha256" : "bb9e646d57b4ba070686a842b1b86e8771c033d4d50cc8b5d9124520fd1a621f"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.95693956754758,
+        200.82406209573091,
+        145.19959342080946
+      ],
+      "face_before" : [
+        251.97010768659487,
+        198.1414779056814,
+        147.29205347196435
+      ],
+      "file" : "front-01.png",
+      "source" : "front-01.png",
+      "source_sha256" : "fbd9dbe973d12dc170df00467a5805c5609c2e2cc9ec782d4d59d840be073806"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.64140755911376,
+        200.44405138707876,
+        145.28095326754794
+      ],
+      "face_before" : [
+        251.65521105715354,
+        199.61449383638401,
+        147.32872618602914
+      ],
+      "file" : "front-02.png",
+      "source" : "front-02.png",
+      "source_sha256" : "de897562f30e378d37f6a7b49b7824bd797531aa170667a656f4d9a054d491c3"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.84622484770168,
+        200.22853978216725,
+        144.73269337271552
+      ],
+      "face_before" : [
+        251.8671497584541,
+        198.57673727238944,
+        150.69435154217763
+      ],
+      "file" : "front-03.png",
+      "source" : "front-03.png",
+      "source_sha256" : "3b78388d3d7c46a7575770fda70f47aaa8daa69a910d73225650d2287b19b85c"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.30679902603484,
+        201.0951489042892,
+        144.91178123244052
+      ],
+      "face_before" : [
+        252.26745495495496,
+        199.28659909909911,
+        150.73329579579578
+      ],
+      "file" : "front-04.png",
+      "source" : "front-04-repair.png",
+      "source_sha256" : "4ea5ff1ba78396733d983a0a58b7e5663250240d9815746fd5003df5f45ae12a"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.57371854613234,
+        200.69394221808014,
+        145.79850885368126
+      ],
+      "face_before" : [
+        252.52478568766307,
+        200.68971300782707,
+        156.31662318300411
+      ],
+      "file" : "front-05.png",
+      "source" : "front-05-repair.png",
+      "source_sha256" : "83715932d3e5656977f14781c635a0b6ca7704ac8c5f4c9e27ad8881b67bc434"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.34348310434459,
+        200.26086149275901,
+        144.50779799480134
+      ],
+      "face_before" : [
+        252.32788118067305,
+        195.96164692611393,
+        145.93495017860499
+      ],
+      "file" : "front-06.png",
+      "source" : "front-06-repair.png",
+      "source_sha256" : "8895309c4d04e0d93221cc692df7b0ce79dac0ff08d92d4a79b104c39c12154b"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        252.13292884721457,
+        200.26843169700314,
+        145.11013053870198
+      ],
+      "face_before" : [
+        252.14383182740181,
+        199.43241748109901,
+        149.04794394246727
+      ],
+      "file" : "front-07.png",
+      "source" : "front-07.png",
+      "source_sha256" : "7dfc5ce345ea513aa3502f97c9c80844220fbf96253394940de1d2668cd3b841"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.41712809154669,
+        201.28571428571428,
+        145.15190107050572
+      ],
+      "face_before" : [
+        252.36738450211669,
+        202.12442481133812,
+        154.58071047303517
+      ],
+      "file" : "front-08.png",
+      "source" : "front-08-repair.png",
+      "source_sha256" : "cf8058bd076e7fd41f7d646eed3d90f9173ad282f7883f8809a5447c66ed8b55"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.99336527828973,
+        201.06524143015113,
+        145.18411352746037
+      ],
+      "face_before" : [
+        251.99336527828973,
+        201.06524143015113,
+        155.67711021009953
+      ],
+      "file" : "front-09.png",
+      "source" : "front-09-repair.png",
+      "source_sha256" : "0482958cbb69668c1270c9457b538a51c60c11ebb1be24e7ded4ddaee12b054c"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.55489942793872,
+        199.97582579811774,
+        144.99206495663407
+      ],
+      "face_before" : [
+        251.60485074626865,
+        196.5830223880597,
+        148.26809701492536
+      ],
+      "file" : "front-10.png",
+      "source" : "front-10-repair.png",
+      "source_sha256" : "ccb15d6b19048aa64702b779164ac7184b4c901e4d25a484263dd055bc63a623"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.60859937257797,
+        200.45912529987083,
+        145.40468721166266
+      ],
+      "face_before" : [
+        252.56051660516604,
+        201.40664206642066,
+        155.91346863468635
+      ],
+      "file" : "front-11.png",
+      "source" : "front-11-repair.png",
+      "source_sha256" : "2f778814ba50d194f1dd88f8ddf8146ea5c7d93149006ad22eedb808aff28d5e"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.91517524235644,
+        200.73098434004476,
+        144.68475018642803
+      ],
+      "face_before" : [
+        251.92199512469529,
+        199.05756609788111,
+        150.60566285392838
+      ],
+      "file" : "front-12.png",
+      "source" : "front-12-repair.png",
+      "source_sha256" : "148023ff68bd1a0ccd2a949e37f34e56141832388bdcc68f512d64ae08c0b506"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.27156067182489,
+        199.9615021702208,
+        144.47688243064729
+      ],
+      "face_before" : [
+        252.21270877327703,
+        195.87291226722979,
+        148.92839316567481
+      ],
+      "file" : "front-13.png",
+      "source" : "front-13-grounded.png",
+      "source_sha256" : "9a445642bb30be39347ae0aa49251edcda1b54a88a9aa139dd76c2db683efc06"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.22976011994004,
+        200.19808845577211,
+        145.45783358320838
+      ],
+      "face_before" : [
+        252.15908236179015,
+        199.37438886799549,
+        146.54926664159458
+      ],
+      "file" : "front-14.png",
+      "source" : "front-14.png",
+      "source_sha256" : "2da8090b56a9b5dfede15988ca95ad04f0c109a2f520d30fd7d9003c3c8bd263"
+    },
+    {
+      "alpha_unchanged" : true,
+      "face_after" : [
+        251.29247193079331,
+        200.60224553653597,
+        144.94110068102339
+      ],
+      "face_before" : [
+        252.25660447071863,
+        199.79789395898763,
+        150.80786994273046
+      ],
+      "file" : "front-15.png",
+      "source" : "front-15.png",
+      "source_sha256" : "c6c66972878eabdcc309533319da12ec1320ae1c97ac2d341031aad409bbcb78"
+    }
+  ],
+  "geometry_changed" : false,
+  "method" : "deterministic whole-sprite skin-ramp calibration",
+  "production_eligible" : false,
+  "status" : "palette_calibrated_animation_not_accepted",
+  "known_issues" : [
+    "Near-hand key-pose jump remains; no geometry was changed by this calibration.",
+    "Far-arm occlusion changes abruptly between front-10 and front-11.",
+    "Automatic in-between experiments produce ghost limbs and are excluded from this asset folder.",
+    "Rear, start and stop clips are not supplied by this candidate."
+  ],
+  "reference_face" : [
+    251.65799739921977,
+    200.84952628645738,
+    145.05796024521644
+  ],
+  "tool" : "tools\/pixel_cleanup\/build.swift"
+}

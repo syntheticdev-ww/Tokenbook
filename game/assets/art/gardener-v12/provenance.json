@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-16",
+  "source_directory": "Codex generated_images/01a084eb-698f-7550-8437-d8537cd3ed92",
+  "assets": [
+    {
+      "asset": "front-body.png",
+      "source_output": "exec-44495abf-4ab7-45d7-8e4f-1eec850d1628.png",
+      "sha256": "f1d0ab8ff772d651dc11dc65f39a702c15ae11ef5f85d7e2765191204dde42a2",
+      "layout": {
+        "width": 1642,
+        "height": 958,
+        "columns": 6,
+        "rows": 3,
+        "order": "row-major"
+      },
+      "prompt": "Use case precise-object-edit. Game sprite production separation pass. In this exact18-cell 1642x958 sheet REMOVE ONLY both bare ARMS/HANDS from every character, replacing those arm/hand pixels with the same flat magenta background. Keep a tiny rounded shoulder cap at each shirt armhole (the first 4 source pixels of skin) as the attachment socket. The result is an armless torso-and-legs animation layer; arms will be separately animated by the game. Preserve EVERY other pixel: face, skin tones, all head/hair shapes, teal shirt, belt, shorts, legs, boots, pouch, poses, positions and dimensions. Do not redraw anything else, do not fill underarms with new clothing. No remaining fists, elbows or floating arm pieces; no holes through torso or legs. Exact original 6x3layout and magenta backdrop, no text. This is layer extraction, not character redesign.",
+      "notes": "Only the armless middle band of all 18 cells is used; the v10/v11 original head and lower-leg bands are retained."
+    },
+    {
+      "asset": "arm-parts.png",
+      "source_output": "exec-a8659343-aed0-4b17-9e44-aeff2381b5a0.png",
+      "sha256": "7c0bbdd7867b47730353761175c8f374494bde12171575d3122986d1d6d09683",
+      "layout": {
+        "width": 1774,
+        "height": 887,
+        "columns": 4,
+        "rows": 1,
+        "order": "row-major"
+      },
+      "prompt": "Use case stylized-concept. Production pixel-art animation ARM LAYERS for the exact adult female farmer in the reference. Create four isolated whole bare arms, detached for game assembly, in one row4columns on a 1024x512 solid pure magenta background. Each is a single anatomical shoulder-to-fingertips arm with a softly bent elbow, relaxed small loosely closed hand, same warm peach highlights and tan shadows as reference. The shoulder joint is the top of each cutout, hand at bottom; arms point downward with a gentle 8degree elbow bend, not straight sticks, no torso or heads, no sleeves. Draw each at same scale, each upper arm about60sourcepixels, forearm/hand about70sourcepixels. Column1: rear/far arm seen on screen-left of front three-quarter figure; column2: near arm seen on screen-right of front three-quarter figure; column3: near arm on screen-left of rear three-quarter figure; column4: far arm on screen-right of rear figure. Top shoulders smooth rounded attachment, consistent two-segment anatomy with no sharp joint seams. Hands not detailed realistic fingers, use crisp small pixel clusters exactly like reference. Same palette/lighting across all4 with dark warm outlines. No shadows on background, text, boxes, accessories or extra limbs. These will be pivoted gently at shoulder; do not depict extreme poses.",
+      "notes": "Four intact shoulder-to-hand cutouts; fixed scale, small opposing continuous rotations around shoulder pivots."
+    },
+    {
+      "asset": "back-body.png",
+      "source_output": "exec-8a20a1c8-70fe-47ba-a35b-1468656bbed5.png",
+      "sha256": "b2dfcdb0a13ca905153e2ac7ca8415c889eb2f8861fdafd2251bef0d95f2f32a",
+      "layout": {
+        "width": 1254,
+        "height": 1254,
+        "columns": 4,
+        "rows": 4,
+        "order": "row-major"
+      },
+      "prompt": "Production pixel-art animation layer. Use image1 for the exact refined rear-view character design and warm palette, image2 for the armless-body layer format. Create a NEW carefully ordered 16-frame BACK WALK cycle,4 columns x4 rows on1536x1536 pure magenta. All16 are the SAME rear three-quarter character facing upper-left. REMOVE both arms below the small rounded shoulder sockets; arms are independently animated by the game. Keep head, ponytail, teal sleeveless shirt, tan shorts, belt/pouch, boots identical in allcells. Level waist and same full body scale percell. Normal relaxed walking, low feet and no high knees. Timeline is row-major, one complete alternating cycle: 0 left foot forward contact/right foot back;1 left heel accepts weight/right heel lifts;2 left supporting/right toe pushes off;3 right foot swings under body;4 right passing by left shin;5 right heel advances a little;6 right heel almost lands;7 feet opening into opposite contact;8 RIGHT foot forward contact/LEFT foot back;9 right heel accepts weight/left heel lifts;10 right supporting/left toe pushes off;11 left swings under body;12 left passing by right shin;13 left heel advances;14 left heel almost lands;15 feet opening back into pose0. Must show BOTH left-led and right-led halves, never repeat only one leading leg. Important: keep supporting foot contacting a stable ground baseline, no bobbing skull shape, no random alternating lighting. Position each pelvis at cellcenterx and220y, bodyheightabout280sourcepixels. Crisp detailed pixel art matching references, no text, guides, shadows, accessories or facial frontviews.",
+      "notes": "Selected cells 0,1,2,3,6,7,8,9,10,11,12,13,14,15. Whole-drawing translation balances measured head and shirt centers; fixed scale .119."
+    },
+    {
+      "asset": "settle-body.png",
+      "source_output": "exec-932e0754-ef3f-46ad-84ee-f21e4eb5a0b8.png",
+      "sha256": "96f05f4b88a64a6ed7d2b9d403e7f16245bf3d1a282a291c45ab63f24452c1d8",
+      "layout": {
+        "width": 1254,
+        "height": 1254,
+        "columns": 4,
+        "rows": 4,
+        "order": "row-major"
+      },
+      "prompt": "Production pixel-art game stop-and-settle transition layer. Image1 defines the exact current farmer FRONT style/proportions; image2 defines REAR identity; image3 defines the destination relaxed standing pose in bottom-leftcell. Create16 coherent whole-body drawings on1536x1536,4columns4rows pure magenta. NO arms below small rounded shoulder sockets (separate arm layers added in game). Maintain exact same pixel detail, face/skin palette, body height and character identity in allcells. Rows1+2 are an8-frame FRONT-LEFT arrival sequence: pose0 the close-foot passing pose of image1 row1col4, one toe slightly behind;1 swing toe lowers;2 heel softly plants;3 weight settles, back foot begins drawing in;4 back foot comes beside planted foot;5 bothfeet comfortably belowhips;6 settles upright;7 neutral relaxed standing like image3 bottom-left, without arms or tools. Rows3+4 are an8-frame REAR-LEFT arrival sequence: start corresponding close-foot rear passing, toe lowering, plant heel, draw backfoot in, then settle into quiet REAR standing; all8 remain rear-facing (do not turn toward viewer). Tiny natural hip settling, never a big squat or hop. Allfigures centered fixedwaist atcellx192,y220, about280pixels tall; no moving around cell, no resizing across frames. Preserve fixed skull/hair mass and costume dimensions. Single fixed warm light, consistent skin ramp, crisp pixelart notpainting. Allposes distinct, gradual endpoint no sudden ankle or hip snap. No text, labels, shadows or scenes.",
+      "notes": "Only low-foot closing cells 5,6,7 (front) and 13,14,15 (rear). One fixed scale per direction, soles registered to zero; rejected generated extra crouch/high-knee poses."
+    }
+  ],
+  "notes": "Source PNGs copied unchanged from imagegen, with no raster postprocessing. Runtime magenta coverage shader, source-region composition and rigid arm transforms only; no temporal blending or leg/torso deformation. Earlier whole-sheet arm-redraw candidates were rejected after comparison due to inconsistent hand silhouettes. Front reference identity remains gardener-v10 with the v11 repaired drawing 16; rear/settle references use this identity and the generated rear study."
+}

@@ -1,0 +1,649 @@
+{
+  "departure": [
+    {
+      "anchor": [
+        599.32568359375,
+        1113.02709960938
+      ],
+      "file": "res://assets/art/gardener-v18/frames/idle.png",
+      "sha256": "323fa249f657ea996eac72a0e700a9ee8fce940c039e53adf24dc9d3466749e9"
+    },
+    {
+      "anchor": [
+        599.61181640625,
+        1113.26831054688
+      ],
+      "file": "res://assets/art/gardener-v23/frames/depart-ease-01.png",
+      "sha256": "3e83cc7a5cfb5a345da70c0a952363cac73e49f917dbfbaa093ccbd30d3d8fbd"
+    },
+    {
+      "anchor": [
+        600.245422363281,
+        1112.71765136719
+      ],
+      "file": "res://assets/art/gardener-v20/frames/depart-01.png",
+      "sha256": "5e517e6ce3634c4931e49d773bad6eeaf5fab538efa5c72f5fac38f1b9ec9765"
+    },
+    {
+      "anchor": [
+        600.245422363281,
+        1112.71765136719
+      ],
+      "file": "res://assets/art/gardener-v23/frames/depart-ease-02.png",
+      "sha256": "a231bd32536afc7302c7f320b9e106c2c1104881914ffe9b89efc1d3f42fbd74"
+    },
+    {
+      "anchor": [
+        598.935180664062,
+        1112.67272949219
+      ],
+      "file": "res://assets/art/gardener-v20/frames/depart-02.png",
+      "sha256": "4d03511abb380eae4fa2347fa8f5000ba2844e4fbfdcdbd771a258231b3d3bb1"
+    },
+    {
+      "anchor": [
+        598.935180664062,
+        1112.67272949219
+      ],
+      "file": "res://assets/art/gardener-v23/frames/depart-ease-03.png",
+      "sha256": "e11d35b6845bdd277fadedcc24aa61d3a7c91b6e43598803afa6a08e659ff78b"
+    },
+    {
+      "anchor": [
+        599.167846679688,
+        1113.04931640625
+      ],
+      "file": "res://assets/art/gardener-v20/frames/depart-03.png",
+      "sha256": "0f51ac3ba9851fee22dbfa2990db2062073b951547f7bd142a31f1a45de89cfd"
+    },
+    {
+      "anchor": [
+        599.167846679688,
+        1113.04931640625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "sha256": "1c94040b89d3eca0d2300672265c9996d9b71d85e227f7de50081fe6ffce5c01"
+    }
+  ],
+  "presentation": "farm-fine-v1",
+  "production_eligible": false,
+  "scale": 0.0337768679631525,
+  "transition": [
+    {
+      "anchor": [
+        599.32568359375,
+        1113.02709960938
+      ],
+      "file": "res://assets/art/gardener-v18/frames/idle.png",
+      "sha256": "323fa249f657ea996eac72a0e700a9ee8fce940c039e53adf24dc9d3466749e9"
+    },
+    {
+      "anchor": [
+        600.245422363281,
+        1112.71765136719
+      ],
+      "file": "res://assets/art/gardener-v18/frames/depart-01.png",
+      "sha256": "56c1d20fc5c8b6672205ed036cd74b5c4013fbb16efbc68d95f8a065b513f835"
+    },
+    {
+      "anchor": [
+        598.935180664062,
+        1112.67272949219
+      ],
+      "file": "res://assets/art/gardener-v18/frames/depart-02.png",
+      "sha256": "62549b2c5d60736a23743065ad343a1e334793ede67c7ea0e8f8761773462c42"
+    },
+    {
+      "anchor": [
+        599.167846679688,
+        1113.04931640625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "sha256": "1c94040b89d3eca0d2300672265c9996d9b71d85e227f7de50081fe6ffce5c01"
+    }
+  ],
+  "version": 1.0,
+  "walk": [
+    {
+      "anchor": [
+        600.0,
+        1120.0
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-00.png",
+      "phase": 0.0,
+      "sha256": "a41948c586d275f65d85a20387fdde6667e92020f41b6e6b68fad01096d4e71a",
+      "source_phase": 0.0,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        600.0,
+        1120.0
+      ],
+      "file": "res://assets/art/gardener-v23/frames/front-contact-soften.png",
+      "phase": 0.507936507936508,
+      "sha256": "a5eec13e7829ea3184eeff195ec75040005c4547722a9daa89eff9e40cfe25c5",
+      "source_phase": 0.25,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        600.0,
+        1120.0
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-00-half.png",
+      "phase": 0.761904761904762,
+      "sha256": "ae4364e1012267eb5ad499efcaa349698a82c8ef115735e1ccb31979dd98d991",
+      "source_phase": 0.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        600.676147460938,
+        1118.7705078125
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-01.png",
+      "phase": 1.01587301587302,
+      "sha256": "e70b57cf35e3674a9d78598ed780cfe43e21c3a50028f4edf5541116bbb4a185",
+      "source_phase": 1.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        600.676147460938,
+        1118.77038574219
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-01-half.png",
+      "phase": 1.26984126984127,
+      "sha256": "31833db824abfef7b7ccba88e1cdc96f88cee9c451924445d4a172a327bcd042",
+      "source_phase": 1.5,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        600.746704101562,
+        1119.24536132812
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-02.png",
+      "phase": 1.77777777777778,
+      "sha256": "6aa0268d5211d7d24fd9eaac105215f5ed3efa7930a0b0a7e28470b148c566cb",
+      "source_phase": 2.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        600.746704101562,
+        1119.24536132812
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-02-half.png",
+      "phase": 2.03174603174603,
+      "sha256": "d996fa074c229e8ae26963a969c960b5d50d22794d5f99d02e6145b4038fe96a",
+      "source_phase": 2.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        601.778686523438,
+        1116.6015625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-03.png",
+      "phase": 2.28571428571429,
+      "sha256": "b5a667686b94d1ccd95b53ea35e3746282894fc590e7d439a8e136199ecd4781",
+      "source_phase": 3.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        601.778686523438,
+        1116.6015625
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-03-half.png",
+      "phase": 2.53968253968254,
+      "sha256": "55a92b656a134b18cb2065697ba57f13495db2f3ba46153f652bb69548aa2dcd",
+      "source_phase": 3.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.52978515625,
+        1114.63842773438
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-04.png",
+      "phase": 2.79365079365079,
+      "sha256": "7d478d918e60f7056a43f348ea2c9ddcf9ec2925e5a7f2504630c92f51f1918e",
+      "source_phase": 4.0,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        599.167846679688,
+        1113.04931640625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "phase": 3.3015873015873,
+      "sha256": "1c94040b89d3eca0d2300672265c9996d9b71d85e227f7de50081fe6ffce5c01",
+      "source_phase": 4.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.167785644531,
+        1113.04919433594
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-04-pass-1.png",
+      "phase": 3.55555555555556,
+      "sha256": "26ca4a73fcf5534f4c67aae5df88828467514f9a456e87836ee489a254adba8d",
+      "source_phase": 4.625,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        599.167785644531,
+        1113.04919433594
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-04-pass-2.png",
+      "phase": 4.06349206349206,
+      "sha256": "ef695a09b12feedbe06d2df5650acd55c493081b64ee774958243cd8013242a9",
+      "source_phase": 4.75,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        599.167785644531,
+        1113.04919433594
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-04-pass-3.png",
+      "phase": 4.57142857142857,
+      "sha256": "c07b2f3c5e7128fc0beb9c994591afdcef06c43f744aa266a4f9e88c7381af36",
+      "source_phase": 4.875,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.167846679688,
+        1113.04931640625
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-cross-land-final.png",
+      "phase": 4.82539682539683,
+      "sha256": "9d835e03fb68f36cdb97f38783a4363dcdb1ac479fe3f8165457ce99b53c480a",
+      "source_phase": 4.9375,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.042236328125,
+        1112.26965332031
+      ],
+      "file": "res://assets/art/gardener-v23/frames/front-cross-land-soften.png",
+      "phase": 5.07936507936508,
+      "sha256": "3ddc883af93208a78191083f1c2631c5dd9579c8e152efcb5942fb9edb5af189",
+      "source_phase": 4.96875,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.739013671875,
+        1113.82836914062
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-05.png",
+      "phase": 5.33333333333333,
+      "sha256": "cd5feec22d36974acfa998dc37472d91e46d7a62e49f94b921e1a80a3dee4892",
+      "source_phase": 5.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        601.325561523438,
+        1114.4638671875
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-arm-return-1.png",
+      "phase": 5.58730158730159,
+      "sha256": "de5550af026359b0815bad1d3dd75bc0da852a8dad3dc6f6668ba68732657811",
+      "source_phase": 5.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        600.06103515625,
+        1117.66027832031
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-06.png",
+      "phase": 5.84126984126984,
+      "sha256": "f2dd88bfa46b422324fbec6e5a6226a950f662e8af78505c92cb929d700385af",
+      "source_phase": 6.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        604.573486328125,
+        1113.99182128906
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-06-half.png",
+      "phase": 6.09523809523809,
+      "sha256": "527ee448871815d766e33878c92de1ed740ed535020cd987425ff6e185410e9a",
+      "source_phase": 6.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.664184570312,
+        1116.65087890625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-07.png",
+      "phase": 6.34920634920635,
+      "sha256": "02395ef6ab6c2f6348291c25ad2b231f6ed6c1563c881e2b639255da90889e1a",
+      "source_phase": 7.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.664184570312,
+        1116.65087890625
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-07-half.png",
+      "phase": 6.6031746031746,
+      "sha256": "c47f458f4a7ecc78ae3b91c14bd5825d345ec80a14ed86aec09ff2c3bf083bcc",
+      "source_phase": 7.5,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        601.95361328125,
+        1115.57397460938
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-08.png",
+      "phase": 7.11111111111111,
+      "sha256": "a21ae2c5d96c5d64cb9ad37c3f504231d3cff610238d67827375d1c65e105ae4",
+      "source_phase": 8.0,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        601.95361328125,
+        1115.57397460938
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-08-half.png",
+      "phase": 7.61904761904762,
+      "sha256": "73f7f8f5121805d75d0c3bd100b9ca44a696658aa3a9cc03ba743fa6417b9d33",
+      "source_phase": 8.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        601.95361328125,
+        1115.57397460938
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-support-roll.png",
+      "phase": 7.87301587301587,
+      "sha256": "aa62ea45f15e1785c8db6950e4a7af958b8d27498a4eba8683c32984805d2c61",
+      "source_phase": 8.75,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        604.490539550781,
+        1114.30224609375
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-09.png",
+      "phase": 8.12698412698413,
+      "sha256": "71df9e4ee321fba5f420c3adbcba3b1812fc343471980e274024b395cecf9888",
+      "source_phase": 9.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        604.490539550781,
+        1114.30224609375
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-09-half.png",
+      "phase": 8.38095238095238,
+      "sha256": "c8b53b541dee6dd0e4d68fe961a000077674ab44d46b1b02f09a6fb7b8f1edae",
+      "source_phase": 9.5,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        600.200561523438,
+        1116.28466796875
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-10.png",
+      "phase": 8.88888888888889,
+      "sha256": "44796c6fc593ec21d1146ace3b150aa85c14e4e4c431ee92c04e54a4b95c0895",
+      "source_phase": 10.0,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        600.322998046875,
+        1114.28759765625
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-toe-off.png",
+      "phase": 9.3968253968254,
+      "sha256": "5d8776bcc9ded1732de89dc8aa55c8584649f52ae98205d93fbe5a8c120f73db",
+      "source_phase": 10.1666666666667,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        598.976928710938,
+        1113.14575195312
+      ],
+      "file": "res://assets/art/gardener-v19/frames/front-10a.png",
+      "phase": 9.65079365079365,
+      "sha256": "81507ff54027e666494fc892968ef773bfb08c9f27f28539e992d193f29122a4",
+      "source_phase": 10.3333333333333,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        598.629516601562,
+        1113.48571777344
+      ],
+      "file": "res://assets/art/gardener-v19/frames/front-10b.png",
+      "phase": 9.90476190476191,
+      "sha256": "8bf7eb20dcc20b6f093cdbf21d0483932cd265064b114400bb10b7c94d440ac8",
+      "source_phase": 10.6666666666667,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        599.923828125,
+        1113.03393554688
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-swing-lift.png",
+      "phase": 10.1587301587302,
+      "sha256": "a411c3bc2bf6322240ece38717a213fa9492f66dd57db4363533b600099e47f7",
+      "source_phase": 10.8333333333333,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        599.923828125,
+        1113.03393554688
+      ],
+      "file": "res://assets/art/gardener-v23/frames/front-passing-lift-soften.png",
+      "phase": 10.6666666666667,
+      "sha256": "3bfa489780ef7fdd67af6b04187d3bee33f06fd9101006446a106f67448ad790",
+      "source_phase": 10.9166666666667,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        600.125,
+        1114.25561523438
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-11.png",
+      "phase": 10.9206349206349,
+      "sha256": "4d137e0b1999adbf9ce16413ffd1243d920e6dd016dd615245d51ea401c2eb57",
+      "source_phase": 11.0,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        600.125,
+        1114.25561523438
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-swing-through-corrected.png",
+      "phase": 11.4285714285714,
+      "replaces_file": "res://assets/art/gardener-v21/frames/front-11-half.png",
+      "sha256": "91c449ee96b554d06592e8b84ea20582c9f45c925e59cb46e15e927a910a6518",
+      "source_phase": 11.5,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        597.215148925781,
+        1117.35852050781
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-swing-under.png",
+      "phase": 11.9365079365079,
+      "replaces_file": "res://assets/art/gardener-v17/frames/front-12.png",
+      "sha256": "b0968e7e42ac18c77cd72d6d9c6883054506b246b48dd3ad99fa40388b4eac59",
+      "source_phase": 12.0,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        597.215148925781,
+        1117.35852050781
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-swing-forward-small.png",
+      "phase": 12.4444444444444,
+      "sha256": "16eb3527c1df62ac4e744f285282c114ccd100c1fe03301a076ace7594d77c82",
+      "source_phase": 12.1666666667,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        597.215148925781,
+        1117.35852050781
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-swing-extend-revised.png",
+      "phase": 12.6984126984127,
+      "sha256": "ca5b3b59643ff75771c48e066842356d9d7103212fe229998ae2bbe10dbd4199",
+      "source_phase": 12.3333333333,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        597.215148925781,
+        1117.35852050781
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-12-half.png",
+      "phase": 12.952380952381,
+      "sha256": "ce38a3df6a67424d862bfccd4f363ac00865859f76ae45102d1d052dcc300e57",
+      "source_phase": 12.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        597.215148925781,
+        1117.35852050781
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-heel-reach.png",
+      "phase": 13.2063492063492,
+      "sha256": "ee476edf1708173025f62f0964acb6bd9ecf917e629e5789dbea6c01959df37f",
+      "source_phase": 12.75,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        598.668701171875,
+        1113.72937011719
+      ],
+      "file": "res://assets/art/gardener-v23/frames/front-reach-ease.png",
+      "phase": 13.4603174603175,
+      "sha256": "356315640200327eb4360440c0014490af4e4db0af5e03a779943fc66b68587a",
+      "source_phase": 12.875,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        601.505737304688,
+        1114.87280273438
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-13.png",
+      "phase": 13.7142857142857,
+      "sha256": "53c3959b707cc43247e8f4b9edc058c6ca8f5558abf542f63e9a9819e6359477",
+      "source_phase": 13.0,
+      "ticks_to_next": 2
+    },
+    {
+      "anchor": [
+        601.505737304688,
+        1114.87280273438
+      ],
+      "file": "res://assets/art/gardener-v23/frames/front-plant-ease.png",
+      "phase": 14.2222222222222,
+      "sha256": "1bde264cbbb3789754443d7a21ebbd1397f00a9242209a458b0cabd1feb2d5d5",
+      "source_phase": 13.25,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        601.505737304688,
+        1114.87280273438
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-13-half.png",
+      "phase": 14.4761904761905,
+      "sha256": "a1e0ab9229286753d3672d85658e689dbdba5ddd5cd4c390a452b9e78231178c",
+      "source_phase": 13.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        601.505737304688,
+        1114.87280273438
+      ],
+      "file": "res://assets/art/gardener-v22/frames/front-heel-lower.png",
+      "phase": 14.7301587301587,
+      "sha256": "af7e756291143bebde21765936cbd9b0ed1af429f43df444281d9a477e5e3635",
+      "source_phase": 13.75,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        603.402709960938,
+        1118.99462890625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-14.png",
+      "phase": 14.984126984127,
+      "sha256": "cd9db7c21114479cd20c9d0d4cfd61d4af662aaa71901e770b6027efa340da73",
+      "source_phase": 14.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        603.402709960938,
+        1118.99462890625
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-14-half.png",
+      "phase": 15.2380952380952,
+      "sha256": "01df88cf505c9e87bf31fed11d0ea13ec6f399d78b473b7f2bb618b0707ab025",
+      "source_phase": 14.5,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        604.228515625,
+        1117.9111328125
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-15.png",
+      "phase": 15.4920634920635,
+      "sha256": "fc1bbc71712e2e4800fe0dd38471d955371179f94ccfe8ff18eecd76ac9c36fd",
+      "source_phase": 15.0,
+      "ticks_to_next": 1
+    },
+    {
+      "anchor": [
+        604.228515625,
+        1117.9111328125
+      ],
+      "file": "res://assets/art/gardener-v21/frames/front-15-half.png",
+      "phase": 15.7460317460317,
+      "sha256": "f9196521c4c257d471657e26009419e8a236adc0abce5b60d940987c53691060",
+      "source_phase": 15.5,
+      "ticks_to_next": 1
+    }
+  ]
+}

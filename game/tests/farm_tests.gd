@@ -202,7 +202,9 @@ static func run(t: SceneTree, directory: String) -> void:
 			for sample in range(1450):
 				gathering.advance(1.0 / 120)
 				var pose: Dictionary = gathering.pose()
-				var height: float = pose_heights["%s:%d:%s" % [pose.kind, pose.frame, "back" if pose.back else "front"]]
+				# Idle direction is encoded by its frame; only the legacy walk
+				# atlas has a separate back-facing row.
+				var height: float = pose_heights["%s:%d:%s" % [pose.kind, pose.frame, "back" if pose.kind == "walk" and pose.back else "front"]]
 				if absf(height - previous_height) > 4: keeps_posture = false
 				previous_height = height
 		t.check(keeps_posture, "gathering rises through intermediate poses instead of jumping seven world pixels out of its crouch")

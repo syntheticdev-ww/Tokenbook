@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "status": "soft_nose_without_right_angle",
+  "animation_integrated": false,
+  "default_preview_integrated": true,
+  "parent": "artifacts/character-reference-v49/nose-contour.png",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-e4e78aed-410a-45b7-8d28-f65cca8dd801.png",
+  "references": [
+    "artifacts/character-reference-v49/nose-contour.png",
+    "artifacts/character-reference-v50/user-nose-reference.png"
+  ],
+  "generation_record": "artifacts/character-reference-v50/generation.json",
+  "sha256": "ac0f7e0d33b8c83174fcb9eee3dc2e0e8df8e7938a6e3f0ca9ba60fe1b4c3e2b",
+  "scope": "Use the user-selected softened face and subtle nose; remove the horizontal right-angle nose tip. Retain the current smile, pixel strength, cleaned hair and outfit. Static preview only. Small incidental generative differences may occur outside the edited region.",
+  "processing": "Exact generated PNG copy; unchanged uniform display grid and .25,.25 sample position. No blur, palette alteration, local face filter or coarser runtime grid.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      654.7486113446388,
+      1172.4179487179488
+    ],
+    "source_bounds": [
+      424,
+      140,
+      494,
+      1048
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "User selected the supplied subtle nose reference; this final removal of the right-angle tip awaits visual review.",
+  "previous_static_material": "gardener-v47",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v50/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1,
+    "detail_preview": "Native game material at 4x integer magnification; v49 angled nose left, v50 right.",
+    "visual_acceptance": "pending user review"
+  }
+}

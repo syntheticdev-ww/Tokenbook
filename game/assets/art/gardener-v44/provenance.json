@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "status": "stronger_pixel_style_comparison_candidate",
+  "animation_integrated": false,
+  "default_preview_integrated": false,
+  "parent": "gardener-v43",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-80376cb0-2f46-4e64-8aa7-78954d1f9390.png",
+  "references": [
+    "res://assets/art/gardener-v43/idle.png"
+  ],
+  "generation_record": "artifacts/character-reference-v44/generation.json",
+  "sha256": "c02d916444f7447e9b04e43035b3d85244832cede2f5f02a7f00677d34e7596d",
+  "scope": "Visual comparison only: larger authored square pixel clusters, stepped outlines and simpler shading. Preserve v43 character design, head/neck proportions, expression and approved tank. Default v43 static preview and all gameplay routes remain unchanged.",
+  "processing": "Exact generated PNG copy. Reuse the existing uniform display grid without changing the shader, palette, or adding a blur filter.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      651.7486113446388,
+      1171.4179487179488
+    ],
+    "source_bounds": [
+      422,
+      139,
+      487,
+      1048
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "Standalone artifacts/character-reference-v44/preview.gd fixture with isolated test data",
+    "face_sampling_override": false
+  },
+  "acceptance": "Comparison sample requested by user; pending visual choice.",
+  "verification": {
+    "checks": [
+      "standalone material_tests.gd at 1x and Retina",
+      "standalone preview.gd --capture"
+    ],
+    "passed": true,
+    "evidence": "artifacts/character-reference-v44/pixel-grid/",
+    "preserved_files": 15,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.00672430355427,
+    "visual_acceptance": "comparison candidate pending user choice"
+  }
+}

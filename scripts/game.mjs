@@ -20,7 +20,7 @@ async function run(binary, args, env = process.env, timeout = 0) {
     stream.on('data', chunk => {
       output.write(chunk);
       tail = (tail + chunk.toString()).slice(-8192);
-      if (/(?:SCRIPT ERROR:|Parse Error:|ERROR: Failed loading resource|ERROR: Failed to load script|ObjectDB instances were leaked|resources still in use at exit)/.test(tail)) engineError = true;
+      if (/(?:SCRIPT ERROR:|SHADER ERROR:|Shader compilation failed|Parse Error:|ERROR: Failed loading resource|ERROR: Failed to load script|ObjectDB instances were leaked|resources still in use at exit)/.test(tail)) engineError = true;
     });
   }
   const timer = timeout ? setTimeout(() => child.kill('SIGKILL'), timeout) : null;
@@ -75,11 +75,63 @@ try {
       console.log(`Isolated test data: ${data}`);
       const env = { ...process.env, TOKENBOOK_TEST_DIR: data, TOKENBOOK_DATA_DIR: data, TOKENBOOK_CAPTURE_DIR: captures };
       await run(godot, [...(command === 'test' ? ['--headless'] : []), '--path', 'game', '--script', command === 'test' ? 'res://tests/run.gd' : 'res://tests/window_smoke.gd'], env, 45000);
+    } else if (command === 'character-preview' || command === 'character-test') {
+      // Same production main scene/FarmView, but never the player's save.
+      const data = await mkdtemp(join(tmpdir(), 'tokenbook-character-'));
+      const captures = join(root, 'artifacts/desktop-pet-v1/in-game');
+      await mkdir(captures, { recursive: true });
+      const env = { ...process.env, TOKENBOOK_TEST_DIR: data, TOKENBOOK_DATA_DIR: data, TOKENBOOK_CAPTURE_DIR: captures };
+      console.log(`New character in the real game; isolated test data: ${data}`);
+      if (command === 'character-test') {
+        for (const test of ['farm_character_tests', 'farm_character_art_tests', 'limb_timing_tests', 'character_departure_tests', 'character_root_motion_tests']) {
+          await run(godot, ['--headless', '--path', 'game', '--script', `res://tests/${test}.gd`], env, 30000);
+        }
+        await run(godot, ['--path', 'game', '--script', 'res://tests/farm_character_smoke.gd'], env, 45000);
+      } else {
+        await run(godot, ['--path', 'game', '--', '--character-test', '--pet'], env);
+      }
+    } else if (command === 'material-preview' || command === 'material-test') {
+      const data = await mkdtemp(join(tmpdir(), 'tokenbook-material-'));
+      const captures = join(root, 'artifacts/character-reference-v57/pixel-grid');
+      await mkdir(captures, { recursive: true });
+      const env = { ...process.env, TOKENBOOK_TEST_DIR: data, TOKENBOOK_DATA_DIR: data, TOKENBOOK_CAPTURE_DIR: captures };
+      console.log(`Static material preview; isolated test data: ${data}`);
+      if (command === 'material-test') {
+        await run(godot, ['--path', 'game', '--script', 'res://tests/character_material_tests.gd'], env, 30000);
+      }
+      await run(godot, ['--path', 'game', '--script', 'res://tests/character_material_preview.gd', ...(command === 'material-test' ? ['--', '--capture'] : [])], env, command === 'material-test' ? 30000 : 0);
+    } else if (command === 'pet-test') {
+      const data = await mkdtemp(join(tmpdir(), 'tokenbook-pet-'));
+      const captures = join(root, 'artifacts/desktop-pet-v1');
+      await mkdir(captures, { recursive: true });
+      const env = { ...process.env, TOKENBOOK_TEST_DIR: data, TOKENBOOK_DATA_DIR: data, TOKENBOOK_CAPTURE_DIR: captures };
+      await run(godot, ['--path', 'game', '--script', 'res://tests/desktop_pet_smoke.gd'], env, 45000);
+    } else if (command === 'environment-test') {
+      const data = await mkdtemp(join(tmpdir(), 'tokenbook-environment-'));
+      const parent = join(root, 'artifacts/living-farm-v2');
+      await mkdir(parent, { recursive: true });
+      const captures = await mkdtemp(join(parent, 'audit-'));
+      const env = { ...process.env, TOKENBOOK_TEST_DIR: data, TOKENBOOK_DATA_DIR: data, TOKENBOOK_CAPTURE_DIR: captures };
+      console.log(`Isolated environment audit: ${captures}`);
+      for (const test of ['environment_visual', 'grounding_visual', 'environment_smoke', 'pixel_environment_tests']) {
+        await run(godot, ['--path', 'game', '--script', `res://tests/${test}.gd`], env, 45000);
+      }
+    } else if (command === 'raster-test') {
+      // Render-only regression: no main scene, save, account access or audio.
+      for (const flags of [[], ['--retina'], ['--mirror'], ['--retina', '--mirror']]) {
+        await run(godot, ['--path', 'game', '--script', 'res://tests/sprite_raster_visual.gd', '--', ...flags], process.env, 30000);
+      }
+      for (const flags of [[], ['--retina']]) {
+        await run(godot, ['--path', 'game', '--script', 'res://tests/farm_layer_visual.gd', '--', ...flags], process.env, 30000);
+      }
+    } else if (command === 'motion-preview') {
+      // Interactive animation fixture only; no production entrypoint/save.
+      await run(godot, ['--path', 'game', '--script', 'res://tests/lifecycle_farm_preview.gd']);
     } else if (command === 'run') {
       const data = join(root, '.runtime/m0');
       await mkdir(data, { recursive: true });
       await run(godot, ['--path', 'game'], { ...process.env, TOKENBOOK_DATA_DIR: data });
-    } else throw new Error('Usage: node scripts/game.mjs setup|test|smoke|run');
+    } else throw new Error('Usage: node scripts/game.mjs setup|test|smoke|raster-test|motion-preview|character-preview|character-test|material-preview|material-test|environment-test|pet-test|run');
   }
 } catch (error) {
   console.error(error.message);

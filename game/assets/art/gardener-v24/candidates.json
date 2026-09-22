@@ -1,0 +1,62 @@
+[
+  {
+    "name": "cross-approach",
+    "phase": 4.68,
+    "parent_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+    "mode": "legs",
+    "reference": "res://assets/art/gardener-v21/frames/front-04-pass-1.png",
+    "detail": "Next tiny step toward crossing. The NEAR leg, connected to screen-RIGHT shorts, is supporting and its foreground boot should be centered at x603,y1050, sole1110; near knee aroundx610,y866. The FAR leg, connected to screen-LEFT shorts, swings inward BEHIND near leg. Far boot centerx658,y995, sole1060, toes angled slightly downward, ankle bent. Boots close together and partly overlap, foreground support boot stays clearly in front. Crucially: do NOT send the far boot forward-left yet. It is still on the right of the supporting boot. Move near boot right35px, far boot left35px from reference.",
+    "prompt": "Edit this complete animation cel, on the exact same1254x1254 transparent canvas. Keep ALL pixels above y768 identical: head, face, single ponytail, bow, arms, clothing, colors and registration. Redraw ONLY the two legs below the shorts. Same leg length, thickness, boot size, colors and crisp outline. This is anatomical animation cleanup, not a blend or limb scaling. Two legs only, no shadows, ghosting, blur, text or sheet. Next tiny step toward crossing. The NEAR leg, connected to screen-RIGHT shorts, is supporting and its foreground boot should be centered at x603,y1050, sole1110; near knee aroundx610,y866. The FAR leg, connected to screen-LEFT shorts, swings inward BEHIND near leg. Far boot centerx658,y995, sole1060, toes angled slightly downward, ankle bent. Boots close together and partly overlap, foreground support boot stays clearly in front. Crucially: do NOT send the far boot forward-left yet. It is still on the right of the supporting boot. Move near boot right35px, far boot left35px from reference.",
+    "file": "res://assets/art/gardener-v24/frames/cross-approach.png",
+    "source": "source/cross-approach.png",
+    "generated_file": "exec-770a174e-1d33-4d4b-b001-add8f91e43cc.png"
+  },
+  {
+    "name": "cross-overlap",
+    "phase": 4.75,
+    "parent_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+    "mode": "legs",
+    "reference": "res://assets/art/gardener-v21/frames/front-04-pass-2.png",
+    "detail": "Repair the exaggerated far leg reach. Near supporting leg attached screen-right shorts crosses in FRONT, boot centeredx644,y1048, sole1110. Far swinging leg attached screen-left shorts passes BEHIND near knee, boot centeredx600,y1007, sole1072. Boots overlap partially. Both knees are close under hips, lightly bent. Do NOT place far boot atx520 or furtherleft: far boot must remain directly under hip x600. Keep boot sizes exact, no miniature boot. Natural small walking step.",
+    "prompt": "Edit this complete animation cel, on the exact same1254x1254 transparent canvas. Keep ALL pixels above y768 identical: head, face, single ponytail, bow, arms, clothing, colors and registration. Redraw ONLY the two legs below the shorts. Same leg length, thickness, boot size, colors and crisp outline. This is anatomical animation cleanup, not a blend or limb scaling. Two legs only, no shadows, ghosting, blur, text or sheet. Repair the exaggerated far leg reach. Near supporting leg attached screen-right shorts crosses in FRONT, boot centeredx644,y1048, sole1110. Far swinging leg attached screen-left shorts passes BEHIND near knee, boot centeredx600,y1007, sole1072. Boots overlap partially. Both knees are close under hips, lightly bent. Do NOT place far boot atx520 or furtherleft: far boot must remain directly under hip x600. Keep boot sizes exact, no miniature boot. Natural small walking step.",
+    "file": "res://assets/art/gardener-v24/frames/cross-overlap.png",
+    "source": "source/cross-overlap.png",
+    "generated_file": "exec-7a2deb4e-2082-4c0c-af6c-23f998b010ed.png"
+  },
+  {
+    "name": "cross-release",
+    "phase": 4.875,
+    "parent_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+    "mode": "legs",
+    "reference": "res://assets/art/gardener-v21/frames/front-04-pass-3.png",
+    "detail": "Repair too-wide reach. Near supporting boot on screen-right centeredx693,y1037, sole1100, same as reference. Far swinging boot on screen-left centeredx552,y1008, sole1073, toe raised modestly. This far foot should move RIGHT55pixels from reference, so stride becomes smaller. Far shin relaxes its extension; knee softly bends. Legs maintain original front/back occlusion: near leg attached right shorts in front, far leg attached left shorts behind. No other change.",
+    "prompt": "Edit this complete animation cel, on the exact same1254x1254 transparent canvas. Keep ALL pixels above y768 identical: head, face, single ponytail, bow, arms, clothing, colors and registration. Redraw ONLY the two legs below the shorts. Same leg length, thickness, boot size, colors and crisp outline. This is anatomical animation cleanup, not a blend or limb scaling. Two legs only, no shadows, ghosting, blur, text or sheet. Repair too-wide reach. Near supporting boot on screen-right centeredx693,y1037, sole1100, same as reference. Far swinging boot on screen-left centeredx552,y1008, sole1073, toe raised modestly. This far foot should move RIGHT55pixels from reference, so stride becomes smaller. Far shin relaxes its extension; knee softly bends. Legs maintain original front/back occlusion: near leg attached right shorts in front, far leg attached left shorts behind. No other change.",
+    "file": "res://assets/art/gardener-v24/frames/cross-release.png",
+    "source": "source/cross-release.png",
+    "generated_file": "exec-63f19fdb-c747-460e-b70c-a3ebe92c00d8.png"
+  },
+  {
+    "name": "cross-hidden-pass",
+    "phase": 4.72,
+    "detail": "Bring the LEFT-SCREEN airborne boot inward behind the RIGHT-SCREEN supporting leg. The airborne boot must move RIGHT by about95px to overlap almost completely behind the supporting shin. It is at x640,y985, above and behind the support boot, not far out atx550. Keep supporting boot atx635,y1050. BOTH boots almost vertically aligned under the hip. The far airborne boot should be mostly OCCLUDED by the near supporting calf; only a small toe and side peeks from its right edge, at x695. Far knee tucked behind near knee, no long leg extending left. Narrow passing silhouette: outer width of BOTH boots together less than200pixels. Match actual physical front/back overlap.",
+    "prompt": "Technical animation cel correction. ONE1254x1254 transparent wholebody PNG, exact source registration, unchanged original bright palette. Only legs below shorts change. Preserve head, hair, face, clothing, arms and all pixels above y768. Proper wholebody anatomy, fixed limb lengths, no resize of character, no blur, no ghost blend, no text, no shadow. Bring the LEFT-SCREEN airborne boot inward behind the RIGHT-SCREEN supporting leg. The airborne boot must move RIGHT by about95px to overlap almost completely behind the supporting shin. It is at x640,y985, above and behind the support boot, not far out atx550. Keep supporting boot atx635,y1050. BOTH boots almost vertically aligned under the hip. The far airborne boot should be mostly OCCLUDED by the near supporting calf; only a small toe and side peeks from its right edge, at x695. Far knee tucked behind near knee, no long leg extending left. Narrow passing silhouette: outer width of BOTH boots together less than200pixels. Match actual physical front/back overlap.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+    "mode": "legs",
+    "reference": "exec-7a2deb4e-2082-4c0c-af6c-23f998b010ed.png",
+    "file": "res://assets/art/gardener-v24/frames/cross-hidden-pass.png",
+    "source": "source/cross-hidden-pass.png",
+    "generated_file": "exec-e48f3d2c-5ee3-4b61-b5aa-3f371cae604d.png"
+  },
+  {
+    "name": "cross-emerge",
+    "phase": 4.735,
+    "detail": "Bring LEFT-SCREEN airborne boot inward, 55px RIGHT from its current position to x606,y996. RIGHT-SCREEN supporting boot stays aroundx645,y1050. Far boot passes behind near calf, so its right half is OCCLUDED. Only its toe and left half show to left of near calf. Both knees close together under hips. Far boot must not remain widely separated atx550. Narrow crossed-leg pose, far boot peeking atx600. Preserve full natural boot size even though half is hidden.",
+    "prompt": "Technical animation cel correction. ONE1254x1254 transparent wholebody PNG, exact source registration, unchanged original bright palette. Only legs below shorts change. Preserve head, hair, face, clothing, arms and all pixels above y768. Proper wholebody anatomy, fixed limb lengths, no resize of character, no blur, no ghost blend, no text, no shadow. Bring LEFT-SCREEN airborne boot inward, 55px RIGHT from its current position to x606,y996. RIGHT-SCREEN supporting boot stays aroundx645,y1050. Far boot passes behind near calf, so its right half is OCCLUDED. Only its toe and left half show to left of near calf. Both knees close together under hips. Far boot must not remain widely separated atx550. Narrow crossed-leg pose, far boot peeking atx600. Preserve full natural boot size even though half is hidden.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+    "mode": "legs",
+    "reference": "exec-7a2deb4e-2082-4c0c-af6c-23f998b010ed.png",
+    "file": "res://assets/art/gardener-v24/frames/cross-emerge.png",
+    "source": "source/cross-emerge.png",
+    "generated_file": "exec-819b65ed-67e1-4111-a0ea-358f6e5be393.png"
+  }
+]

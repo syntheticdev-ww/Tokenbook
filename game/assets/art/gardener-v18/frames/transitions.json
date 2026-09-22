@@ -1,0 +1,17 @@
+{
+  "frames" : [
+    {
+      "file" : "idle.png",
+      "sha256" : "323fa249f657ea996eac72a0e700a9ee8fce940c039e53adf24dc9d3466749e9"
+    },
+    {
+      "file" : "depart-01.png",
+      "sha256" : "56c1d20fc5c8b6672205ed036cd74b5c4013fbb16efbc68d95f8a065b513f835"
+    },
+    {
+      "file" : "depart-02.png",
+      "sha256" : "62549b2c5d60736a23743065ad343a1e334793ede67c7ea0e8f8761773462c42"
+    }
+  ],
+  "production_eligible" : false
+}

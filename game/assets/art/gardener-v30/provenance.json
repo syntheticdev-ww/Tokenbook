@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "status": "static_material_soft_gray_berry_smile",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-804a149e-2635-4f98-9926-69aef642e9f2.png",
+  "references": [
+    "res://assets/art/gardener-v29/idle.png",
+    "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-e90118b3-9178-4ff8-ad6d-554159482115.png"
+  ],
+  "prompt": "Make one tiny technical pixel-art correction to THIS exact sprite: replace ONLY the mouth pixels. Everything else in the entire 1254x1254 transparent sprite must stay the same, including eyes, skin, face shape, light gray blouse, softly fuller clothed torso, berry-red bow, hair, body and pose.\n\nThe mouth is currently a thin smooth curved line. It disappears into a straight dash when sampled at gameplay size. Replace that line with a SIMPLE AUTHORED PIXEL SMILE built from four large crisp square/rectangular pixel clusters. No smooth curve, no antialiasing, no skinny lines.\n\nThe desired miniature pattern is:\nX..X\n.XX.\nThe two outer corners are raised one game-art pixel above the connected lower middle pair. It is a friendly CLOSED-MOUTH smile, not teeth or an open mouth.\n\nAt this 1254x1254 source resolution the intended approximate filled areas are:\nLEFT RAISED CORNER: x535..547, y417..430.\nLOWER CONNECTED MIDDLE: x548..573, y431..443.\nRIGHT RAISED CORNER: x574..586, y417..430.\nUse one warm muted terracotta mouth color around #BA513E for the smile pixel clusters, visibly contrasting against the peach skin. Make the diagonally connected pixel steps read as a warm gentle U-shaped smile at a total body height of only 84 game pixels. Each smile segment should be about 12 source pixels thick, the same as the intended art pixel pitch, not a fine vector line. Remove the old smooth thin smile from any places outside this new small mouth pattern using the adjacent existing skin colors.\nThis is only a low-resolution mouth articulation correction. Do NOT make the mouth larger than this 4-pixel pattern, do NOT touch the cheek/chin outline, do NOT redraw eyes, do NOT add teeth, lips or any other feature. Keep all other source pixels as close as possible to identical. Preserve the true transparent background, exact canvas and sprite placement. Return one sprite only, no annotations or diagrams.",
+  "generation_history": [
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-86ccbc58-6768-48b2-9a4e-9326fe55f289.png",
+      "prompt": "Edit reference image 1, this existing adult woman game heroine sprite, with THREE carefully limited improvements. Reference image 2 is the previously shown palette options; the user now prefers the MIDDLE option 2, but wants the blouse more LIGHT GRAY than yellow cream. Deliver one full-body RGBA transparent sprite, exactly the same 1254x1254 padded canvas, same placement, same standing pose and foot registration as reference 1. She is a young adult woman in her twenties from a refined cozy pixel-art farming game.\n\n1. BLOUSE AND BOW COLORS: Change the existing terracotta blouse to a soft LIGHT WARM GRAY / PEARL GRAY OATMEAL. Clearly grayish rather than yellow beige. Think warm pale linen gray midtone #CECFC7, soft greige shadows #929389, ivory gray highlights #EAE8DF; retain distinct clustered shadows and garment construction, gold buttons, same hem, straps and neckline. Avoid flat white and avoid blue steel gray. Change the existing pale bow to soft MUTED BERRY RED, midtone #A95665, deep berry shadows #733C4C, dusty rose highlights #CD8590, matching the middle palette option. Preserve bow shape and folds.\n\n2. A MORE READABLE NATURAL SMILE: The current mouth looks neutral at small in-game size. Thoughtfully redraw the mouth as a CLEAR, gentle, happy CLOSED-MOUTH SMILE with distinctly upturned corners. Make the smile a little wider and more legible, not a tiny flat line. Keep the same face shape, soft cheeks and small calm brown eyes; slightly soften the lower eyelids and subtly raise the cheeks to support the smile. Do not enlarge the eyes, add huge eyelashes or redesign her face. No grin, no open mouth or broad white teeth. Use a deliberate warm rose-terracotta pixel curve, with raised corners and a slightly lower connected center, separated from nose/chin. Her whole visible body will be only 84 game pixels tall: the smile must read in roughly 4 authored pixels across, corners one authored pixel higher than the center, using clear solid clusters instead of thin antialiased lines. At this source scale, a helpful smile location is x536..585, y418..441, center near x555,y434. The upper lip corners should remain visible when source sampled on a 112x104 grid. Retain clear ivory eye glints and warm brown pupils. Facial expression should be warmly smiling, relaxed and welcoming.\n\n3. VERY SUBTLE NATURAL FIGURE REFINEMENT: Her bust should be only a little fuller, around 5-8% more volume, expressed through a slightly rounder upper-torso blouse contour and coherent fabric shading. Keep shoulders, waist, hips and limb lengths proportionate; no exaggerated hourglass. This is an ordinary fully clothed adult farming adventurer. Keep her same modest blouse cut and coverage, no lowered neckline, no cleavage emphasis, no crop top. This should be a tasteful subtle figure adjustment, not a body redesign.\n\nPRESERVE everything else as closely as possible: total height and on-canvas location, head size, face outline, one chestnut ponytail silhouette and golden hair colors, skin tone, shorts, belt, hip pouch, socks and boots, arms and hands, all leg and foot positions. Same appealing fine pixel-art style with deliberate crisp square clusters, consistent pixel sizes and stable contours. No painterly smoothing, blur, extra texture, added outlines, global filters or background. No upscaling body or changing pose. This is a refined production sprite edit, not an illustration or a comparison card. Return only one complete sprite with TRUE TRANSPARENT background, no words, no ground or shadow."
+    },
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-aa876c14-dfff-4822-af57-52d55edb3e1d.png",
+      "prompt": "Refine this exact existing adult woman pixel-game sprite in only two local areas. Its new light warm gray blouse and berry-red bow are CORRECT; preserve their colors exactly. Keep the whole 1254x1254 transparent canvas, character placement, feet, height, face shape, hair silhouette, eyes, outfit construction, limbs and pose.\n\nThe last edit barely changed the expression. Please make an ACTUAL VISIBLE mouth change now, not an almost identical redraw:\n- Replace the current tiny 25-pixel-wide almost flat smile with a clearly wider cheerful CLOSED-MOUTH U-CURVED smile about 48-52 source pixels wide and 18-22 source pixels tall.\n- Mouth occupies roughly x533..584, y419..443 on this canvas. The two corners are distinctly raised, the center sits lower. A strong simple connected warm terracotta line/cluster, 8-11 source pixels thick so it survives sampling. Mouth corners at about (536,423) and (579,423), lower connected center around (554,437) and (565,437). This corresponds to a 4-5 pixel smiling curve on the actual 84px-high in-game character. It must read as happy at that scale, not a straight dash.\n- No open mouth, no teeth, no wide grin. Gentle visibly upturned corners, small lifted warm cheeks and soft relaxed eye expression. Same nose, same two warm brown eyes and clean little ivory eye glints. Keep lips away from chin and preserve the existing flattering soft face silhouette. Do not give her a new head/face or enlarge her eyes.\n- Use actual square pixel clusters, no antialiasing or thin smooth illustration strokes.\n\nAlso make the fully clothed upper torso subtly fuller as requested. Currently the shape is essentially unchanged: let the blouse project a little farther on its viewer-left upper-bust contour, about 8-12 source pixels at x505..520,y530..580, tapering naturally back to the exact existing waist and belt. Add a restrained rounder upper-bust plane with coherent blouse folds. Only a small natural increase, no exaggerated figure, same neckline/straps and full clothing coverage, no cleavage, no waist or hip reduction. Adult farming heroine with balanced proportions.\n\nEVERYTHING ELSE is frozen: light gray blouse color and gold buttons, muted berry bow, chestnut hair, warm skin, face outline, single ponytail, shorts, pouch, boots, arms, legs, overall dimensions and source position. Return one complete refined sprite on TRUE transparent background, same 1254x1254 canvas. No ground, no labels, no sheet, no new style, no smoothing, no global filter."
+    },
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-804a149e-2635-4f98-9926-69aef642e9f2.png",
+      "prompt": "Make one tiny technical pixel-art correction to THIS exact sprite: replace ONLY the mouth pixels. Everything else in the entire 1254x1254 transparent sprite must stay the same, including eyes, skin, face shape, light gray blouse, softly fuller clothed torso, berry-red bow, hair, body and pose.\n\nThe mouth is currently a thin smooth curved line. It disappears into a straight dash when sampled at gameplay size. Replace that line with a SIMPLE AUTHORED PIXEL SMILE built from four large crisp square/rectangular pixel clusters. No smooth curve, no antialiasing, no skinny lines.\n\nThe desired miniature pattern is:\nX..X\n.XX.\nThe two outer corners are raised one game-art pixel above the connected lower middle pair. It is a friendly CLOSED-MOUTH smile, not teeth or an open mouth.\n\nAt this 1254x1254 source resolution the intended approximate filled areas are:\nLEFT RAISED CORNER: x535..547, y417..430.\nLOWER CONNECTED MIDDLE: x548..573, y431..443.\nRIGHT RAISED CORNER: x574..586, y417..430.\nUse one warm muted terracotta mouth color around #BA513E for the smile pixel clusters, visibly contrasting against the peach skin. Make the diagonally connected pixel steps read as a warm gentle U-shaped smile at a total body height of only 84 game pixels. Each smile segment should be about 12 source pixels thick, the same as the intended art pixel pitch, not a fine vector line. Remove the old smooth thin smile from any places outside this new small mouth pattern using the adjacent existing skin colors.\nThis is only a low-resolution mouth articulation correction. Do NOT make the mouth larger than this 4-pixel pattern, do NOT touch the cheek/chin outline, do NOT redraw eyes, do NOT add teeth, lips or any other feature. Keep all other source pixels as close as possible to identical. Preserve the true transparent background, exact canvas and sprite placement. Return one sprite only, no annotations or diagrams."
+    }
+  ],
+  "processing": "Exact generated PNG copy with original RGB sampled directly. No image rescaling or runtime recolor filter.",
+  "scope": "User-selected option 2 revised toward light warm gray blouse, berry-red bow, visible upturned smile and slightly fuller clothed upper torso. Same scene, pixel grid, standing registration and animation sources.",
+  "palette": {
+    "selected_option": 2,
+    "blouse": "light warm gray oatmeal",
+    "blouse_midtone": "#CECFC7",
+    "hair_bow": "muted berry red",
+    "hair_bow_midtone": "#A95665"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      405,
+      154,
+      489,
+      1017
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.3,
+      0.1
+    ],
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 168.688995215311,
+    "comparison": "Previous v29 at identical 112x104 grid, sampling offset, scene and foot anchor",
+    "comparison_artifact": "artifacts/character-material-v30/pixel-grid/comparison.png"
+  },
+  "acceptance": "Requested palette, smile and subtle figure adjustment implemented; native scene and comparison visually reviewed. Awaiting user aesthetic feedback; animation integration remains out of scope.",
+  "sha256": "797e40b1c4edc141b4d04d7ed55ac864d05ddafa23e50f14886138197ee732f5",
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11160,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_pixels": 168.688995215311,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 2,
+      "changed_pixels_outside_character_area": 0,
+      "grid_cells": [
+        112.0,
+        104.0
+      ],
+      "height_ratio_to_previous": 1.00593471810089,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9096,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.300000011920929,
+        0.100000001490116
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "797e40b1c4edc141b4d04d7ed55ac864d05ddafa23e50f14886138197ee732f5"
+    },
+    "face": {
+      "mouth_cells": [
+        [
+          48,
+          35
+        ],
+        [
+          51,
+          35
+        ],
+        [
+          49,
+          36
+        ],
+        [
+          50,
+          36
+        ]
+      ],
+      "upturned_corners": true,
+      "connected_smile_center": true,
+      "left_eye_highlights": 1,
+      "right_eye_highlights": 3,
+      "both_pupils_visible": true
+    },
+    "scope_integrity": "All eleven frozen scene, motion, companion, shader and previous-art checksums preserved; zero changed scene pixels outside the character comparison area."
+  }
+}

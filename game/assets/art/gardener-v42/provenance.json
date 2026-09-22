@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "reference_led_pixel_expression_and_proportion_revision",
+  "animation_integrated": false,
+  "parent": "gardener-v41",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-06e55b5e-cd2d-4125-957f-35ec6979a7dc.png",
+  "references": [
+    "artifacts/character-reference-v42/user-reference.png",
+    "res://assets/art/gardener-v41/idle.png"
+  ],
+  "generation_record": "artifacts/character-reference-v42/generation.json",
+  "sha256": "2f79835f28e9ee776f48a5460180cf732b659f4ccae5a2c6afa4430ec42443ee",
+  "scope": "Static heroine only: visibly stepped pixel clusters and relaxed friendly expression from the latest user reference, smaller head relative to body. Retain the approved cream tank and remaining outfit colors. No animation or environment changes.",
+  "processing": "Exact generated PNG copy; fixed uniform display grid across face and body, with .25,.25 sampling to retain the far-eye highlight and small smile at both 1x and Retina. No blur, palette alteration or local face filter.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      662.2486113446388,
+      1163.43
+    ],
+    "source_bounds": [
+      455,
+      156,
+      437,
+      1023
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Pending user visual review. User rejected v41 except the tank design.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v42/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.00688976377953,
+    "visual_acceptance": "pending user review"
+  }
+}

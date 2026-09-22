@@ -1,0 +1,155 @@
+[
+  {
+    "phase": 5.5,
+    "name": "front-arm-return-1",
+    "file": "res://assets/art/gardener-v22/frames/front-arm-return-1.png",
+    "source": "source/front-arm-return-1.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Temporal fraction: one quarter of the way from image1 toward image2. Near hand fingertips center x656 y732 (moves left gently from668 to615). Far arm retracts gently, still a small visible hand at x480 y708, does not teleport behind the other side of torso. Legs almost unchanged, intermediate boot positions.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-05.png",
+    "mode": "body",
+    "generated_file": "exec-028a708c-af21-4f54-9ff7-28eb009a876c.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-05.png",
+      "res://assets/art/gardener-v17/frames/front-06.png"
+    ]
+  },
+  {
+    "phase": 8.75,
+    "name": "front-support-roll",
+    "file": "res://assets/art/gardener-v22/frames/front-support-roll.png",
+    "source": "source/front-support-roll.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Temporal fraction: exactly halfway. Support boot on screen-left rolls flat and moves only halfway toward hip: boot center x505,y1035; sole1100. Bent knee slightly straightens. Airborne boot on screen-right stays around x770,y1010. Keep upper body unchanged from image1.",
+    "parent_file": "res://assets/art/gardener-v21/frames/front-08-half.png",
+    "mode": "legs",
+    "generated_file": "exec-fb07da18-b7d7-45f8-9650-173cf1fbba14.png",
+    "references": [
+      "res://assets/art/gardener-v21/frames/front-08-half.png",
+      "res://assets/art/gardener-v17/frames/front-09.png"
+    ]
+  },
+  {
+    "phase": 10.1666666666667,
+    "name": "front-toe-off",
+    "file": "res://assets/art/gardener-v22/frames/front-toe-off.png",
+    "source": "source/front-toe-off.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Temporal fraction: exactly halfway. Support leg vertical on screen-left. Boot sole same ground. Swinging near leg on screen-right only tiny shift toward center; ankle and knee half the difference. Preserve most image1 pixels, very small inbetween, no extra knee lift. Near hand also half its short return arc.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-10.png",
+    "mode": "body",
+    "generated_file": "exec-58e651a4-c605-45a3-89d2-2393353d54a9.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-10.png",
+      "res://assets/art/gardener-v19/frames/front-10a.png"
+    ]
+  },
+  {
+    "phase": 10.8333333333333,
+    "name": "front-swing-lift",
+    "file": "res://assets/art/gardener-v22/frames/front-swing-lift.png",
+    "source": "source/front-swing-lift.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Temporal fraction: exactly halfway. Near swinging leg attached to screen-right shorts crosses inward. Its knee midway x600,y825; swinging boot center near x697,y978. Far support leg remains nearly vertical at x565. Near fingertips halfway between x663 and684. No leg swap.",
+    "parent_file": "res://assets/art/gardener-v19/frames/front-10b.png",
+    "mode": "body",
+    "generated_file": "exec-92ac6d59-a8fd-4fcd-873a-15178fe76da2.png",
+    "references": [
+      "res://assets/art/gardener-v19/frames/front-10b.png",
+      "res://assets/art/gardener-v17/frames/front-11.png"
+    ]
+  },
+  {
+    "phase": 12,
+    "name": "front-swing-under",
+    "file": "res://assets/art/gardener-v22/frames/front-swing-under.png",
+    "source": "source/front-swing-under.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Temporal fraction: one third of the way from image1 toward image2. Critical swing-through. Near leg attached to SCREEN-RIGHT shorts is the AIRBORNE leg and passes in front. Its boot moves from x710,y965 toward x490,y1000; target center x637,y977, sole1058. Knee flexed and at x578,y840. Far SUPPORT leg attached to screen-left shorts moves backward/right gradually, boot target x610,y1040, sole1103. Boots overlap but do NOT fuse or swap identity; near boot in front. Keep original upper body from image1.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-12.png",
+    "mode": "legs",
+    "replaces_file": "res://assets/art/gardener-v17/frames/front-12.png",
+    "generated_file": "exec-9da371b2-b629-436e-8e3d-6cbfa025e690.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-12.png",
+      "res://assets/art/gardener-v21/frames/front-12-half.png"
+    ]
+  },
+  {
+    "phase": 12.3333333333,
+    "name": "front-swing-extend-revised",
+    "file": "res://assets/art/gardener-v22/frames/front-swing-extend-revised.png",
+    "source": "source/front-swing-extend-revised.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. ONLY change legs below shorts. This is a SMALL next step beyond current passing pose. Front near boot currently around x610,y1000 must move LEFT only55 pixels to center x555,y1000. Extend its knee a little forward/left. The rear planted boot currently around x695,y1035 stays almost the SAME at x695,y1040. Do not widen to full stride yet. Near boot sole stays raised at y1070. Preserve exact upper-body pixels, pose scale, camera and palette. No heel snap.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-12.png",
+    "mode": "legs",
+    "generated_file": "exec-85ab80ee-c908-437c-9860-5505b34f4b5b.png",
+    "references": [
+      "exec-9da371b2-b629-436e-8e3d-6cbfa025e690.png"
+    ]
+  },
+  {
+    "phase": 12.75,
+    "name": "front-heel-reach",
+    "file": "res://assets/art/gardener-v22/frames/front-heel-reach.png",
+    "source": "source/front-heel-reach.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Temporal fraction: exactly halfway. Near airborne foot on screen-left reaches forward very slightly, its raised toe angled exactly halfway between endpoints. Far supporting foot on screen-right lowers gently by half the distance. No extra stride extension, no knee bounce. Upper body unchanged.",
+    "parent_file": "res://assets/art/gardener-v21/frames/front-12-half.png",
+    "mode": "legs",
+    "generated_file": "exec-08543330-f50c-413a-991d-29e78e76728f.png",
+    "references": [
+      "res://assets/art/gardener-v21/frames/front-12-half.png",
+      "res://assets/art/gardener-v17/frames/front-13.png"
+    ]
+  },
+  {
+    "phase": 13.75,
+    "name": "front-heel-lower",
+    "file": "res://assets/art/gardener-v22/frames/front-heel-lower.png",
+    "source": "source/front-heel-lower.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Temporal fraction: exactly halfway. Forward near boot gradually lowers raised toe about halfway and rolls toward sole contact, NOT fully flat yet. Rear boot barely moves. Both knees maintain natural continuous angle. Only small changes from endpoints. Preserve upper body exactly from image1.",
+    "parent_file": "res://assets/art/gardener-v21/frames/front-13-half.png",
+    "mode": "legs",
+    "generated_file": "exec-36a97139-7ae1-47b9-b8c8-5b7d82df0644.png",
+    "references": [
+      "res://assets/art/gardener-v21/frames/front-13-half.png",
+      "res://assets/art/gardener-v17/frames/front-14.png"
+    ]
+  },
+  {
+    "phase": 4.9375,
+    "name": "front-cross-land-final",
+    "file": "res://assets/art/gardener-v22/frames/front-cross-land-final.png",
+    "source": "source/front-cross-land-final.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Make a very small earlier walking pose before this source. Only edit below y768, leave all upper body identical. On screen-right the NEAR leg connects from RIGHT shorts hem through right knee into RIGHT boot. Keep that topology strictly. Move the SCREEN-RIGHT boot LEFT by35pixels and DOWN12pixels, bend near knee fractionally inward: target boot brown-pixel center(710,1028). The SCREEN-LEFT FAR boot moves RIGHT15pixels and UP20pixels, brown-pixel center(485,1020). Reduce stride width a little. Both boots must keep their original shapes, shading, size and direction. Do NOT switch which leg is in front, do not bring right thigh diagonally onto left boot, no extra bend, no ghosting. This is a subtle animation inbetween.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+    "mode": "legs",
+    "generated_file": "exec-0af0f0d3-6359-4f9b-81a8-2491177ccf11.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-05.png"
+    ]
+  },
+  {
+    "phase": 11.5,
+    "name": "front-swing-through-corrected",
+    "file": "res://assets/art/gardener-v22/frames/front-swing-through-corrected.png",
+    "source": "source/front-swing-through-corrected.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Precise HALF-WAY leg transition only. Keep upper body/head exactly image1. Image1 boot centroids are support(603,1050), swing(679,980); image2 are support(718,1030), swing(614,995). Draw halfway: SUPPORT far boot centered(660,1040), sole1105; SWING near boot centered(646,988), sole1060. Two boots almost overlap horizontally; raised near boot visible in FRONT of lower support boot. Near leg attached to right shorts hem, its knee bends in FRONT. Support leg attached left shorts. Critical: do NOT reset legs to a pose with support boot at x560 and swing bootx715. Swing continues smoothly FORWARD-LEFT; support continuesBACKWARD-RIGHT. Never reverse either movement. No wide stride yet.",
+    "parent_file": "res://assets/art/gardener-v21/frames/front-11-half.png",
+    "mode": "legs",
+    "replaces_file": "res://assets/art/gardener-v21/frames/front-11-half.png",
+    "generated_file": "exec-d0aa2838-6099-4f33-8bd2-896cbec0c5c1.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-11.png",
+      "res://assets/art/gardener-v22/frames/front-swing-under.png"
+    ]
+  },
+  {
+    "phase": 12.1666666667,
+    "name": "front-swing-forward-small",
+    "file": "res://assets/art/gardener-v22/frames/front-swing-forward-small.png",
+    "source": "source/front-swing-forward-small.png",
+    "prompt": "Edit the supplied two reference animation cels to produce ONE whole-body in-between cel, not a sheet, not a blend. Same exact 1254 by1254 transparent canvas and registration as image1, same heroine, warm skin palette, crisp detailed pixel illustration, natural single ponytail, turquoise tank top and khaki shorts. This is technical animation cleanup: keep head, face, hair, bow, neck and torso pixel-for-pixel as image1. No new hairstyle or repaint. Preserve body proportions, bone lengths, two hands, two legs. Full opaque anatomical drawing with clean outlines, no ghosting, motion blur, smear, duplicate limbs, shadows or ground. Both references show chronological endpoints; match the requested intermediate fraction, never extrapolate. Don't move the whole character or crop or scale her. Output single full-body cel with fully transparent empty background. Exact canvas1254x1254. Change ONLY below y768. Small next walking pose from source: near foreground boot currently brown center x614,y1000 moves LEFT ONLY35px to center x579 and stays SAME HEIGHT. Far background supporting boot around x718,y1030 remains completely identical. Keep knee softly BENT; do not straighten into a wide stride. Make exactly this small step, NOT a full forward step. Front sole y1068, rear sole1103. Keep boot sizes, sock cuffs, legs anatomy, shading. Same near leg in front of far leg. No changing head, torso, arms or shorts. Single wholebody cel.",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-12.png",
+    "mode": "legs",
+    "generated_file": "exec-f54c043a-0227-4eb3-b511-3b6c02001ff3.png",
+    "references": [
+      "res://assets/art/gardener-v22/frames/front-swing-under.png"
+    ]
+  }
+]

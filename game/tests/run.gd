@@ -19,7 +19,7 @@ func run() -> void:
 		finish()
 		return
 	var layout = load("res://window_layout.gd").new()
-	check(layout.expanded_position(Vector2i(1100, 600), Rect2i(0, 0, 1440, 900)) == Vector2i(920, 290), "expand preserves bottom-right anchor")
+	check(layout.expanded_position(Vector2i(1100, 600), Rect2i(0, 0, 1440, 900)) == Vector2i(180, 70), "200x210 pet expands to 1120x740 while preserving bottom-right anchor")
 	check(layout.expanded_position(Vector2i(12, 12), Rect2i(0, 0, 1440, 900)) == Vector2i(0, 0), "expand near edge stays on screen")
 	check(layout.clamp_position(Vector2i(1900, -100), Vector2i(240, 210), Rect2i(0, 25, 1440, 875)) == Vector2i(1200, 25), "disconnected monitor and menu bar are handled")
 	check(layout.clamp_position(Vector2i(-900, 300), Vector2i(420, 520), Rect2i(-1440, 0, 1440, 900)) == Vector2i(-900, 300), "negative monitor coordinates are valid")
@@ -63,6 +63,8 @@ func run() -> void:
 	load("res://tests/farm_tests.gd").run(self, root)
 	load("res://tests/motion_tests.gd").run(self)
 	load("res://tests/gait_tests.gd").run(self)
+	load("res://tests/refined_animation_tests.gd").run(self)
+	load("res://tests/gesture_tests.gd").run(self)
 	finish()
 
 func finish() -> void:

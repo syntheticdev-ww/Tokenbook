@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "status": "soft_neckline_center_shading",
+  "animation_integrated": false,
+  "default_preview_integrated": true,
+  "parent": "gardener-v54",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-b90190ed-52e8-4de1-9b36-da7d46214a15.png",
+  "references": [
+    "game/assets/art/gardener-v54/idle.png"
+  ],
+  "generation_record": "artifacts/character-reference-v55/generation.json",
+  "sha256": "e147bddef06dd115c00a8d987c38d1628f0c387ec03892a8e81a9a13f383e1cb",
+  "scope": "Refine only the small chest-center shadow inside the existing neckline: replace the hard dark notch with a restrained warm skin-shadow transition. Keep v54 chest size, neckline coverage, model and pixel-art strength. Static preview only; small incidental generative differences may remain outside the edit.",
+  "processing": "Exact generated PNG copy; portrait drawing grid 160x188 follows the selected image aspect ratio and retains approximately the previous 90-logical-pixel character height. Same uniform .25,.25 phase, no blur or local face filter.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red",
+    "skin": "slightly lighter warm peach"
+  },
+  "static_registration": {
+    "anchor": [
+      580.7655819141527,
+      1308.8266666666668
+    ],
+    "source_bounds": [
+      316,
+      19,
+      600,
+      1309
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      160,
+      188
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      80,
+      94
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Local neckline shadow refinement pending visual review.",
+  "previous_static_material": "gardener-v54",
+  "prior_acceptance": "User explicitly approved v54 before requesting this localized refinement.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v55/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 0.998474446987033,
+    "detail_preview": "v54 left, local neckline-shadow refinement v55 right; same game material at 4x integer magnification.",
+    "visual_acceptance": "pending user review"
+  }
+}

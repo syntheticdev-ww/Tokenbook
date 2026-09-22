@@ -5,6 +5,11 @@ const Store = preload("res://farm_store.gd")
 const Rules = preload("res://farm_rules.gd")
 const Farm = preload("res://farm_view.gd")
 const Art = preload("res://pixel_art.gd")
+const Overlay = preload("res://game_overlay.gd")
+var pet: Control
+var pet_clock := 0.0
+var game_position := Vector2i(-99999,-99999)
+var window_scale := 1.0
 var farm_motion := preload("res://farm_motion.gd").new()
 var store := Store.new()
 var layout := Layout.new()
@@ -29,6 +34,9 @@ var drag_start := Vector2i.ZERO
 var drag_window := Vector2i.ZERO
 var dragging := false
 var drag_moved := false
+var drag_local_start := Vector2.ZERO
+var drag_has_motion := false
+var drag_using_screen := false
 var font := FontVariation.new()
 var instance_lock: Object
 var native_window: Object
@@ -41,13 +49,33 @@ var music_button: Button
 var music: AudioStreamPlayer
 var music_tween: Tween
 var _quitting := false
+# Deliberately opt-in until rear, turning and farming poses are authored.
+var character_test := false
+var character: RefCounted
+var character_stop: Button
+var character_reset: Button
 
 func _ready() -> void:
+    character_test = character_test or "--character-test" in OS.get_cmdline_user_args()
+    if character_test:
+        var test_dir := OS.get_environment("TOKENBOOK_TEST_DIR")
+        if not test_dir.is_absolute_path() or test_dir != OS.get_environment("TOKENBOOK_DATA_DIR"):
+            printerr("Character test requires an explicitly isolated TOKENBOOK_TEST_DIR and matching TOKENBOOK_DATA_DIR.")
+            get_tree().quit(2)
+            return
+        var character_art := preload("res://farm_character_art.gd").new()
+        if not character_art.load_art():
+            printerr("Character art unavailable: ", character_art.error)
+            get_tree().quit(2)
+            return
+        character = preload("res://farm_character.gd").new()
+        character.art = character_art
+        expanded = not "--pet" in OS.get_cmdline_user_args()
     get_tree().auto_accept_quit = false
-    get_window().close_requested.connect(shutdown)
+    get_window().close_requested.connect(func(): set_expanded(false) if expanded else hide_game())
     get_window().transparent_bg = true
     get_window().always_on_top = true
-    get_window().unfocusable = true
+    get_window().unfocusable = not expanded
     Engine.max_fps = 24
     font.base_font = preload("res://assets/fonts/NotoSansSC.ttf")
     font.variation_opentype = {0x77676874: 400.0}
@@ -80,7 +108,8 @@ func _ready() -> void:
     timer.timeout.connect(_tick)
     add_child(timer)
     timer.start()
-    start_music()
+    if not character_test:
+        start_music()
     refresh()
 
 func usable_rect() -> Rect2i:
@@ -89,32 +118,66 @@ func usable_rect() -> Rect2i:
 
 func set_expanded(value: bool) -> void:
     expanded = value
+    if expanded:
+        page = "farm"
     get_window().unfocusable = not expanded
     apply_layout()
     refresh()
 
 func _process(delta: float) -> void:
+    if dragging:
+        var point := DisplayServer.mouse_get_position()
+        if drag_using_screen or point.distance_to(drag_start)>5*dpi:
+            drag_using_screen=true
+            drag_to(point)
+            # Recover a release outside our no-focus window. Event-based
+            # input remains authoritative for forwarded/accessible drags.
+            if native_window != null and not native_window.command(DisplayServer.window_get_native_handle(DisplayServer.WINDOW_HANDLE),5):
+                finish_drag()
     farm_motion.advance(delta)
+    if character != null:
+        character.advance(delta)
+        update_character_controls()
     # Active movement/actions get a smooth presentation; rest/hidden stay cheap.
-    var active := not game_hidden and is_instance_valid(farm) and farm.is_visible_in_tree() and farm_motion.busy()
-    Engine.max_fps = 60 if active else (12 if game_hidden else 24)
+    var moving: bool = character.busy() if character != null else farm_motion.busy()
+    if not expanded and not game_hidden and not dragging:
+        pet_clock += delta
+        if is_instance_valid(pet): pet.set_clock(pet_clock)
+    var visible_farm := expanded and page == "farm" and not game_hidden and is_instance_valid(farm) and farm.is_visible_in_tree()
+    Engine.max_fps = 60 if dragging or (visible_farm and moving) else (12 if game_hidden else (30 if visible_farm and farm.ambient_enabled else 24))
 
 func apply_layout() -> void:
     var dimensions: Vector2i = Layout.EXPANDED if expanded else Layout.COMPACT
-    var point := layout.expanded_position(compact_anchor, usable_rect()) if expanded else layout.clamp_position(compact_anchor, dimensions, usable_rect())
+    var screen := DisplayServer.screen_get_usable_rect(get_window().current_screen)
+    window_scale = minf(dpi,minf(float(screen.size.x)/dimensions.x,float(screen.size.y)/dimensions.y)) if expanded else dpi
+    var physical := Vector2i(Vector2(dimensions)*window_scale)
+    var point := Vector2i(Vector2(compact_anchor)*dpi)
+    if expanded:
+        point = game_position if game_position.x != -99999 else screen.position+(screen.size-physical)/2
+    point = layout.clamp_position(point,physical,screen)
+    get_window().mouse_passthrough_polygon = PackedVector2Array()
     get_window().content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
     get_window().content_scale_size = dimensions
-    get_window().size = Vector2i(Vector2(dimensions) * dpi)
-    get_window().position = Vector2i(Vector2(point) * dpi)
+    get_window().size = physical
+    get_window().position = point
+    get_window().always_on_top = not expanded
     if native_window != null:
-        native_window.command(DisplayServer.window_get_native_handle(DisplayServer.WINDOW_HANDLE), 0)
+        native_window.command(DisplayServer.window_get_native_handle(DisplayServer.WINDOW_HANDLE),4 if expanded else 0)
     build_ui(dimensions)
+    if expanded: get_window().grab_focus()
+
+func update_pet_hit_region(polygon: PackedVector2Array) -> void:
+    if expanded: return
+    # Native passthrough coordinates are client pixels, not logical UI units.
+    var physical := PackedVector2Array()
+    for point in polygon: physical.append(point*window_scale)
+    get_window().mouse_passthrough_polygon=physical
 
 func box(color: String, radius: int = 8) -> StyleBoxFlat:
     var style := StyleBoxFlat.new()
     style.bg_color = Color(color)
     style.set_corner_radius_all(radius)
-    style.set_border_width_all(1)
+    style.set_border_width_all(0)
     style.border_color = Color("c8b899")
     return style
 
@@ -157,104 +220,10 @@ func clear_children(node: Node) -> void:
         child.queue_free()
 
 func build_ui(dimensions: Vector2i) -> void:
-    for child in get_children():
-        if child is Control:
-            remove_child(child)
-            child.queue_free()
-    status = null
-    detail = null
-    action_button = null
-    crop_choice = null
-    hint = null
-    hint_background = null
-    resources = null
-    page_values.clear()
-    var w := dimensions.x
-    var background := Panel.new()
-    background.add_theme_stylebox_override("panel", box("f7f0dd", 10))
-    place(background, Rect2(1, 1, w - 2, dimensions.y - 2))
-    var handle := Control.new()
-    handle.mouse_default_cursor_shape = Control.CURSOR_MOVE
-    handle.gui_input.connect(header_input)
-    place(handle, Rect2(7, 4, w - 105, 28))
-    label("词元之书", Rect2(15, 6, 108, 22), 15, "536044")
-    music_button = button("♪", Rect2(w - 93, 6, 23, 23), toggle_music)
-    music_button.tooltip_text = "背景音乐 · 静音 / 恢复"
-    button("−" if expanded else "+", Rect2(w - 63, 6, 23, 23), func(): set_expanded(not expanded)).tooltip_text = "收起陪伴" if expanded else "展开游戏"
-    button("×", Rect2(w - 33, 6, 23, 23), shutdown).tooltip_text = "保存并退出"
-    if expanded:
-        resources = label("", Rect2(16, 33, w - 32, 21), 12, "7c765e")
-    body = Control.new()
-    place(body, Rect2(0, 55 if expanded else 35, w, 426 if expanded else 127))
-    build_page()
-    if expanded:
-        for index in range(4):
-            var keys := ["farm", "bag", "book", "home"]
-            var titles := ["农场", "背包", "主书", "小屋"]
-            button(titles[index], Rect2(12 + index * 101, 486, 93, 27), func(): show_page(keys[index]), page == keys[index])
-        hint_background = Panel.new()
-        hint_background.add_theme_stylebox_override("panel", box("f7f0dd", 5))
-        hint_background.mouse_filter = Control.MOUSE_FILTER_IGNORE
-        place(hint_background, Rect2(20, 63, 380, 44))
-        hint = label("", Rect2(29, 65, 362, 40), 12, "536044")
-        hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-    else:
-        status = label("", Rect2(14, 165, w - 28, 20), 12)
-        label("本地农场 · 点击小院展开", Rect2(14, 187, w - 28, 16), 10, "91886e")
+    Overlay.build(self,dimensions)
 
 func build_page() -> void:
-    clear_children(body)
-    page_values.clear()
-    action_button = null
-    crop_choice = null
-    detail = null
-    if not expanded or page == "farm":
-        farm = Farm.new()
-        farm.motion = farm_motion
-        farm.externally_driven = true
-        farm.pixel_ratio = dpi
-        farm.compact = not expanded
-        farm.selected_plot = selected_plot if expanded else -1
-        place(farm, Rect2(10, 0, 400 if expanded else 220, 342 if expanded else 127), body)
-        farm.plot_selected.connect(select_plot)
-        farm.house_selected.connect(func(): show_page("home"))
-        farm.water_selected.connect(func(): issue({"type": "water"}))
-        farm.cat_petted.connect(func(): toast("小猫眯起眼睛，陪你晒了一会儿太阳。"))
-        farm.gui_input.connect(func(event: InputEvent):
-            if not expanded and event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-                set_expanded(true))
-        if expanded:
-            status = label("", Rect2(16, 348, 390, 22), 14, "536044", body)
-            detail = label("", Rect2(16, 373, 390, 19), 11, "8a8068", body)
-            action_button = button("播种", Rect2(14, 396, 253, 29), perform_action, true, body)
-            crop_choice = OptionButton.new()
-            crop_choice.add_theme_font_override("font", font)
-            crop_choice.add_theme_font_size_override("font_size", 12)
-            crop_choice.add_theme_stylebox_override("normal", box("efe8d5", 6))
-            crop_choice.add_theme_color_override("font_color", Color("586648"))
-            for text in ["初春 · 3分钟", "萝卜 · 1小时", "小麦 · 4小时", "土豆 · 8小时"]:
-                crop_choice.add_item(text)
-            crop_choice.select(["welcome", "radish", "wheat", "potato"].find(selected_crop))
-            crop_choice.item_selected.connect(func(index: int):
-                selected_crop = ["welcome", "radish", "wheat", "potato"][index]
-                refresh())
-            place(crop_choice, Rect2(274, 396, 131, 29), body)
-        return
-    farm = null
-    var paper := Panel.new()
-    paper.add_theme_stylebox_override("panel", box("faf5e7", 8))
-    place(paper, Rect2(12, 2, 396, 418), body)
-    if not store.ready:
-        label("存档暂不可用", Rect2(28, 22, 330, 25), 19, "8b5c43", body)
-        var error := label(store.last_error, Rect2(28, 62, 360, 180), 14, "8b5c43", body)
-        error.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-        return
-    if page == "bag":
-        build_bag()
-    elif page == "book":
-        build_book()
-    else:
-        build_home()
+    Overlay.page(self)
 
 func build_bag() -> void:
     label("随身小仓库", Rect2(28, 18, 320, 28), 21, "586044", body)
@@ -320,18 +289,24 @@ func build_home() -> void:
     var hide := button("隐藏到菜单栏", Rect2(28, 356, 169, 29), hide_game, false, body)
     hide.disabled = tray_id < 0 or native_window == null
     button("收起陪伴", Rect2(209, 356, 173, 29), func(): set_expanded(false), false, body)
-    label("农场可玩版 0.1 · 本地自动保存", Rect2(28, 393, 350, 19), 10, "918168", body)
+    label("本地自动保存", Rect2(28, 396, 180, 19), 10, "918168", body)
+    button("保存并退出", Rect2(260, 391, 122, 26), shutdown, false, body)
 
 func show_page(value: String) -> void:
     _toast_until = 0
-    page = value
     if not expanded:
         set_expanded(true)
-    else:
-        build_ui(Layout.EXPANDED)
+    page = value
+    build_ui(Layout.EXPANDED)
     refresh()
 
 func select_plot(id: int) -> void:
+    if character_test:
+        if id == 0:
+            begin_character_walk()
+        else:
+            toast("这一轮先体验从小屋走到第一块田；其他方向和劳动动作待接入。")
+        return
     selected_plot = id
     refresh()
 
@@ -380,12 +355,14 @@ func refresh() -> void:
         farm.set_state(state)
     if is_instance_valid(music_button):
         music_button.text = "♪" if state.settings.music else "静"
+        music_button.disabled = character_test
+    if character_test:
+        if is_instance_valid(resources):
+            resources.text = "林间小院 · 散步时光"
+        if not expanded or page == "farm":
+            update_character_controls()
+            return
     if not expanded:
-        var mature := 0
-        for id in range(8):
-            if Rules.plot_status(state, id).phase == "mature":
-                mature += 1
-        status.text = "%d 块田可以收获了" % mature if mature > 0 else ("她正慢慢照料小院" if not state.work.is_empty() else "小院安静，作物慢慢长大")
         return
     if page == "bag":
         page_values.capacity.text = "收成 %d / %d 格 · 种子单独收好" % [Rules.stored_count(state), Rules.CAPACITY]
@@ -426,6 +403,7 @@ func update_farm_controls(state: Dictionary) -> void:
         action_button.disabled = true
 
 func perform_action() -> void:
+    if character_test: return
     if not store.ready:
         return
     var state := store.snapshot()
@@ -438,6 +416,10 @@ func perform_action() -> void:
         issue({"type": "clear", "plot": selected_plot})
 
 func issue(request: Dictionary, show_toast: bool = true) -> Dictionary:
+    if character_test and request.get("type", "") != "settings":
+        var blocked := {"ok": false, "message": "新人物正在做行走接入测试，劳动动作暂未开放。"}
+        if show_toast: toast(blocked.message)
+        return blocked
     var result := store.apply(Crypto.new().generate_random_bytes(16).hex_encode(), request)
     if show_toast:
         toast(result.message)
@@ -447,6 +429,27 @@ func issue(request: Dictionary, show_toast: bool = true) -> Dictionary:
         build_page()
     refresh()
     return result
+
+func begin_character_walk() -> void:
+    if character == null: return
+    character.walk_to_plot(0)
+    update_character_controls()
+
+func update_character_controls() -> void:
+    if character == null or (expanded and page != "farm"): return
+    if is_instance_valid(status):
+        var names := {"idle": "站在田边" if character.arrived() else "安静站立", "depart": "迈出第一步", "walk": "沿小路散步", "settle": "慢慢收步"}
+        status.text = "她正%s" % names[character.kind]
+        if character.stop_requested and character.kind == "walk": status.text = "走完当前一步，再慢慢停下"
+    if is_instance_valid(detail):
+        detail.text = "点第一块田，沿着小路走走。"
+    if is_instance_valid(action_button):
+        action_button.disabled = character.busy() or character.arrived()
+        action_button.text = "已到田边" if character.arrived() else ("继续走" if character.travelled > 0 else "走到第一块田")
+    if is_instance_valid(character_stop):
+        character_stop.disabled = not character.busy() or character.stop_requested or character.kind == "settle"
+    if is_instance_valid(character_reset):
+        character_reset.disabled = character.busy() or character.travelled == 0
 
 func toast(message: String) -> void:
     _toast = message
@@ -485,22 +488,43 @@ func header_input(event: InputEvent) -> void:
     if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
         dragging = true
         drag_moved = false
+        drag_has_motion = false
+        drag_using_screen = false
+        drag_local_start = event.position
         drag_start = DisplayServer.mouse_get_position()
         drag_window = get_window().position
+        if not expanded:
+            get_window().mouse_passthrough_polygon=PackedVector2Array()
+
+func drag_to(screen_point: Vector2i) -> void:
+    var delta := screen_point-drag_start
+    if delta.length()>5*dpi: drag_moved=true
+    if drag_moved: get_window().position=drag_window+delta
+
+func finish_drag() -> void:
+    if not dragging: return
+    if drag_using_screen: drag_to(DisplayServer.mouse_get_position())
+    dragging=false
+    if expanded:
+        game_position=get_window().position
+    elif drag_moved:
+        var logical := Vector2i(Vector2(get_window().position)/dpi)
+        compact_anchor=layout.clamp_position(logical,Layout.COMPACT,usable_rect())
+        get_window().position=Vector2i(Vector2(compact_anchor)*dpi)
+        store.save_window(compact_anchor)
+        if is_instance_valid(pet): update_pet_hit_region(pet.hit_polygon)
+    else:
+        set_expanded.call_deferred(true)
 
 func _input(event: InputEvent) -> void:
     if dragging and event is InputEventMouseMotion:
-        var delta := DisplayServer.mouse_get_position() - drag_start
-        if delta.length() > 5 * dpi:
-            drag_moved = true
-        if drag_moved:
-            get_window().position = drag_window + delta
-    if dragging and event is InputEventMouseButton and not event.pressed:
-        dragging = false
-        var logical := Vector2i(Vector2(get_window().position) / dpi)
-        compact_anchor = logical + (Layout.EXPANDED - Layout.COMPACT if expanded else Vector2i.ZERO)
-        compact_anchor = layout.clamp_position(compact_anchor, Layout.COMPACT, usable_rect())
-        store.save_window(compact_anchor)
+        drag_has_motion=true
+        if not drag_using_screen:
+            drag_to(drag_start+Vector2i((event.position-drag_local_start)*window_scale))
+    if dragging and event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and not event.pressed:
+        if not drag_has_motion and not drag_using_screen:
+            drag_to(drag_start+Vector2i((event.position-drag_local_start)*window_scale))
+        finish_drag()
     if event is InputEventKey and event.pressed and event.keycode == KEY_ESCAPE and expanded:
         if page != "farm":
             show_page("farm")

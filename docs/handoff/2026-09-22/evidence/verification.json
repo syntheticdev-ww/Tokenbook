@@ -1,0 +1,55 @@
+{
+  "background_asset": "res://assets/art/farm-background-landscape-v3.png",
+  "background_checked_pixels": 11403,
+  "background_crisp_motion": true,
+  "background_grid_density": 2.0,
+  "background_grid_errors": 0,
+  "background_source_color_errors": 0,
+  "body_logical_pixels": 90.4827586206897,
+  "body_pixels": 180.965517241379,
+  "canvas_pixels": [
+    160.0,
+    188.0
+  ],
+  "cell_screen_pixels": 1.0,
+  "changed_pixels_outside_character_area": 0,
+  "display_sampling_offset": [
+    0,
+    0
+  ],
+  "display_sampling_step": 1.0,
+  "face_grid_region": [
+    28,
+    16,
+    13,
+    12
+  ],
+  "face_sample_offset": [
+    0.200000002980232,
+    0.800000011920929
+  ],
+  "face_sampling_override": false,
+  "grid_cells": [
+    160.0,
+    188.0
+  ],
+  "height_ratio_to_previous": 1.00152671755725,
+  "motion_distance": 0.0,
+  "motion_kind": "idle",
+  "physical_top_left": [
+    1062.0,
+    371.0
+  ],
+  "real_scene_checked_colors": 9361,
+  "real_scene_color_errors": 0,
+  "sample_offset": [
+    0.25,
+    0.25
+  ],
+  "scope": "static material preview only",
+  "source_sha256": "66515450f9d84a70bff319abc2cc9b946b39e447a72c62ee4c50b46f817a0328",
+  "window_physical_size": [
+    2240,
+    1480
+  ]
+}

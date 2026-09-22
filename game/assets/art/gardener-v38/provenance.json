@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "status": "unified_style_static_sample",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-2ebc972b-08d5-4b57-9c90-8df47d21e109.png",
+  "references": [
+    "res://assets/art/gardener-v37/idle.png",
+    "artifacts/grass-refinement-v3/pixel-grid/after-context.png"
+  ],
+  "prompt": "Create a NEW production-quality transparent pixel-art character sprite by REDESIGNING the heroine in reference 1 to truly belong in the cottage lighting and textures in reference 2. Reference 1 is her identity, outfit, pose and placement. Reference 2 is the actual game context and is the lighting/color/style target. Deliver ONLY a complete transparent full-body sprite, no cottage, no ground or baked shadow.\n\nThis is a deliberate redesign based on a pixel-art study, NOT a subtle touch-up. The existing hair is messy with too many curls, black seams and yellow streaks; the character reads as a glossy outlined anime sticker on the environment. Solve that visibly. Aim for the coherence of a refined modern pixel RPG, with clean shape economy and selective outlines, while preserving her adult feminine proportions and friendly personality.\n\nNATIVE DESIGN SCALE: design the complete canvas as 112 x 104 logical pixels, with the visible figure about 86 native pixels high. Every region including hair, eyes, lips, skin and clothes must be authored on ONE consistent crisp grid. Deliver an enlarged clean version on a 1120 x 1040 transparent canvas if possible (10x integer nearest-neighbor appearance). The character roughly occupies x365..805, y115..975 on this canvas, feet near y970, face center near x555,y310. Do not zoom the character to fill the canvas. Keep her body/foot placement and same relaxed front-three-quarter standing pose from reference 1. Keep arms, legs, torso, outfit, face size and overall height consistent. This is a WORLD SPRITE at gameplay scale, not a portrait illustration shrunk later.\n\nHAIR REDESIGN, the key requirement:\n- Preserve chestnut brown SINGLE ponytail and muted berry-red tied bow.\n- Smooth coherent crown mass with a clear part and ONE broad restrained light plane; do NOT draw braided ridges, repeated swooping dark divisions, metallic gold stripes or numerous loops on the crown.\n- On the VIEWER'S LEFT of her forehead and cheek, remove ALL outward C-shaped curls, floating ring/loop locks and hooked tips. Replace them with TWO clean side-swept bangs flowing diagonally downward, then ONE simple tapered cheek-length lock. Keep clear open space around the eye and cheek.\n- Right side of the face has a simple straight-to-gently-curved tapered side lock.\n- The ponytail joins naturally at the bow and forms one gently curved main silhouette with only THREE broad connected tapered locks at the lower end. Avoid six curling fingers, spirals, frizz, tiny jagged points and repetitive stripe highlights.\n- Hair shading uses about 5 purposeful chestnut/dark-walnut/warm-brown shades; warm muted sunlight only on connected upper-left-facing planes. Hair should feel soft and matte rather than shiny gold/glossy plastic. Fewer internal lines, readable volumes.\n\nINTEGRATION / PIXEL CRAFT:\n- Replace the heavy almost-black/reddish border around every part with a THIN selective dark-brown contour. Keep deepest outline on shadow/overlap edges; use mid-brown or the local material color on sun-facing edges. The figure must remain clear against the cottage but not look cut out with a marker.\n- Upper-left warm daylight, calm slightly cool brown/muted olive ambient shadows compatible with reference 2. Subtle environmental influence, no green skin or global yellow tint.\n- Face, shoulders and legs use concise connected warm skin planes, not tiny glossy shiny spots or dither. Face and body must look drawn by the same pixel artist at the same resolution.\n- Keep her attractive warm BROWN open eyes and GENTLE CLOSED-MOUTH SMILE. No teeth. At native size use modest dark-brown lashes/pupils, restrained ivory eye whites, a readable tiny warm lip curve. No huge white anime eye wedges, dense black mascara or smooth vector eyes. Simplify detail intelligently without erasing expression.\n- Keep cream-yellow sleeveless button blouse, deep-indigo cuffed shorts, brown belt, small brass buckle/buttons, green hip pouch, ivory socks and brown boots. Preserve the selected colors and existing figure, do not redesign the outfit.\n- Simplify blouse/shorts into clean lit/midtone/shadow planes; avoid luminous gold jewelry and white specular gleams on boots.\n\nCrisp deliberate staircase contours and connected pixel clusters are essential. Not blurry, not a mosaic/filter effect, not coarse toy blocks. Pixel artistry must be obvious at the small actual gameplay size yet remain appealing. No antialiasing halos, fuzzy alpha fringe, smooth gradient/airbrush shading, noise, extra poses, captions, checkerboard or frame. Transparent background only.\n",
+  "processing": "Exact generated PNG copy. Fixed 224x208 fine drawing grid and uniform .5,.5 phase across face/body. Retina displays native cells 1:1; the existing 1x window downsamples for compatibility.",
+  "scope": "Simplify left bangs, crown divisions and ponytail; align selective contours and matte warm lighting with the cottage. Static scene sample only.",
+  "palette": {
+    "selected_option": 1,
+    "blouse": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      649.75341796875,
+      1174.43
+    ],
+    "source_bounds": [
+      443,
+      176,
+      472,
+      1014
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.5,
+      0.5
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "display_canvas_at_retina": [
+      224,
+      208
+    ],
+    "background_grid_density": "window physical density",
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "one_x_limit": "Downsampled compatibility display, not lossless integer-upscaled native art. A dedicated lower-resolution source is not part of this static sample.",
+    "rejected_coarse_sample": "112x104 grid damaged facial readability at actual size; retained only under artifacts/unified-style-v38/coarse-grid.",
+    "body_logical_pixels": 87.2258064516129,
+    "one_x_downsample_step": 2,
+    "one_x_downsample_offset": [
+      0,
+      0
+    ],
+    "face_sampling_override": false
+  },
+  "sha256": "944f0eed412d1f8592999226eeda6ddb71f85072ef7a779a5c83ff89527409fd",
+  "acceptance": "Reviewed in native 2240x1480 game viewport, side-by-side with v37: left curls removed, fewer ponytail branches, quieter hair highlights and simpler crown contour. The fine grid preserves facial expression better than the rejected coarse study. Background v3 unchanged. Awaiting user aesthetic review; static material sample only.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "status": "passed",
+    "one_x": {
+      "art_grid": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 0.5,
+      "display_density": 1,
+      "downsample_phase": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        {
+          "highlight": 2,
+          "pupil": 12
+        },
+        {
+          "highlight": 3,
+          "pupil": 12
+        }
+      ],
+      "face_sampling_override": false,
+      "lip_cells": 2,
+      "original_rgb_errors": 0,
+      "passed": true,
+      "physical_canvas": [
+        112,
+        104
+      ],
+      "tooth_cells": 0,
+      "transparent_edge_errors": 0,
+      "uniform_grid_errors": 0
+    },
+    "retina": {
+      "art_grid": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1.0,
+      "display_density": 2,
+      "downsample_phase": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        {
+          "highlight": 5,
+          "pupil": 46
+        },
+        {
+          "highlight": 16,
+          "pupil": 53
+        }
+      ],
+      "face_sampling_override": false,
+      "lip_cells": 5,
+      "original_rgb_errors": 0,
+      "passed": true,
+      "physical_canvas": [
+        224,
+        208
+      ],
+      "tooth_cells": 0,
+      "transparent_edge_errors": 0,
+      "uniform_grid_errors": 0
+    },
+    "ordinary_to_native_pixel_mismatches": 0,
+    "real_scene": {
+      "background_asset": "res://assets/art/farm-background-landscape-v3.png",
+      "background_checked_pixels": 11403,
+      "background_crisp_motion": true,
+      "background_grid_density": 2.0,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_logical_pixels": 87.2258064516129,
+      "body_pixels": 174.451612903226,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1.0,
+      "changed_pixels_outside_character_area": 0,
+      "display_sampling_offset": [
+        0,
+        0
+      ],
+      "display_sampling_step": 1.0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.200000002980232,
+        0.800000011920929
+      ],
+      "face_sampling_override": false,
+      "grid_cells": [
+        224.0,
+        208.0
+      ],
+      "height_ratio_to_previous": 1.01421594550036,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1031.0,
+        350.0
+      ],
+      "real_scene_checked_colors": 8960,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.5,
+        0.5
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "944f0eed412d1f8592999226eeda6ddb71f85072ef7a779a5c83ff89527409fd",
+      "window_physical_size": [
+        2240,
+        1480
+      ]
+    }
+  },
+  "visual_evidence": [
+    "artifacts/unified-style-v38/pixel-grid/comparison.png",
+    "artifacts/unified-style-v38/pixel-grid/after-scene.png",
+    "artifacts/unified-style-v38/pixel-grid/after-context.png"
+  ],
+  "background": {
+    "asset": "res://assets/art/farm-background-landscape-v3.png",
+    "bitmap_changed": false,
+    "motion_or_shader_changed": false
+  }
+}

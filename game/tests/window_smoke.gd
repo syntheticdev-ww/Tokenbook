@@ -9,7 +9,8 @@ func sample_motion() -> void:
 	if is_instance_valid(motion_sample):
 		rendered_positions.append(motion_sample.actor_position())
 		if motion_sample.visual_pose().kind == "walk":
-			rendered_poses[str(motion_sample.actor_sprite().source)] = true
+			var sprite: Dictionary = motion_sample.actor_sprite()
+			rendered_poses[sprite.texture + str(sprite.source)] = true
 
 func check(ok: bool, message: String) -> void:
 	if not ok:
@@ -28,6 +29,7 @@ func run() -> void:
 	root.add_child(scene)
 	await process_frame
 	check(scene.store.ready, "window loads persistent state")
+	check(scene.pet != null and scene.farm == null, "native game starts as a standalone desktop pet")
 	var window_id := root.get_window_id()
 	check(scene.music != null and scene.music.stream.loop_mode == AudioStreamWAV.LOOP_FORWARD, "original ambient track is configured for continuous looping")
 	scene.toggle_music()
@@ -40,7 +42,7 @@ func run() -> void:
 	await process_frame
 	check(root.get_window_id() == window_id, "expand uses the same native window")
 	check(root.size.x > compact_size.x and root.size.y > compact_size.y, "expand changes native size")
-	check(root.always_on_top, "companion requests native always-on-top")
+	check(not root.always_on_top and scene.farm.refined_animation, "landscape game enables refined rendering with normal window focus")
 	if not scene.has_method("issue"):
 		check(false, "native UI has no playable plot action flow")
 		scene.shutdown(1)
@@ -51,10 +53,23 @@ func run() -> void:
 	click.button_index = MOUSE_BUTTON_LEFT
 	click.pressed = true
 	var diagonal_centers := [Vector2(132, 186), Vector2(180, 210), Vector2(228, 234), Vector2(276, 258), Vector2(84, 210), Vector2(132, 234), Vector2(180, 258), Vector2(228, 282)]
+	var viewport := Rect2(Vector2.ZERO, scene.farm.size)
+	var action_area := Rect2(Vector2(scene.Layout.EXPANDED) - Vector2(306,98), Vector2(286,78))
+	var nav_area := Rect2(20,scene.Layout.EXPANDED.y-86,336,68)
 	for id in range(8):
+		var polygon := PackedVector2Array()
+		for corner in geometry.plot_polygon(id):
+			var point: Vector2 = scene.farm.world_to_view(corner)
+			check(viewport.has_point(point), "closer framing keeps every corner of field %d visible" % id)
+			polygon.append(point)
+		for hud in [action_area,nav_area]:
+			var hud_polygon := PackedVector2Array([hud.position,Vector2(hud.end.x,hud.position.y),hud.end,Vector2(hud.position.x,hud.end.y)])
+			check(Geometry2D.intersect_polygons(polygon,hud_polygon).is_empty(), "field %d is not covered by the bottom controls" % id)
 		click.position = scene.farm.world_to_view(diagonal_centers[id])
 		scene.farm._gui_input(click)
 		check(scene.selected_plot == id, "native diagonal field %d selects its own existing save entry" % id)
+	for corner in [geometry.HOUSE.position,geometry.HOUSE.end]:
+		check(viewport.has_point(scene.farm.world_to_view(corner)), "closer framing keeps the full cottage visible")
 	click.position = scene.farm.world_to_view(geometry.plot_center(0))
 	scene.farm._gui_input(click)
 	check(scene.selected_plot == 0, "clicking the drawn plot selects that plot")
@@ -138,5 +153,8 @@ func run() -> void:
 func capture(label: String) -> void:
 	var target := OS.get_environment("TOKENBOOK_CAPTURE_DIR")
 	if not target.is_empty():
-		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png(target.path_join(label + ".png"))
+		# Explicitly render the fixture, as the character smoke test does.
+		# Waiting for a spontaneous draw can stall after native window changes.
+		await process_frame
+		RenderingServer.force_draw(false)
+		check(root.get_texture().get_image().save_png(target.path_join(label + ".png")) == OK, "screenshot is saved: " + label)

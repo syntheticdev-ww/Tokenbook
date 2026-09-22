@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "status": "static_material_unified_face_body_pixel_art",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-fd2a78ab-97cd-4833-a5f1-fb7d5babc376.png",
+  "references": [
+    "res://assets/art/gardener-v34/idle.png",
+    "artifacts/character-material-v34/pixel-grid/after-context.png"
+  ],
+  "prompt": "COHESIVE PIXEL-ART REDRAW of the existing adult heroine. This is a correction of a visibly mismatched face/body style. Reference 1 is the heroine identity, costume and silhouette. Reference 2 is her current actual game scene, for matching the fine pixel environment. The current FACE IS TOO SMOOTH AND ANIME-LIKE while the limbs have crude disconnected square patches. Repaint the whole character as one coherent deliberately drawn pixel sprite, with a NOTICEABLY stronger pixel-art aesthetic than reference 1. Merely changing the colors or adding a few square highlights will not solve it.\n\nOutput ONE full-body transparent sprite on a 1254x1254 canvas. Maintain existing position and scale: body bounds approximately x405..894, y152..1173, soles around y1161. Preserve the neutral standing pose, figure, head size and overall silhouette for game registration. Keep her a charming young adult woman with balanced proportions, chestnut single ponytail, berry-red bow, cream-yellow sleeveless blouse, deep-indigo cuffed shorts, brown belt and gold buckle/buttons, green pouch, ivory socks and brown boots. Preserve recognizable facial identity, large open warm brown eyes and delicate CLOSED-MOUTH smile, absolutely no teeth or white stripe in the mouth.\n\nCRITICAL ART DIRECTION:\n- Draw ALL of the character with ONE common fine pixel cadence. Aim for classic premium detailed game-sprite pixel art at roughly 120-135 native pixels full-body height, then nearest-neighbor enlarged for this output. Approximately 8 source pixels per authored pixel step; the FACE, ears, neck, shoulders, arms, fingers and legs must share that SAME grid with hair/clothes/boots. Fine enough to preserve readable eyes and a pretty mouth, but unmistakably more pixel-authored than current.\n- Redraw the FACE itself in true pixel clusters. Eyes/irises/catchlights/lids/brows/mouth/nose and oval jaw all have economical intentional staircase edges and tidy contiguous color clusters. No smooth vector eyelashes, no tiny anime linework, no glossy photographic iris or smooth airbrushed cheek gradient. Preserve clear eye whites and warm brown pupils, open friendly eyes, gentle lifted corners of closed lips. The face is NOT a high-resolution anime portrait pasted on a pixel body.\n- Face, ear, neck, shoulders, arms and legs use the SAME warm 4-5-tone skin ramp, identical cell size, and consistent upper-left daylight. Shape the cheek, chin, collarbone, arm and knee with connected readable forms. Avoid isolated bright square skin stickers and disconnected dark blotches. Pixel shading should convey anatomy naturally.\n- Remove the conspicuously thick black line encircling the chin. Use the same restrained warm dark-brown contour treatment as the arm, one fine authored cell where needed, warmer reflected-light edges on lit skin. Make the jaw-to-neck-to-collar transition feel integrated, not a floating face/head.\n- Hair and bow, blouse seams/folds, denim cuffs, buttons, pouch and boot laces use the same tidy authored pixel clusters, larger intentional highlights and controlled shade ramps. Keep volume and useful detail, omit scattered single-pixel noise. No thick black sticker outline around the whole character. Pixel clusters should be compatible with the cottage's flower petals, stonework and wood in reference 2.\n- Crisp, rich, refined PIXEL ART. No blurry or blocky mosaic filter, no smeared edge antialiasing, no oil painting texture, no partial photographic region, no global desaturation, no rough low-detail 32px icon. Preserve clothing palette and her attractive face/figure; change the DRAWING LANGUAGE coherently, not her identity or body design.\n\nTransparent background, clean alpha edge, no baked checkerboard, no scene, no captions, no ground/shadow, no new poses. This must look like one artist painted every part on the SAME PIXEL GRID.\n",
+  "processing": "Exact generated PNG copy. Whole-character 168x156 point-sampled grid at Retina, displayed at the unchanged 224x208 physical canvas. No face-specific sampling, color blending, blur or palette filter. A 1x screen uses a 112x104 grid with the same center phase.",
+  "scope": "Redraw face and body with a shared pixel-art language and lighting. Calibrate a moderate whole-character grid while preserving on-screen size, closed smile, selected palette and background.",
+  "palette": {
+    "selected_option": 1,
+    "blouse": "cream yellow #EACB76",
+    "shorts": "deep indigo #46566F",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      410,
+      153,
+      481,
+      1019
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas_at_retina": [
+      168,
+      156
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.5,
+      0.5
+    ],
+    "face_sampling_override_at_retina": false,
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 169.0207336523126,
+    "comparison_artifact": "artifacts/character-material-v35/pixel-grid/comparison.png",
+    "one_x_display": {
+      "grid": [
+        112,
+        104
+      ],
+      "sample_offset": [
+        0.5,
+        0.5
+      ],
+      "face_sampling_override": false
+    },
+    "display_canvas_at_retina": [
+      224,
+      208
+    ],
+    "grid_selection_artifact": "artifacts/character-material-v35/grid-study.png"
+  },
+  "acceptance": "Compared v34 and v35 across three whole-character grid densities, then reviewed both screen profiles and the real farm scene. Selected 168x156 to make facial and bodily pixel treatment more coherent while preserving eye and closed-lip visibility. Aesthetic acceptance remains with the user; static material only.",
+  "sha256": "98541c58a0e25bc8f20aff1ed0c9d3ce61a9faf24fb15202068eda1aac9e1de9",
+  "background": {
+    "asset": "res://assets/art/farm-background-landscape-v1.png",
+    "bitmap_changed": false,
+    "rendering_change": "None in v35; preserve v33 physical-pixel background sampling and existing scene."
+  },
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11403,
+      "background_grid_density": 2.0,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_logical_pixels": 84.5103668261563,
+      "body_pixels": 169.020733652313,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1.33333333333333,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.200000002980232,
+        0.800000011920929
+      ],
+      "face_sampling_override": false,
+      "grid_cells": [
+        168.0,
+        156.0
+      ],
+      "height_ratio_to_previous": 0.998041136141038,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9133,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.5,
+        0.5
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "98541c58a0e25bc8f20aff1ed0c9d3ce61a9faf24fb15202068eda1aac9e1de9",
+      "window_physical_size": [
+        2240,
+        1480
+      ]
+    },
+    "feature_checks": [
+      {
+        "art_grid": [
+          112.0,
+          104.0
+        ],
+        "display_density": 1,
+        "eyes": [
+          {
+            "highlight": 2,
+            "pupil": 7
+          },
+          {
+            "highlight": 2,
+            "pupil": 10
+          }
+        ],
+        "face_sampling_override": false,
+        "lip_cells": 3,
+        "original_rgb_errors": 0,
+        "passed": true,
+        "tooth_cells": 0,
+        "transparent_edge_errors": 0,
+        "uniform_grid_errors": 0
+      },
+      {
+        "art_grid": [
+          168.0,
+          156.0
+        ],
+        "display_density": 2,
+        "eyes": [
+          {
+            "highlight": 2,
+            "pupil": 20
+          },
+          {
+            "highlight": 6,
+            "pupil": 15
+          }
+        ],
+        "face_sampling_override": false,
+        "lip_cells": 5,
+        "original_rgb_errors": 0,
+        "passed": true,
+        "tooth_cells": 0,
+        "transparent_edge_errors": 0,
+        "uniform_grid_errors": 0
+      }
+    ],
+    "scope_integrity": "Eleven baseline files unchanged: background art and renderer, world/window geometry, animation and previous character image. No changed real-scene pixels outside the character area. Static material shader intentionally uses a moderate uniform grid."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "version": 18,
+  "status": "Opt-in real-main-scene integration; not a complete production character set.",
+  "parent": "gardener-v17/frames/cycle.json (19 walking frames, unchanged)",
+  "technique": "Three whole-character raster edits via built-in imagegen. No limb rig, pose crossfade, optical flow or runtime body-part composition. Offline Swift calibration preserves the existing head, hair and buckle pixels; runtime selects one complete drawing.",
+  "prompts": [
+    {
+      "name": "idle",
+      "source": [
+        "game/assets/art/gardener-v17/frames/front-04a.png"
+      ],
+      "prompt": "Edit this exact Tokenbook game character into a relaxed standing IDLE pose, as the endpoint of her walking animation. Single complete character, true transparent alpha, same 1254x1254 canvas. Preserve the face, hair, natural single ponytail WITHOUT a top bun, turquoise bow, torso size, outfit, skin colors, pixels, shading, position and proportions. Keep head and shoulders exactly where they are. Change only the arms very subtly and the legs: both feet now rest on the ground beside one another, modestly apart, not crossed, no lifted heel, not marching or wide-legged. Near leg on viewer left supports relaxed weight; near boot sole stays at y1120 with center around x545; far boot rests just behind it in perspective, center around x681, sole y1105. Knees relaxed, no stiff symmetrical soldier stance. Hands rest naturally near the thighs; near hand stays around x680 y739 and far hand around x478 y734, preserving arm length and volume. Retain crisp fine pixel-art detail and dark outline. Do not shrink the body, redraw the face, add motion blur or ground shadow, move the person on the canvas, or add props/text/background. This is one intact authored sprite, not separate limbs.",
+      "raw": "source/idle.png",
+      "generated_file": "exec-23c71724-aeb2-4e2e-a4bc-aaf6100bfc3d.png",
+      "prepared": "frames/idle.png"
+    },
+    {
+      "name": "depart-01",
+      "source": [
+        "game/assets/art/gardener-v18/source/idle.png",
+        "game/assets/art/gardener-v17/frames/front-04a.png"
+      ],
+      "prompt": "One complete Tokenbook pixel-art character on true transparent alpha, exactly 1254x1254. Input 1 is the stationary start pose. Input 2 is the target passing-step pose. Paint a new authored in-between of those two whole-body poses. Preserve the head position, face, single ponytail without bun, turquoise bow, outfit, proportions, skin palette and canvas alignment. The whole body is coherent, not separately pasted limbs. No rescaling, no ghosting, no blur, no added props or background. Both images depict the same character from the same camera. Head, torso and belt stay almost perfectly stable. Only leg stance and subtle arms ease between the supplied endpoints. This is the EARLY in-between, ONE THIRD of the way from input1 idle to input2 passing. Keep the weight-bearing near boot planted at approximately x545, sole y1120. The far foot begins to release from the ground: heel just lifting, knee softly bending inward, boot still close to the idle foot position but beginning to angle back. Leg silhouette should be only slightly different from standing, with no marching high-knee. Arms remain relaxed near the thighs with a very small natural counter motion. Do not jump to input2's crossed-leg pose yet.",
+      "raw": "source/depart-01.png",
+      "generated_file": "exec-7149eae6-5b35-4daa-8861-0fdf3c79a9ec.png",
+      "prepared": "frames/depart-01.png"
+    },
+    {
+      "name": "depart-02",
+      "source": [
+        "game/assets/art/gardener-v18/source/idle.png",
+        "game/assets/art/gardener-v17/frames/front-04a.png"
+      ],
+      "prompt": "One complete Tokenbook pixel-art character on true transparent alpha, exactly 1254x1254. Input 1 is the stationary start pose. Input 2 is the target passing-step pose. Paint a new authored in-between of those two whole-body poses. Preserve the head position, face, single ponytail without bun, turquoise bow, outfit, proportions, skin palette and canvas alignment. The whole body is coherent, not separately pasted limbs. No rescaling, no ghosting, no blur, no added props or background. Both images depict the same character from the same camera. Head, torso and belt stay almost perfectly stable. Only leg stance and subtle arms ease between the supplied endpoints. This is the LATE in-between, TWO THIRDS of the way from input1 idle to input2 passing. Keep the near support boot planted near x535, sole y1120. The far knee folds naturally just behind the support leg and the heel lifts back modestly, boot midway between its flat standing placement and input2's lifted back placement. The hips remain nearly level, no body bob or shifted face. Arms subtly settle toward input2, shoulder attached naturally. Do not copy either endpoint: paint the missing gentle transition between their leg silhouettes.",
+      "raw": "source/depart-02.png",
+      "generated_file": "exec-50c8f2e1-046b-4585-8534-ab0f887f3ea9.png",
+      "prepared": "frames/depart-02.png"
+    }
+  ],
+  "preparation": {
+    "tool": "tools/pixel_cleanup/transitions.swift",
+    "region": "y480..<1140, x380..<905 except y<560 && x>715 and preserved buckle x540..<598 y629..<667",
+    "registration": "game/tests/build_character_manifest.gd; mean eye/waist correction relative to v17 front-00; fixed scale 33/977",
+    "manifest": "character.json includes output SHA-256 and pre-calibrated anchors"
+  },
+  "runtime": {
+    "entry": "npm run game:character-preview",
+    "scene": "res://main.tscn",
+    "flag": "--character-test",
+    "save": "Per-launch temporary directory; requires TOKENBOOK_TEST_DIR == TOKENBOOK_DATA_DIR before opening any save.",
+    "route": "Existing HOME (228,138) -> work_point(0) (156,174). Front-facing only.",
+    "timing": "Movement capped at 60 FPS. Nineteen walk drawings advanced by distance, 1.05s nominal cycle, .24s depart and .30s settle clips.",
+    "limits": [
+      "No rear-facing or turning support.",
+      "Farming actions blocked in character-test mode.",
+      "Reset is an explicit stationary test action, not an animated return trip.",
+      "Original production launch and saves are unchanged."
+    ]
+  }
+}

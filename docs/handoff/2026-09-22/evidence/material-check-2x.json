@@ -1,0 +1,33 @@
+{
+  "art_grid": [
+    160.0,
+    188.0
+  ],
+  "cell_screen_pixels": 1.0,
+  "display_density": 2,
+  "downsample_phase": [
+    0.0,
+    0.0
+  ],
+  "eyes": [
+    {
+      "highlight": 16,
+      "pupil": 45
+    },
+    {
+      "highlight": 16,
+      "pupil": 38
+    }
+  ],
+  "face_sampling_override": false,
+  "lip_cells": 6,
+  "original_rgb_errors": 0,
+  "passed": true,
+  "physical_canvas": [
+    160,
+    188
+  ],
+  "tooth_cells": 0,
+  "transparent_edge_errors": 0,
+  "uniform_grid_errors": 0
+}

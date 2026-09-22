@@ -1,0 +1,19 @@
+{
+  "asset": "front-continuity.png",
+  "tool": "built-in image_gen",
+  "source_output": "exec-ae3510e4-b9b5-431e-b000-92ee585231bf.png",
+  "sha256": "202801e0d4a6ede7e3af8ff369eda370be2e3daeea259940fc11f1362d054ef5",
+  "reference": "game/assets/art/gardener-v10/front.png",
+  "layout": {
+    "columns": 6,
+    "rows": 3,
+    "width": 1642,
+    "height": 958,
+    "order": "row-major"
+  },
+  "selected_zero_based_cells": [
+    16
+  ],
+  "prompt": "Use case: precise-object-edit. Edit target: this exact 18-frame pixel-art walk sprite sheet. Keep the same 1642x958 canvas, 6 columns x3 rows, magenta background, all exact positions and all18 leg/arm poses. This is an animation continuity repair, not a redesign or a new animation.\n\nOnly repair inconsistent HEAD AND UPPER TORSO drawing in these cells (1-based):\n- Row1 column3: the crown/head/upper torso is compressed vertically relative to column2 and column4. Restore the same head height and head-to-belt proportions as its neighbors. Keep head width, neck, face, costume and exact walking leg pose.\n- Row3 column4: the head/hair/upper-body mass bulges too far right compared with columns3 and5. Restore the same skull, bangs, ponytail volume and upper-body center as its neighbors, moving the outline inward by just a couple of source pixels, not shifting the entire sprite. Keep its face orientation and legs exactly as shown.\n- Row3 column5: ensure the head silhouette flows naturally from corrected column4 into column6, same skull volume and consistent hair silhouette, no sudden shrink/swell.\n\nPreserve the precise skin ramp and the lighting of the input. Face, arms and legs must not become paler, more yellow, or darker. Keep every non-target cell unchanged. Keep ALL legs, knees, feet, hips and boots unchanged, including in target cells. Do NOT lower or raise knees or exchange which leg is in front. No extra frames, no labels, no shadows, no grids. Match the input's crisp pixel-art detail and sharp pixel clusters. Repair only the specified upper-body volume inconsistencies; no global restyling, smoothing, palette change, rescaling, rearrangement or cropping.",
+  "notes": "Only row 3 column 5 is consumed. The other 17 whole drawings remain v10. Candidate cell 2 overcorrected the crown; cell 15 and the subsequent palette-continuity attempt failed the existing source palette bound. No color correction, raster postprocessing, body deformation, or temporal crossfade was applied. Runtime registers complete drawings using face, belt and a lightly weighted horizontal whole-head centroid. Art direction and unique pose count remain unchanged."
+}

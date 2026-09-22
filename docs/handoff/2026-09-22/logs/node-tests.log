@@ -1,0 +1,16 @@
+
+> tokenbook@0.1.0 test
+> node --test
+
+✔ ambient loop is deterministic PCM with headroom and a continuous loop seam (952.63575ms)
+✔ summarizes unique desktop usage records using the Tokenbook formula (0.701542ms)
+✔ rejects inconsistent usage semantics (0.360041ms)
+✔ flags conflicting duplicate response ids (0.081375ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1043.866583

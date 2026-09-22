@@ -1,0 +1,71 @@
+{
+  "version": 19,
+  "parent": "gardener-v18/character.json",
+  "status": "Two localized passing-pose corrections; front-route integration only.",
+  "generator": "Built-in image_gen image editing",
+  "sources": [
+    {
+      "name": "front-10a",
+      "edit_target": "gardener-v17/frames/front-10a.png",
+      "references": [
+        "gardener-v17/frames/front-10.png",
+        "gardener-v17/frames/front-11.png"
+      ],
+      "generated_file": "exec-99d28676-6bb6-4d39-a610-e539f1dab41e.png",
+      "raw": "source/front-10a.png",
+      "final": "frames/front-10a.png",
+      "prompt": "Use case: precise-object-edit. One complete Tokenbook pixel-art animation sprite, same 1254x1254 canvas, genuine transparent alpha. Image 1 is the exact edit target. Image 2 is the earlier leg pose (front-10). Image 3 is the next passing pose (front-11). Correct ONLY the two legs/boots below the shorts so they progress between image2 and image3; the current legs lag behind the already-returning arms. Keep every head/face/single-ponytail/turquoise-bow/torso/arm/hand/shorts/belt/pouch pixel and all placement exactly as image1. No bun, no body scale change, no body bob, no face or palette change. Whole connected legs with soft knees and original volume, no cutout parts or marching high-knee. Match original crisp detailed pixel clusters, boot size, warm skin shading and dark outline. No blur, ghosts, added shadow, ground, props or labels. This is EARLY progress: the NEAR leg (origin at viewer-right hem of shorts) has swung 40 percent of the distance from image2's trailing bent leg to image3's low forward passing knee. Move its lifted boot about 15 source pixels LEFT from its CURRENT position, slightly bending the knee forward. Near boot's toe/shaft visible center around x738,y974, with sole around y1050; not high-knee. The FAR supporting leg remains firmly planted but its boot position advances about 40 percent toward image3 (around x562 with flat sole near y1119). Keep the shorts hem and proximal thigh join anchored to image1; anatomy flows naturally from unchanged hip to changed knee and boot. Both feet must truly advance beyond image1's pose, not simply redraw the same trailing leg."
+    },
+    {
+      "name": "front-10b",
+      "edit_target": "gardener-v17/frames/front-10b.png",
+      "references": [
+        "gardener-v17/frames/front-10.png",
+        "gardener-v17/frames/front-11.png"
+      ],
+      "generated_file": "exec-517ff8d9-7c17-474f-9e31-a1ff09bb1162.png",
+      "raw": "source/front-10b.png",
+      "final": "frames/front-10b.png",
+      "prompt": "Use case: precise-object-edit. One complete Tokenbook pixel-art animation sprite, same 1254x1254 canvas, genuine transparent alpha. Image 1 is the exact edit target. Image 2 is the earlier leg pose (front-10). Image 3 is the next passing pose (front-11). Correct ONLY the two legs/boots below the shorts so they progress between image2 and image3; the current legs lag behind the already-returning arms. Keep every head/face/single-ponytail/turquoise-bow/torso/arm/hand/shorts/belt/pouch pixel and all placement exactly as image1. No bun, no body scale change, no body bob, no face or palette change. Whole connected legs with soft knees and original volume, no cutout parts or marching high-knee. Match original crisp detailed pixel clusters, boot size, warm skin shading and dark outline. No blur, ghosts, added shadow, ground, props or labels. This is LATE progress: the NEAR leg (origin at viewer-right hem of shorts) must now be 72 percent of the way from image2's trailing bent leg to image3's passing knee. It is visibly closer to image3 than image2. Bring the bent near knee gently toward viewer-left and the lifted boot about 45 source pixels LEFT from its CURRENT position. Near boot's visible toe/shaft center around x708,y974 and sole around y1050. Maintain a low natural step, not a high knee. FAR planted leg/boot is about72 percent toward image3, foot centered around x586 with sole y1117. Keep the shorts hem and proximal thigh join anchored to image1. Draw a genuine intermediate leg silhouette and appropriate near-leg-over-far-leg occlusion, not the old trailing stance and not image3 yet."
+    }
+  ],
+  "scope": {
+    "edited": "Legs below y768 including natural shorts-hem join; offline palette calibration.",
+    "unchanged": [
+      "All head, face, body and arm pixels above y768, checked byte for byte.",
+      "All 17 other walk frames.",
+      "All idle/start/settle frames from v18.",
+      "All runtime movement constants and 60 FPS limit.",
+      "Nineteen-pose phase order and source registration anchors."
+    ]
+  },
+  "preprocessing": "tools/pixel_cleanup/legs.swift; one intact baked sprite per pose. No runtime limb layers or geometry distortion.",
+  "discarded": "Initial y780 hard cut created a thigh seam despite passing timing checks. Archived under artifacts/whole-gait-v19/rejected-hard-cut; not used by runtime.",
+  "diagnostic": {
+    "meaning": "Spatial progress between actual front-10 and front-11 poses, not elapsed-time lag or an aesthetic score.",
+    "before": {
+      "near_hand": [
+        0.40878,
+        0.73387
+      ],
+      "swing_boot": [
+        0.2736,
+        0.29812
+      ]
+    },
+    "after": {
+      "near_hand": [
+        0.40878,
+        0.73387
+      ],
+      "swing_boot": [
+        0.46218,
+        0.63712
+      ]
+    }
+  },
+  "limitations": [
+    "Small local improvement only; not a claim that the complete animation is perfect.",
+    "Rear, turning and farming integration remain future work."
+  ]
+}

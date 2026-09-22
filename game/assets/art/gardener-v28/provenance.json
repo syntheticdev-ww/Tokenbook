@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "status": "static_material_candidate_only",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-aba65dcc-bc6f-4d91-a2ef-b3fc4ab758f9.png",
+  "references": [
+    "res://assets/art/gardener-v27/idle.png",
+    "artifacts/farm-focus-v2/character-context.png"
+  ],
+  "prompt": "Local sprite-face redesign on this exact character. Her FACE is the only part the player dislikes, so do not copy its current facial construction again. Please make a CLEAR facial change, not a nearly identical touch-up. Preserve the exact rest of this pixel sprite (all hair silhouette, bow, costume, body, limbs, boots, standing pose and placement). Only exposed skin of face and facial features may change. Full-body 1254x1254 transparent PNG output, same padded layout.\n\nReplace the current square jaw and huge black-and-white anime eyes with an appealing softly oval face and SMALLER, gentler warm brown eyes. Narrow the lower jaw by roughly 12%, shorten the face below the nose slightly, round cheek-to-chin transitions using clean pixel steps. No long straight horizontal chin. Eyes about 15% smaller than now: warm brown iris/pupil clusters dominate, with ONLY a tiny ivory glint at the upper side; remove the broad stark white outer eye columns that turn into goggles at game size. Thin warm-brown eyelids, no giant black triangles, soft small relaxed eyebrows above. A balanced calm gaze turned slightly left in 3/4 perspective. Tiny softly indicated nose, warm gentle closed smile, restrained cheek blush. Make her look like a naturally pretty young adult adventurer from a warm, cozy 16-bit pixel farming game, not an anime doll or a blocky chibi.\n\nFacial PIXEL clusters should be SIMPLE and deliberately arranged for a body only 83 pixels tall at gameplay size: dark eye marks and one ivory eye glint each, separated friendly smile made of a small solid terracotta cluster. No white bands or noisy detail, no harsh angular jaw, no pointed chin, no makeup eyelashes. Match the same regular crisp square pixel grid as the surrounding hair. No blur, no smooth portrait shading, no color filter. Keep the bright warm skin and chestnut/teal/brown costume palette exactly in the same family. Do not change the hairstyle or hairline, head scale, outfit, body shape, any limb position, or create new motion. One full sprite only, transparent background, no ground, no words.",
+  "generation_history": [
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-b1fe85fb-3f0f-4347-ab2a-97ec333ae103.png",
+      "prompt": "Edit the FIRST image, one existing full-body pixel-art heroine sprite. This is a precise LOCAL FACE BEAUTY REFINEMENT, not a character redesign. The second image shows how she looks in the actual game; retain this accepted detailed warm pixel style. Deliver ONE full-body transparent PNG at the same 1254x1254 canvas and same character placement/feet position as image one.\n\nOnly thoughtfully redraw the facial features and the exposed face/jaw outline (roughly source x485..652, y329..476). Keep EVERYTHING outside this local face area as close to identical as possible: same hair shape, bangs, single chestnut ponytail, teal bow, teal shirt, tan shorts, arms, hands, legs, boots, colors, lighting and standing pose. Do NOT enlarge the head, shorten the limbs, change the stance, mirror, or move the feet. Keep the original head-to-body ratio.\n\nThe face currently reads as a hard angular block with a broad flat jaw, heavy slanted dark eyebrows/eyelids and crowded eye pixels. Refine it into a naturally attractive, sweet, relaxed young adult heroine face suited to a cozy farming game: a small softly tapered oval face, gentle round cheek contour, short smooth-stepped chin without a pointed V or square flat jaw. Balanced 3/4 eye perspective facing slightly viewer-left. Warm brown eyes, calm friendly open gaze, thin economical dark-brown upper eyelid pixels, tiny clean ivory catchlights. Separate eyebrows from eyes and keep them light and relaxed, not aggressive diagonal wedges. Small simple nose, a visibly distinct warm terracotta gentle closed-mouth smile, subtle healthy blush confined to a few pixels. Reduce excess near-black pixels and harsh face outline. Use warm skin-tone cluster boundaries with restrained brown on the shadowed side; no black sticker border. Do not make the eyes enormous, cross-eyed, squinting or dot-like. Keep face clean and expressive, not a doll or a smooth anime portrait.\n\nCRUCIAL: use clearly AUTHORED square pixel clusters on the same regular art-pixel grid as the rest of the sprite. Facial details must remain readable when the entire character is shown only 82-84 native art pixels tall. Economical, intentional pixels, approximately 2px eyes with a tiny highlight and a 2-3px smile at the final small in-game scale. Make the smile separate from the chin contour. No blur, no antialiasing, no airbrush shading, no glossy skin, no new overall filter, no global color grading, no noise, no extra accessories, no ground shadow. True transparent background. Return only the edited full-body sprite, no comparison sheet or labels."
+    },
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-67ec26da-0610-46c1-807a-95c676e16adc.png",
+      "prompt": "Make a visibly improved FACE on this exact existing full-body pixel-art heroine. The previous edit was too subtle: her lower face is STILL a broad angular slab with a long straight horizontal jaw/chin, and the big near-black eyelid wedges make the gaze harsh. Please actually redraw the exposed face so its silhouette and expression change noticeably while staying the SAME character.\n\nChange ONLY the face in roughly x493..650, y328..478 of this 1254x1254 sprite. Preserve all hair, bow, ears, torso, clothing, hands, legs, boots, posture, full-body proportions, canvas placement and transparent padding. Do not restyle the rest of the character.\n\nSpecific face art direction: gently fuller upper cheeks but a narrower, SHORTER lower face, taper the jaw inward by about one authored art-pixel on each side. Raise the chin slightly so there is no long broad flat bottom shelf. Round the chin with 2-3 small stepped curves, not a sharp point. A soft cute oval young-adult face. Delicate warm-brown eyebrows spaced clearly above the eyes, NO thick dark diagonal eyebrow triangles. Eyes should be well balanced in the 3/4 perspective, quietly friendly rather than surprised: thinner upper brown eyelids, modest brown irises and small ivory highlights, more skin-colored breathing room around them. Remove the enormous black corner wedges. A tiny unobtrusive nose and a small terracotta smile positioned naturally halfway between nose and chin, clearly separate from the jaw. Warm even skin with very restrained cheek blush. Keep the smile visibly warm and relaxed.\n\nPrecisely authored PIXEL ART, clean intentionally placed square cells matching the pixel size of her hair and clothing, no smoothing or blur. Economical facial features designed to remain attractive when her entire body is reduced to about 83 native game-art pixels tall. The face must read clearly and prettily at small in-game scale. Do not add more high-resolution gradients or tiny noisy details. Match the original warm palette and top-left lighting. NOT a new anime illustration, NOT chibi with bigger head, NOT a different person. Deliver just this full sprite with the distinctly softer, prettier face, SAME 1254x1254 transparent PNG, no ground, no caption, no shadow or sheet."
+    },
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-aba65dcc-bc6f-4d91-a2ef-b3fc4ab758f9.png",
+      "prompt": "Local sprite-face redesign on this exact character. Her FACE is the only part the player dislikes, so do not copy its current facial construction again. Please make a CLEAR facial change, not a nearly identical touch-up. Preserve the exact rest of this pixel sprite (all hair silhouette, bow, costume, body, limbs, boots, standing pose and placement). Only exposed skin of face and facial features may change. Full-body 1254x1254 transparent PNG output, same padded layout.\n\nReplace the current square jaw and huge black-and-white anime eyes with an appealing softly oval face and SMALLER, gentler warm brown eyes. Narrow the lower jaw by roughly 12%, shorten the face below the nose slightly, round cheek-to-chin transitions using clean pixel steps. No long straight horizontal chin. Eyes about 15% smaller than now: warm brown iris/pupil clusters dominate, with ONLY a tiny ivory glint at the upper side; remove the broad stark white outer eye columns that turn into goggles at game size. Thin warm-brown eyelids, no giant black triangles, soft small relaxed eyebrows above. A balanced calm gaze turned slightly left in 3/4 perspective. Tiny softly indicated nose, warm gentle closed smile, restrained cheek blush. Make her look like a naturally pretty young adult adventurer from a warm, cozy 16-bit pixel farming game, not an anime doll or a blocky chibi.\n\nFacial PIXEL clusters should be SIMPLE and deliberately arranged for a body only 83 pixels tall at gameplay size: dark eye marks and one ivory eye glint each, separated friendly smile made of a small solid terracotta cluster. No white bands or noisy detail, no harsh angular jaw, no pointed chin, no makeup eyelashes. Match the same regular crisp square pixel grid as the surrounding hair. No blur, no smooth portrait shading, no color filter. Keep the bright warm skin and chestnut/teal/brown costume palette exactly in the same family. Do not change the hairstyle or hairline, head scale, outfit, body shape, any limb position, or create new motion. One full sprite only, transparent background, no ground, no words."
+    }
+  ],
+  "processing": "Exact generated PNG copy, direct original-color pixel sampling. No RGB filters or bitmap rescaling.",
+  "scope": "Static face refinement and smaller display only. Accepted scene, camera, environment and all animation source files remain frozen.",
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      405,
+      157,
+      486,
+      1011
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.3,
+      0.1
+    ],
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 167.69377990430624,
+    "comparison": "previous v27 at 128x120, sample 0.6/0.35, identical scene and foot anchor",
+    "comparison_artifact": "artifacts/character-material-v28/pixel-grid/comparison.png"
+  },
+  "acceptance": "Pending user feedback on smaller in-scene scale and revised face.",
+  "sha256": "1e1163872c0932f044f06ba4fd06f0cb0ba088856ced66515e24cc87ce79cb95",
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11160,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_pixels": 167.693779904306,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 2,
+      "changed_pixels_outside_character_area": 0,
+      "grid_cells": [
+        112.0,
+        104.0
+      ],
+      "height_ratio_to_previous": 0.8762,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 8960,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.300000011920929,
+        0.100000001490116
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "1e1163872c0932f044f06ba4fd06f0cb0ba088856ced66515e24cc87ce79cb95"
+    },
+    "face": {
+      "mouth_cells": [
+        [
+          49,
+          36
+        ],
+        [
+          50,
+          36
+        ]
+      ],
+      "left_eye_highlights": 1,
+      "right_eye_highlights": 2,
+      "both_pupils_visible": true
+    },
+    "scope_integrity": "All ten scene, motion, companion and previous-art checksums preserved; no changed pixels outside the character comparison region."
+  }
+}

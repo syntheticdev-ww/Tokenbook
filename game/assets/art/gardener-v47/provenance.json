@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "status": "closed_lip_pixel_smile_refinement",
+  "animation_integrated": false,
+  "default_preview_integrated": true,
+  "parent": "gardener-v46",
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-6b5333dd-b86a-4018-a064-c4ef44c21c66.png",
+  "references": [
+    "game/assets/art/gardener-v46/idle.png"
+  ],
+  "generation_record": "artifacts/character-reference-v47/generation.json",
+  "sha256": "210313d93b5e761d0ae981eb198ec99203b88f3738cb0d6a2f408fa9130ee4a0",
+  "scope": "Refine the mouth into a small, gently upturned closed-lip pixel smile without teeth. Retain the current coarse pixel style, cleaned side lock, face design, body proportions and outfit. Static preview only; small incidental generative differences are possible outside the mouth.",
+  "processing": "Exact generated PNG copy; unchanged uniform display grid and .25,.25 sample position. No blur, palette alteration, local face filter or coarser runtime grid.",
+  "palette": {
+    "tank": "cream yellow",
+    "shorts": "deep indigo",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      654.2486113446388,
+      1172.4179487179488
+    ],
+    "source_bounds": [
+      425,
+      140,
+      490,
+      1048
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "native_grid": [
+      224,
+      208
+    ],
+    "sample_offset": [
+      0.25,
+      0.25
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "static_only": true,
+    "command": "npm run game:material-preview",
+    "face_sampling_override": false
+  },
+  "acceptance": "Mouth refinement pending user visual review.",
+  "verification": {
+    "command": "npm run game:material-test",
+    "passed": true,
+    "evidence": "artifacts/character-reference-v47/pixel-grid/",
+    "preserved_files": 11,
+    "real_scene_color_errors": 0,
+    "changed_pixels_outside_character_area": 0,
+    "height_ratio_to_previous": 1.00095510983763,
+    "detail_preview": "Native game material rendered at 4x integer magnification; v46 left, v47 right.",
+    "visual_acceptance": "pending user review"
+  }
+}

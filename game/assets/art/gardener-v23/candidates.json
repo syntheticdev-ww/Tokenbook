@@ -1,0 +1,117 @@
+[
+  {
+    "name": "depart-ease-01",
+    "clip": "departure",
+    "between": 0,
+    "mode": "body",
+    "parent_file": "res://assets/art/gardener-v18/frames/idle.png",
+    "prompt": "Create ONE exact halfway whole-body animation cel between the supplied chronological references. Canvas1254x1254 transparent. Preserve the heroine identity, face/head/hair/bow, registration, proportions, fine pixel style and warm colors. Natural single ponytail, turquoise sleeveless top, khaki shorts, short brown boots. Same body size and position. Edit only pose as requested. Authored opaque anatomical drawing, clean pixel contours. No blending, ghosting, blur, duplicate limbs, extra shadows, floor, text or sheet. Do not extrapolate: halfway is strictly inside the endpoint silhouettes/boot positions. Keep head/face/hair pixels unchanged from reference1. Both feet remain on the ground. The screen-right boot slides inward only halfway from x705 toward x660; target x683. Left boot moves inward half the tiny amount. Both arms follow halfway between references. The body/head stay fixed.",
+    "file": "res://assets/art/gardener-v23/frames/depart-ease-01.png",
+    "source": "source/depart-ease-01.png",
+    "generated_file": "exec-4f85ff59-9ae2-4287-9f33-95b609cd0a8c.png",
+    "references": [
+      "res://assets/art/gardener-v18/frames/idle.png",
+      "res://assets/art/gardener-v20/frames/depart-01.png"
+    ]
+  },
+  {
+    "name": "depart-ease-02",
+    "clip": "departure",
+    "between": 1,
+    "mode": "legs",
+    "parent_file": "res://assets/art/gardener-v20/frames/depart-01.png",
+    "prompt": "Edit this ONE whole-body cel. Keep exact1254x1254 transparent canvas, character size, registration, head, hair, face, colors, outfit, proportions. Technical tiny pose cleanup only: keep ALL pixels above y768 unchanged unless arms explicitly mentioned. Clean fine pixel contours, full opaque anatomical limbs, no ghosting or blending. Do not create a bigger step. Early beginning of first step. Near leg attached to SCREEN-RIGHT shorts gently moves inward LEFT, near boot center fromx660,y1050 to x638,y1048. Far support leg attached SCREEN-LEFT shorts gently moves RIGHT, far boot fromx578,y1050 to x595,y1042. Legs still almost parallel, not fully crossed. Near boot is in front and far boot behind, start overlap only15pixels. Keep arms upperbody exact. Tiny knee bend, no large striding pose.",
+    "file": "res://assets/art/gardener-v23/frames/depart-ease-02.png",
+    "source": "source/depart-ease-02-revised.png",
+    "rejected_first_source": "source/depart-ease-02.png",
+    "generated_file": "exec-5d3077ac-47b7-486d-945f-a309af86a449.png",
+    "references": [
+      "res://assets/art/gardener-v20/frames/depart-01.png"
+    ]
+  },
+  {
+    "name": "depart-ease-03",
+    "clip": "departure",
+    "between": 2,
+    "mode": "legs",
+    "parent_file": "res://assets/art/gardener-v20/frames/depart-02.png",
+    "prompt": "Create ONE exact halfway whole-body animation cel between the supplied chronological references. Canvas1254x1254 transparent. Preserve the heroine identity, face/head/hair/bow, registration, proportions, fine pixel style and warm colors. Natural single ponytail, turquoise sleeveless top, khaki shorts, short brown boots. Same body size and position. Edit only pose as requested. Authored opaque anatomical drawing, clean pixel contours. No blending, ghosting, blur, duplicate limbs, extra shadows, floor, text or sheet. Do not extrapolate: halfway is strictly inside the endpoint silhouettes/boot positions. Keep head/face/hair pixels unchanged from reference1. Change only legs below shorts. Near foreground left boot moves halfway LEFT from x591 toward x527, target center x559,y1045. Far background right boot halfway RIGHT from x682 toward x712,target x698,y1025. Do not overextend knees. Preserve every upper body pixel.",
+    "file": "res://assets/art/gardener-v23/frames/depart-ease-03.png",
+    "source": "source/depart-ease-03.png",
+    "generated_file": "exec-ec1fb6b2-d322-470c-8b5a-244eb9e72a75.png",
+    "references": [
+      "res://assets/art/gardener-v20/frames/depart-02.png",
+      "res://assets/art/gardener-v20/frames/depart-03.png"
+    ]
+  },
+  {
+    "name": "front-contact-soften",
+    "phase": 0.25,
+    "mode": "legs",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-00.png",
+    "prompt": "Edit this ONE whole-body cel. Keep exact1254x1254 transparent canvas, character size, registration, head, hair, face, colors, outfit, proportions. Technical tiny pose cleanup only: keep ALL pixels above y768 unchanged unless arms explicitly mentioned. Clean fine pixel contours, full opaque anatomical limbs, no ghosting or blending. Do not create a bigger step. Move the foreground SCREEN-LEFT boot only 22 pixels RIGHT, from brown centroidx485,y1045 to x507,y1047. Keep heel shape and boot tilt almost unchanged, tiny roll flatter. Near knee stays bent lightly and shifts right only10px. Rear boot atx774,y979 stays exact. This is a VERY SMALL next frame. Foreground boot must NOT reach x530. Fullbody single cel.",
+    "file": "res://assets/art/gardener-v23/frames/front-contact-soften.png",
+    "source": "source/front-contact-soften-revised.png",
+    "rejected_first_source": "source/front-contact-soften.png",
+    "generated_file": "exec-1bb7b43a-2391-4e7b-9f59-ea8bdc3d33be.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-00.png"
+    ]
+  },
+  {
+    "name": "front-cross-land-soften",
+    "phase": 4.96875,
+    "mode": "body",
+    "parent_file": "res://assets/art/gardener-v22/frames/front-cross-land-final.png",
+    "prompt": "Create ONE precise halfway whole-body animation in-between cel from these two chronological endpoint PNGs. Transparent1254x1254 canvas. Same heroine, warm skin, fine crisp pixel illustration, natural single ponytail, turquoise tank top, khaki shorts, short brown boots. Preserve head, face, hair, bow and registration pixel-for-pixel from first reference. Full opaque anatomical pose, clean outlines and same proportions/bone lengths; never blend images or deform/scale limbs. Do not extrapolate. No blur, ghosts, smears, duplicate limbs, ground, shadows or text. Small intermediate to wider stance. Front LEFT boot moves only halfway left, center roughly x474,y1015. RIGHT boot moves halfway right, roughly x738,y1025. Both knees follow half arcs. Arm/hand half transition: far hand moves inward very slightly. Keep leg identities: left shorts connects left boot, right shorts connects right boot.",
+    "file": "res://assets/art/gardener-v23/frames/front-cross-land-soften.png",
+    "source": "source/front-cross-land-soften.png",
+    "generated_file": "exec-bb4c07ff-a377-44e5-9654-2d4dc5b165da.png",
+    "references": [
+      "res://assets/art/gardener-v22/frames/front-cross-land-final.png",
+      "res://assets/art/gardener-v17/frames/front-05.png"
+    ]
+  },
+  {
+    "name": "front-passing-lift-soften",
+    "phase": 10.9166666666667,
+    "mode": "legs",
+    "parent_file": "res://assets/art/gardener-v22/frames/front-swing-lift.png",
+    "prompt": "Create ONE precise halfway whole-body animation in-between cel from these two chronological endpoint PNGs. Transparent1254x1254 canvas. Same heroine, warm skin, fine crisp pixel illustration, natural single ponytail, turquoise tank top, khaki shorts, short brown boots. Preserve head, face, hair, bow and registration pixel-for-pixel from first reference. Full opaque anatomical pose, clean outlines and same proportions/bone lengths; never blend images or deform/scale limbs. Do not extrapolate. No blur, ghosts, smears, duplicate limbs, ground, shadows or text. Halfway support-to-passing. Far supporting boot shifts RIGHT a little from x566 to603, target x585,y1050. Raised near swinging boot shifts LEFT a little from x709 to679, target x694,y980. Near knee bends halfway inward; near leg passes in front of support leg. Arms halfway subtle forward swing. No extra knee lift, no leg swap.",
+    "file": "res://assets/art/gardener-v23/frames/front-passing-lift-soften.png",
+    "source": "source/front-passing-lift-soften.png",
+    "generated_file": "exec-652748a2-8ea2-49a7-8dad-ce8c27923869.png",
+    "references": [
+      "res://assets/art/gardener-v22/frames/front-swing-lift.png",
+      "res://assets/art/gardener-v17/frames/front-11.png"
+    ]
+  },
+  {
+    "name": "front-reach-ease",
+    "phase": 12.875,
+    "mode": "body",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-13.png",
+    "prompt": "Edit this ONE whole-body cel. Keep exact1254x1254 transparent canvas, character size, registration, head, hair, face, colors, outfit, proportions. Technical tiny pose cleanup only: keep ALL pixels above y768 unchanged unless arms explicitly mentioned. Clean fine pixel contours, full opaque anatomical limbs, no ghosting or blending. Do not create a bigger step. This is a TINY EARLIER pose. Near hand fingertips on screen-right currently centeredx765,y754 move ONLY10pixels LEFT and4pixels UP to x755,y750. Far screen-left fingertips move12px RIGHT. Slightly less arm spread, preserve elbows/proportions, not shrink hands. Near boot screen-left currently centerx488,y994 moves7px RIGHT and3px UP to x495,y991. Rear boot currentlyx695,y1046 moves5px RIGHT and10px UP to x700,y1036. Keep head/torso exactly same. Output whole character.",
+    "file": "res://assets/art/gardener-v23/frames/front-reach-ease.png",
+    "source": "source/front-reach-ease-revised.png",
+    "rejected_first_source": "source/front-reach-ease.png",
+    "generated_file": "exec-218ea75f-f93c-4f22-a458-d330341907f9.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-13.png"
+    ]
+  },
+  {
+    "name": "front-plant-ease",
+    "phase": 13.25,
+    "mode": "legs",
+    "parent_file": "res://assets/art/gardener-v17/frames/front-13.png",
+    "prompt": "Create ONE precise halfway whole-body animation in-between cel from these two chronological endpoint PNGs. Transparent1254x1254 canvas. Same heroine, warm skin, fine crisp pixel illustration, natural single ponytail, turquoise tank top, khaki shorts, short brown boots. Preserve head, face, hair, bow and registration pixel-for-pixel from first reference. Full opaque anatomical pose, clean outlines and same proportions/bone lengths; never blend images or deform/scale limbs. Do not extrapolate. No blur, ghosts, smears, duplicate limbs, ground, shadows or text. Foreground screen-left boot unchanged, toe still raised. Trailing screen-right boot moves halfway back/right from centerx702,y1030 towardx754,y999; targetx728,y1015. Rear knee relaxes halfway and lifts heel a little. Exact upper body from ref1, no arm changes.",
+    "file": "res://assets/art/gardener-v23/frames/front-plant-ease.png",
+    "source": "source/front-plant-ease.png",
+    "generated_file": "exec-e71ebaa6-29de-4c1e-bfdb-e59a1c417c1f.png",
+    "references": [
+      "res://assets/art/gardener-v17/frames/front-13.png",
+      "res://assets/art/gardener-v21/frames/front-13-half.png"
+    ]
+  }
+]

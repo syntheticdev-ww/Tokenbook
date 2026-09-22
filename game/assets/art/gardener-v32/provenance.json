@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "status": "static_material_bright_eyes_happy_smile",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-ede42a86-af81-4486-b1d0-5d509fb736d0.png",
+  "references": [
+    "res://assets/art/gardener-v31/idle.png"
+  ],
+  "prompt": "Edit the FACE ONLY of this existing adult heroine pixel-art game sprite. The user specifically says the eyes are TOO SMALL and she DOES NOT LOOK LIKE SHE IS SMILING. Make a clear improvement in both, preserving her identity and the current delicate face shape. This should look warmly, visibly happy rather than neutral, sleepy or reserved.\n\nKeep this EXACT full-body 1254x1254 transparent canvas, same head scale, body size, pose, placement, feet and padding. Everything outside the exposed face is frozen: warm gray sleeveless blouse, berry-red bow, chestnut single ponytail, skin tone, modestly fuller clothed torso, shorts, belt, green pouch, hands, legs and boots.\n\nFacial art direction:\n- Make both eyes NOTICEABLY MORE OPEN AND LARGER than this image: about 25-30% taller and 10-15% wider, keeping balanced near/far eye perspective in her existing 3/4 face. Give them bright warm brown irises, clearly visible pupils, small bright ivory catchlights and modest clean eye-white accents. She should have lively, expressive open eyes. Not narrow almond slits, not sleepy half-closed eyes, not closed smiling crescents.\n- Keep the eye outlines economical and warm dark brown, no huge black wedges or broad black eyeliner. Soft lifted brows, comfortable space between brows and eyes. Preserve natural adult heroine proportions; no giant chibi head or doll eyes.\n- Replace the barely visible flat mouth with an OBVIOUS but GENTLE HAPPY SMILE. A softly parted small smile is welcome: slightly raised corners with a small restrained ivory glimpse of the upper teeth and warm rose-brown lip edges. Smile a little wider than the current tiny dash, expressive yet proportionate. A tiny tooth highlight and distinct lower lip shadow can help the smile read at small scale.\n- Let the lower eyelids and upper cheeks subtly lift in harmony with the mouth, so her whole expression is smiling. Keep eyes well open despite the cheek lift. Very light warm cheek flush, not pink circular stickers.\n- Avoid a large laughing mouth, huge toothy grin, pout, red lipstick, a pasted-on geometric U or oversized square mouth blocks. Do not draw a literal pixel emoji. The expression should feel charming, welcoming and naturally happy.\n- Preserve the softly oval face and jaw, gentle short chin, subtle nose and warm healthy complexion.\n\nCRUCIAL pixel-game usability: the FULL BODY is displayed about 85 logical pixels tall, so eye and smile features must remain legible at that scale. Make deliberate authored pixel clusters coherent with the hair, with enough contrast for eyes and mouth. Do not make tiny high-resolution painted details that disappear after sampling. Fine tasteful PIXEL ART; no blur, no airbrushed anime face, no glossy portrait rendering, no heavy outlines. Prioritize a beautiful clear expression over any rigid geometric pixel pattern.\nOne complete transparent sprite only, no ground, no caption, no extra views, no global color or body changes.",
+  "processing": "Exact generated PNG copy; original RGB sampled directly on the unchanged grid. No image rescaling, blur or recolor filters.",
+  "scope": "Face refinement: more open, larger brown eyes with clear catchlights and a gently parted happy smile, with coordinated lifted cheeks. Retain current warm gray blouse, berry bow, figure, scene and standing registration.",
+  "palette": {
+    "selected_option": 2,
+    "blouse": "light warm gray oatmeal",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      404,
+      150,
+      492,
+      1023
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.3,
+      0.1
+    ],
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 169.68421052631578,
+    "comparison": "Previous v31 retains its 0.9/0.9 face phase; v32 uses 0.0/0.8. Same body sampling, grid, scene and foot anchor.",
+    "comparison_artifact": "artifacts/character-material-v32/pixel-grid/comparison.png",
+    "face_grid_region": [
+      44,
+      28,
+      13,
+      11
+    ],
+    "face_sample_offset": [
+      0,
+      0.8
+    ],
+    "face_comparison_artifact": "artifacts/character-material-v32/pixel-grid/face-comparison.png"
+  },
+  "acceptance": "Larger, more open eyes and a gently parted smile reviewed in the source, native pixel card, actual scene and enlarged face comparison. Awaiting user aesthetic feedback; static preview only.",
+  "sha256": "00515983064c314b211c314ca600fa270882cdd09d5d163a641a99ea0d825fe0",
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11160,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_pixels": 169.684210526316,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 2,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.0,
+        0.800000011920929
+      ],
+      "grid_cells": [
+        112.0,
+        104.0
+      ],
+      "height_ratio_to_previous": 1.00097847358121,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9376,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.300000011920929,
+        0.100000001490116
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "00515983064c314b211c314ca600fa270882cdd09d5d163a641a99ea0d825fe0"
+    },
+    "face": {
+      "lip_cells": [
+        [
+          49,
+          35
+        ],
+        [
+          51,
+          35
+        ],
+        [
+          50,
+          36
+        ]
+      ],
+      "tooth_cells": [
+        [
+          50,
+          35
+        ]
+      ],
+      "left_eye_highlights": 1,
+      "right_eye_highlights": 2,
+      "both_pupils_visible": true,
+      "eye_regions": [
+        [
+          44,
+          30,
+          5,
+          4
+        ],
+        [
+          50,
+          30,
+          6,
+          4
+        ]
+      ]
+    },
+    "review": "Compared native sampling phases, selected a visible tooth accent with surrounding warm lip pixels and both open eyes. Feature checks now cover the enlarged eye region and gently parted mouth rather than the earlier closed red lip line.",
+    "scope_integrity": "Ten frozen scene, motion, companion and previous-art files unchanged; static shader changes only facial sample phase. Original body sampling, grid and colors retained. Zero changed scene pixels outside the character comparison region."
+  }
+}

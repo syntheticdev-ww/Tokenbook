@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "status": "static_material_palette_option_3",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-811ccd75-b8cc-491e-a090-74c923c77108.png",
+  "references": [
+    "res://assets/art/gardener-v28/idle.png",
+    "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-e90118b3-9178-4ff8-ad6d-554159482115.png"
+  ],
+  "prompt": "Make a strictly LOCAL COLOR-ONLY EDIT to reference image 1, the approved transparent pixel-art game sprite. The user selected palette option 3 (the RIGHTMOST panel) in reference image 2. Image 2 is a COLOR reference ONLY; never borrow its face, pose or proportions.\n\nDeliver ONE full-body transparent PNG with exactly the same 1254 x 1254 canvas, transparent padding, sprite placement and complete visible feet as reference 1. Preserve the reference sprite pixel-for-pixel wherever possible. NO redesign, NO redrawing facial features, NO head or body proportion changes, NO pose changes, NO scale or translation. She has one chestnut ponytail, a small friendly smile and calm brown eyes; these are already approved. Preserve their exact construction and every skin/hair color.\n\nOnly two fabric regions may change:\n1. Existing teal sleeveless blouse fabric, approximately source x510..690, y470..645: recolor to muted warm TERRACOTTA RED matching option 3 of the palette board. Main middle color around #B97057, darker folds in soft reddish brown around #754839, warm soft peach clay highlights around #D79574. Retain the existing original pixel clusters, panel seams, buttons and folds exactly. Gold buttons remain gold. The shirt should read as soft warm clay red, not fluorescent orange, scarlet or pink, and retain separation from peach skin and brown hair.\n2. Existing teal hair bow fabric at top right of head, approximately source x698..803, y152..336: recolor to PALE FLAX / LIGHT LINEN matching option 3. Main tone around #E7D9B5, shadow around #B5A17B, highlight around #F6EACA. Preserve its existing bow shape, folded fabric and all pixel edges exactly. This is warm light linen, not shiny gold or pure white.\n\nEVERYTHING ELSE must remain unchanged: face, eyes, mouth, facial silhouette, skin, chestnut hair and golden highlights, single ponytail shape, ears, hands, arms, legs, shorts, belt, boots, socks, green hip pouch, outlines and pose. NO global color adjustment. NO desaturation outside the two specified fabrics. Keep the same crisp fine square-pixel art structure and original light direction; no blur, smoothing, antialiasing or extra detail. Do not generate a new illustration or reinterpret the design. Do not add background, ground, cast shadow, text, swatches or comparison sheet. True transparent alpha. One exact-color-edited sprite only.",
+  "processing": "Exact generated PNG copy, direct original-color pixel sampling. No bitmap rescaling or runtime recolor filters.",
+  "scope": "Selected palette option 3 for the static character: terracotta blouse and pale flax bow. Same approved display registration, pixel grid, scene and motion sources.",
+  "palette": {
+    "selected_option": 3,
+    "blouse": "soft terracotta red",
+    "blouse_midtone": "#B97057",
+    "hair_bow": "pale flax",
+    "hair_bow_midtone": "#E7D9B5"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      405,
+      157,
+      487,
+      1011
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.3,
+      0.1
+    ],
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 167.69377990430624,
+    "comparison": "Previous approved v28 at identical 112x104 grid, sample offset, scene and foot anchor",
+    "comparison_artifact": "artifacts/character-material-v29/pixel-grid/comparison.png"
+  },
+  "acceptance": "Palette option 3 selected by user; native rendered preview visually inspected. v28 face design, display dimensions, stance and scene retained. Animation integration remains out of scope.",
+  "sha256": "5ff26e8d0bbd57ff1bc721094c7d53cb041d56bca59c3af51be203bbb8ca9384",
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11160,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_pixels": 167.693779904306,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 2,
+      "changed_pixels_outside_character_area": 0,
+      "grid_cells": [
+        112.0,
+        104.0
+      ],
+      "height_ratio_to_previous": 1.0,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 8948,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.300000011920929,
+        0.100000001490116
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "5ff26e8d0bbd57ff1bc721094c7d53cb041d56bca59c3af51be203bbb8ca9384"
+    },
+    "face": {
+      "mouth_cells": [
+        [
+          49,
+          36
+        ],
+        [
+          50,
+          36
+        ]
+      ],
+      "left_eye_highlights": 1,
+      "right_eye_highlights": 3,
+      "both_pupils_visible": true
+    },
+    "eye_check_note": "Fixed pre-existing eye highlight detection: require bright low-chroma ivory or gray rather than counting bright peach skin. No further artwork or grid modification.",
+    "scope_integrity": "All eleven frozen scene, motion, shader, companion and previous-art checksums preserved."
+  }
+}

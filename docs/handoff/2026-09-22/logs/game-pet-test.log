@@ -1,0 +1,8 @@
+
+> tokenbook@0.1.0 game:pet-test
+> node scripts/game.mjs pet-test
+
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5 Pro
+
+Desktop pet native checks: 32, failures: 0; cropped RGBA MiB: 2.36943817138672

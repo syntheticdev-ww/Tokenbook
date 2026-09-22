@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-f12a335f-05d0-47f4-bd33-f50a531d8025.png",
+  "reference": "res://assets/art/farm-background-landscape-v1.png",
+  "prompt": "Redraw this game background as AUTHENTIC, CRISP, DETAILED PIXEL ART for a finished cozy farming game. The user says the cottage, grass and distant scenery look too soft and blurry. This needs a visible art-direction improvement, not a subtle sharpen filter. Preserve the original 1536x1024 landscape canvas and EXACT composition, scale, silhouettes and positions of all landmarks: cottage/doorsteps in the upper right, doors/windows/roof/chimney, wood fence, barrel/tools/wheelbarrow/flowers, left river and arched bridge, distant church/mountains, large open meadow across the center and lower frame. Do not zoom, move the house, shift the doorway, change perspective or add objects. The lower meadow must remain empty of characters and farm plots because those are separate game layers.\n\nMake this look like a carefully hand-authored premium pixel RPG environment, with a coherent pixel grid and sharply readable clusters. One- to three-pixel staircase details, deliberate color ramps and clean silhouettes throughout. Pixel art drawn intentionally, NOT a digital oil painting with a pixelation filter.\n\n- COTTAGE: clearly separated terracotta roof tiles with crisp pixel highlight rims and shadow seams; readable masonry joints and individual stone faces; sharp timber beams/door planks, window frames, shutters, chimney bricks and step edges. Preserve the warm sunlight and existing red roofs/green shutters/light stone palette. No rounded airbrush shading or fuzzy outlines.\n- MEADOW: replace muddy stippled paint with organized crisp grass-blade clusters, tufts and small readable ground texture. Distinguish light, midtone and shadow areas with deliberate green ramps and tidy pixel edges. Keep a calm walkable center, no all-over noisy dithering, excessive contrast or random confetti pixels. Preserve the same terrain composition.\n- TREES AND FLOWERS: readable leaf clusters with clear light/shadow planes, crisp tiny flowers and stems, hand-placed pixel highlights; don't smear neighboring foliage hues together.\n- RIVER AND BRIDGE: sharp pixel arcs and stone blocks, clean banks and rocks, horizontal pixel reflection streaks. Preserve exact shapes and locations.\n- DISTANCE: sharpen the church/roofs/tree silhouettes, bridge, mountain ridges and cloud edges as pixel clusters. Express distance by cooler/lighter controlled palette, NOT blur, haze smearing or loss of focus. All layers remain legible.\n- Keep the inviting natural palette and light direction. No photorealism, smooth 3D render, depth-of-field blur, bloom, motion blur, painterly scumbling, sharpening halos, jagged noise or chunky 8-bit simplification.\n- Every texture must use the same clear pixel-art language, both close and distant. Make the improvement unmistakable at actual game-window size.\n\nOne complete opaque landscape asset only, no UI, captions, people, farm plots, grid overlay, borders or labels.\n",
+  "processing": "Exact generated PNG copy; no bitmap filters applied.",
+  "world_rect": [
+    -78,
+    0,
+    512,
+    342
+  ],
+  "sha256": "d52ca4149abd745087075db55a468534d39faa6a29e9cb630488a76ae5b2e84d",
+  "acceptance": "Reviewed in the native landscape game viewport: more distinct grass clusters, cottage tile and masonry seams, and distant church/tree edges. Doorstep registration and farm layout remain usable; generated texture details and silhouettes have small local shifts. Awaiting user aesthetic review.",
+  "integration": {
+    "resource": "Art.texture(LANDSCAPE), normal Godot imported texture",
+    "crisp_pixel_motion": true,
+    "world_geometry_changed": false,
+    "window_changed": false,
+    "historical_square_background_changed": false
+  },
+  "verification": {
+    "commands": [
+      "npm run game:material-test",
+      "npm run game:environment-test"
+    ],
+    "status": "passed",
+    "environment_checks": 49,
+    "environment_failures": 0,
+    "landscape_motion": {
+      "checks": 9,
+      "failures": 0,
+      "grass": {
+        "mixed_color_pixels": 0,
+        "moving_pixels": 5018
+      },
+      "leaves": {
+        "mixed_color_pixels": 0,
+        "moving_pixels": 4035
+      },
+      "negative_control_mixed_pixels": 8811
+    },
+    "static_scene_source_color_errors": 0,
+    "static_scene_grid_errors": 0
+  },
+  "visual_evidence": [
+    "artifacts/pixel-scene-v37/pixel-grid/after-scene.png",
+    "artifacts/living-farm-v2/audit-CyH90e/pixel-landscape-1.png"
+  ]
+}

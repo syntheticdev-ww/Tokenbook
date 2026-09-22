@@ -1,0 +1,713 @@
+{
+  "canvas": [
+    112,
+    112
+  ],
+  "departure": [
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/idle.png",
+      "sha256": "eadc0216984a8cceb6c792e95c97e956b94bff45583513bedbb6a352ea2fab97",
+      "source_file": "res://assets/art/gardener-v18/frames/idle.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-01.png",
+      "sha256": "a9baeb07f495a5895237860443ffa1da636111ef19a56d8f703e510d79be0b03",
+      "source_file": "res://assets/art/gardener-v23/frames/depart-ease-01.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-02.png",
+      "sha256": "c0f2a24d2de495da6ce988319c5e83aac18966422fb3705a7ebe2ee009a8c3e8",
+      "source_file": "res://assets/art/gardener-v20/frames/depart-01.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-03.png",
+      "sha256": "fd11d91610c8c4c18c469e01e4571a19b89ecde33c749ea4f067b7e8b0e06ee5",
+      "source_file": "res://assets/art/gardener-v23/frames/depart-ease-02.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-04.png",
+      "sha256": "fb1735ec23f6443b475bd229c147848786557543fd7ab136bd0234735252eeba",
+      "source_file": "res://assets/art/gardener-v20/frames/depart-02.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-05.png",
+      "sha256": "c72e6a1a0eb979ba11de9b4cfb93640d56b2b53011e9bd74058ada55bb77c897",
+      "source_file": "res://assets/art/gardener-v23/frames/depart-ease-03.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-06.png",
+      "sha256": "586e1be5e1ba7ed9999306626a0ae38a52434e5e2694d603af82cb3582033d54",
+      "source_file": "res://assets/art/gardener-v20/frames/depart-03.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-07.png",
+      "sha256": "5ba77e15a34d2553548fc071d8f08fd6699bd88cee75254dbdb3131fcd1dc5be",
+      "source_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "source_phase": 4.5,
+      "ticks_to_next": 1.0
+    }
+  ],
+  "production_eligible": false,
+  "sampling": "nearest",
+  "scale": 0.35849539406346,
+  "transition": [
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/idle.png",
+      "sha256": "eadc0216984a8cceb6c792e95c97e956b94bff45583513bedbb6a352ea2fab97",
+      "source_file": "res://assets/art/gardener-v18/frames/idle.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-02.png",
+      "sha256": "c0f2a24d2de495da6ce988319c5e83aac18966422fb3705a7ebe2ee009a8c3e8",
+      "source_file": "res://assets/art/gardener-v20/frames/depart-01.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-04.png",
+      "sha256": "fb1735ec23f6443b475bd229c147848786557543fd7ab136bd0234735252eeba",
+      "source_file": "res://assets/art/gardener-v20/frames/depart-02.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/depart-06.png",
+      "sha256": "586e1be5e1ba7ed9999306626a0ae38a52434e5e2694d603af82cb3582033d54",
+      "source_file": "res://assets/art/gardener-v20/frames/depart-03.png"
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-07.png",
+      "sha256": "5ba77e15a34d2553548fc071d8f08fd6699bd88cee75254dbdb3131fcd1dc5be",
+      "source_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "source_phase": 4.5,
+      "ticks_to_next": 1.0
+    }
+  ],
+  "version": 2,
+  "walk": [
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-00.png",
+      "phase": 0.0,
+      "sha256": "98aaa0ad85ed30a7757cab7d2027b33621fbd177007b039727a9ff793c13e0ea",
+      "source_file": "res://assets/art/gardener-v17/frames/front-00.png",
+      "source_phase": 0.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-01.png",
+      "phase": 0.507936507936508,
+      "sha256": "ecc98c798fa77615df98966f7ecf6432073051b4772a8dca6752d218720bb691",
+      "source_file": "res://assets/art/gardener-v23/frames/front-contact-soften.png",
+      "source_phase": 0.25,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-02.png",
+      "phase": 1.01587301587302,
+      "sha256": "4489e0f849e1b467b51b84716ffd13344fa348153acccca3aa300627795dc061",
+      "source_file": "res://assets/art/gardener-v21/frames/front-00-half.png",
+      "source_phase": 0.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-03.png",
+      "phase": 1.26984126984127,
+      "sha256": "98892506448ae26e7f0c878fa575072cb553df5588b9453e649bb2408dd00416",
+      "source_file": "res://assets/art/gardener-v17/frames/front-01.png",
+      "source_phase": 1.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-04.png",
+      "phase": 1.77777777777778,
+      "sha256": "bc026c90ee79606ab7dc1624428f6ade5be114b404fccc70ee14f506f73fc79b",
+      "source_file": "res://assets/art/gardener-v17/frames/front-02.png",
+      "source_phase": 2.0,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-05.png",
+      "phase": 2.03174603174603,
+      "sha256": "8ca865b24e08107f68efd69a9b9340a4619c0845df6d43ae00c1846b18cd0d3c",
+      "source_file": "res://assets/art/gardener-v17/frames/front-03.png",
+      "source_phase": 3.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-06.png",
+      "phase": 2.53968253968254,
+      "sha256": "6b3e68e1fea9acdd0c3d3956bafcc8349b9c90d9d2b09a465a3d1fddd794289f",
+      "source_file": "res://assets/art/gardener-v17/frames/front-04.png",
+      "source_phase": 4.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-07.png",
+      "phase": 3.04761904761905,
+      "sha256": "5ba77e15a34d2553548fc071d8f08fd6699bd88cee75254dbdb3131fcd1dc5be",
+      "source_file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "source_phase": 4.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-08.png",
+      "phase": 3.3015873015873,
+      "sha256": "d80db22d67cb5d3d5ac0f7e7e89314d9505106b48c99d180e2edcecaf0192735",
+      "source_file": "res://assets/art/gardener-v21/frames/front-04-pass-1.png",
+      "source_phase": 4.625,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-09.png",
+      "phase": 3.55555555555556,
+      "sha256": "6f40296b12d6b64632d18196e14905d4f4b8259aa33874fd10e763a7156bc25c",
+      "source_file": "res://assets/art/gardener-v24/frames/cross-approach.png",
+      "source_phase": 4.68,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-10.png",
+      "phase": 3.80952380952381,
+      "sha256": "6815d42a18adda59442f1b1e6bf4ca6db3d53aafac01f95c8e397813acbcc607",
+      "source_file": "res://assets/art/gardener-v24/frames/cross-hidden-pass.png",
+      "source_phase": 4.72,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-11.png",
+      "phase": 4.06349206349206,
+      "sha256": "861d24244e2ca89022ae6d08ac85efc377c16770134436d1edf552c768ea3620",
+      "source_file": "res://assets/art/gardener-v24/frames/cross-emerge.png",
+      "source_phase": 4.735,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-12.png",
+      "phase": 4.31746031746032,
+      "sha256": "59003bff2bb6b408f6e9cdd1e44efcf717e8d1dd72cbaf66876ee3a8df8c5bcf",
+      "source_file": "res://assets/art/gardener-v24/frames/cross-overlap.png",
+      "source_phase": 4.75,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-13.png",
+      "phase": 4.57142857142857,
+      "sha256": "f59734779e4bc95762b9e8cf013038e131c7f1d8fc2b4dce16fff75d0bf2f6e3",
+      "source_file": "res://assets/art/gardener-v24/frames/cross-release.png",
+      "source_phase": 4.875,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-14.png",
+      "phase": 4.82539682539683,
+      "sha256": "91bebddebbb3e91a6d6d469b9d8e0f69b407bbbd34e6794afcb410d5f87bba4c",
+      "source_file": "res://assets/art/gardener-v22/frames/front-cross-land-final.png",
+      "source_phase": 4.9375,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-15.png",
+      "phase": 5.07936507936508,
+      "sha256": "8d4258d6b052eb01cbfdafaea36f9ef83ac7ec206028cb425be1d651a9c38b00",
+      "source_file": "res://assets/art/gardener-v17/frames/front-05.png",
+      "source_phase": 5.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-16.png",
+      "phase": 5.58730158730159,
+      "sha256": "49215a41b48c626704435b5d58108d95588fffbaabcf5630c1043e627d2836a9",
+      "source_file": "res://assets/art/gardener-v22/frames/front-arm-return-1.png",
+      "source_phase": 5.5,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-17.png",
+      "phase": 6.09523809523809,
+      "sha256": "2381d254d014e695058570d884c473aa2f44b9d00303793cedc2f6ffb1f4f474",
+      "source_file": "res://assets/art/gardener-v17/frames/front-06.png",
+      "source_phase": 6.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-18.png",
+      "phase": 6.6031746031746,
+      "sha256": "40c57f9126e4decdb4717d09fccf805e07569750c919ff442d1ac8ba5951eee0",
+      "source_file": "res://assets/art/gardener-v21/frames/front-06-half.png",
+      "source_phase": 6.5,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-19.png",
+      "phase": 7.11111111111111,
+      "sha256": "76181cc353ab41bdafec5b2a279bf585cc8e0cc3d20f2176ea805d113988e111",
+      "source_file": "res://assets/art/gardener-v17/frames/front-07.png",
+      "source_phase": 7.0,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-20.png",
+      "phase": 7.36507936507936,
+      "sha256": "ed35ba2094e2aa06f7bf657ea1a756a29b4b067770e09509f1e62d6fb09b6e7e",
+      "source_file": "res://assets/art/gardener-v21/frames/front-07-half.png",
+      "source_phase": 7.5,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-21.png",
+      "phase": 7.87301587301587,
+      "sha256": "e9841273f90d87f263fcbeee10831b6bc72937ddaa4e2d8a9eb41e8baa7e74f5",
+      "source_file": "res://assets/art/gardener-v17/frames/front-08.png",
+      "source_phase": 8.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-22.png",
+      "phase": 8.38095238095238,
+      "sha256": "e7347a7c3e43aa7f7679071b88d162aa58f7cc0d0d6bd7b2cbcec127bf8e3df8",
+      "source_file": "res://assets/art/gardener-v21/frames/front-08-half.png",
+      "source_phase": 8.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-23.png",
+      "phase": 8.63492063492063,
+      "sha256": "1bb84091759012852af47d45dd234c9adeb390fc16f62600ef815941120a68fc",
+      "source_file": "res://assets/art/gardener-v22/frames/front-support-roll.png",
+      "source_phase": 8.75,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-24.png",
+      "phase": 8.88888888888889,
+      "sha256": "50b671df0b726e56135b186a9870eca588f83da2812ac845ef95ab9576c4e462",
+      "source_file": "res://assets/art/gardener-v17/frames/front-09.png",
+      "source_phase": 9.0,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-25.png",
+      "phase": 9.14285714285714,
+      "sha256": "fa3bf7375b872a381068a9e01dcc0695f9e6d45394f6c73c8f8a00170125e5da",
+      "source_file": "res://assets/art/gardener-v21/frames/front-09-half.png",
+      "source_phase": 9.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-26.png",
+      "phase": 9.3968253968254,
+      "sha256": "b51563b18602bfc35d5241ba149d01aa314023f1d8a78b5780a38016f7c5b65b",
+      "source_file": "res://assets/art/gardener-v17/frames/front-10.png",
+      "source_phase": 10.0,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-27.png",
+      "phase": 9.65079365079365,
+      "sha256": "77c95dff1bab05e80addaca9016ac52247661bf9fc75509f9f6a9390926726d2",
+      "source_file": "res://assets/art/gardener-v22/frames/front-toe-off.png",
+      "source_phase": 10.1666666666667,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-28.png",
+      "phase": 9.90476190476191,
+      "sha256": "db34d9578545c9f00626427775f1b2ae3d0e1f5de10c8765b84e04f8cf686910",
+      "source_file": "res://assets/art/gardener-v19/frames/front-10a.png",
+      "source_phase": 10.3333333333333,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-29.png",
+      "phase": 10.1587301587302,
+      "sha256": "8e837bef5914dd2101bcea21d6c746c42a84fefd0e855906a7acf4531b1f4129",
+      "source_file": "res://assets/art/gardener-v19/frames/front-10b.png",
+      "source_phase": 10.6666666666667,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-30.png",
+      "phase": 10.4126984126984,
+      "sha256": "a36368ea9862137f37cb07cc50f7f781740a1358766acfd536e70dbe1aee8275",
+      "source_file": "res://assets/art/gardener-v22/frames/front-swing-lift.png",
+      "source_phase": 10.8333333333333,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-31.png",
+      "phase": 10.9206349206349,
+      "sha256": "fd581ec454b901e3c7142f91601974502ad8bfff2931aac86e201fd7329c1697",
+      "source_file": "res://assets/art/gardener-v23/frames/front-passing-lift-soften.png",
+      "source_phase": 10.9166666666667,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-32.png",
+      "phase": 11.1746031746032,
+      "sha256": "2ae5f03b92b857ffdf88bf43e8a60ea54718ebeb681711d94ec10d4de7e3e008",
+      "source_file": "res://assets/art/gardener-v17/frames/front-11.png",
+      "source_phase": 11.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-33.png",
+      "phase": 11.6825396825397,
+      "sha256": "dab5f1b0c9052781495f9ce63b637181fb02339df1a0549e2baee98c272f7053",
+      "source_file": "res://assets/art/gardener-v22/frames/front-swing-through-corrected.png",
+      "source_phase": 11.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-34.png",
+      "phase": 11.9365079365079,
+      "sha256": "2f31762f92281ee8039e1937295679a9d8193cfd2977b8cb30c6ec2458fde4e3",
+      "source_file": "res://assets/art/gardener-v22/frames/front-swing-under.png",
+      "source_phase": 12.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-35.png",
+      "phase": 12.4444444444444,
+      "sha256": "83949615f222e39307ff68633dd94622b001355ff3b7abbf757f1b2c54051935",
+      "source_file": "res://assets/art/gardener-v22/frames/front-swing-forward-small.png",
+      "source_phase": 12.1666666667,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-36.png",
+      "phase": 12.6984126984127,
+      "sha256": "b4582808f7678b6d105d68ef96f115a3d0330052dfe7d3a85933a2abdde31f4a",
+      "source_file": "res://assets/art/gardener-v22/frames/front-swing-extend-revised.png",
+      "source_phase": 12.3333333333,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-37.png",
+      "phase": 12.952380952381,
+      "sha256": "81a2965b11a6f24447ea3e247fa81d511a56518f779dc62cec7ae1feba127ae2",
+      "source_file": "res://assets/art/gardener-v21/frames/front-12-half.png",
+      "source_phase": 12.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-38.png",
+      "phase": 13.2063492063492,
+      "sha256": "dc11caf7153a253a430901fed10b1d54a8e903c022ea3af041b61d84ed14cefe",
+      "source_file": "res://assets/art/gardener-v22/frames/front-heel-reach.png",
+      "source_phase": 12.75,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-39.png",
+      "phase": 13.4603174603175,
+      "sha256": "37cee50d003a15828c1a3419ac584143baaa7bbb3b7fac8c0a978a6c86244659",
+      "source_file": "res://assets/art/gardener-v23/frames/front-reach-ease.png",
+      "source_phase": 12.875,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-40.png",
+      "phase": 13.7142857142857,
+      "sha256": "0ebbaae3dfe9a605c52a35c457e5a475ad6683883612d8642e44110d792ea347",
+      "source_file": "res://assets/art/gardener-v17/frames/front-13.png",
+      "source_phase": 13.0,
+      "ticks_to_next": 2.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-41.png",
+      "phase": 14.2222222222222,
+      "sha256": "69edb5137527fdb78b62cf7871f01d97504ddadb392221256478dc0024d70c8d",
+      "source_file": "res://assets/art/gardener-v23/frames/front-plant-ease.png",
+      "source_phase": 13.25,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-42.png",
+      "phase": 14.4761904761905,
+      "sha256": "cc9f7ad589be6064660a674fe4de8604e1e0e030d6141047b70c2c5b4dfe3a39",
+      "source_file": "res://assets/art/gardener-v21/frames/front-13-half.png",
+      "source_phase": 13.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-43.png",
+      "phase": 14.7301587301587,
+      "sha256": "29e3350d82dac6aa541ca9ce9695df9467b509d3a0d7c1b0a7c7c8b8b2e695a5",
+      "source_file": "res://assets/art/gardener-v22/frames/front-heel-lower.png",
+      "source_phase": 13.75,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-44.png",
+      "phase": 14.984126984127,
+      "sha256": "47d86845e4841cd40481c0551d4c791ac36031ce2f36c487b7dca62b67ed4107",
+      "source_file": "res://assets/art/gardener-v17/frames/front-14.png",
+      "source_phase": 14.0,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-45.png",
+      "phase": 15.2380952380952,
+      "sha256": "03076fdc08a649629a8cedf6d5a5c9584c8d1fc30e70cee085b871496d7e878e",
+      "source_file": "res://assets/art/gardener-v21/frames/front-14-half.png",
+      "source_phase": 14.5,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-46.png",
+      "phase": 15.4920634920635,
+      "sha256": "9d16f7409289c08896a9250ecd53f1d12150c0f19f13d953270bbbcf685add9c",
+      "source_file": "res://assets/art/gardener-v17/frames/front-15.png",
+      "source_phase": 15.0,
+      "ticks_to_next": 1.0
+    },
+    {
+      "anchor": [
+        58.0,
+        99.0
+      ],
+      "file": "res://assets/art/gardener-v25/frames/walk-47.png",
+      "phase": 15.7460317460317,
+      "sha256": "149303a708f53720b1c9d3d6cbe09f0c50e9260bd10a7aa02474032c3727ca48",
+      "source_file": "res://assets/art/gardener-v21/frames/front-15-half.png",
+      "source_phase": 15.5,
+      "ticks_to_next": 1.0
+    }
+  ]
+}

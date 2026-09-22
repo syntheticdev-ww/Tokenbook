@@ -4,7 +4,7 @@ extends RefCounted
 const Geometry = preload("res://farm_geometry.gd")
 const Rules = preload("res://farm_rules.gd")
 const DEPART_SECONDS := 0.18
-const ARRIVE_SECONDS := 0.30
+const ARRIVE_SECONDS := 0.50
 const STRIDE_DISTANCE := 19.5
 var clock := 0.0
 var elapsed := 0.0
@@ -94,11 +94,13 @@ func pose() -> Dictionary:
 		return _pose("walk", frame, "walk", _facing_right, _facing_back)
 	var local := elapsed - travel_time
 	if busy() and local < ARRIVE_SECONDS:
+		if travel_time > 0 and local < .34:
+			var result := _pose("idle",3 if _facing_back else 0,"arrive",_facing_right,_facing_back)
+			result.settle_progress = clampf(local/.34,0,1)
+			return result
 		# Keep the incoming orientation for landing, then pass through the
 		# authored profile before facing the crops. No mesh deformation/ghosting.
-		if travel_time > 0 and local < 0.10:
-			return _pose("idle", 3 if _facing_back else 0, "arrive", _facing_right)
-		if travel_time > 0 and local < 0.20 and (_facing_back or _facing_right):
+		if travel_time > 0 and local < 0.42 and (_facing_back or _facing_right):
 			return _pose("idle", 2, "arrive", _facing_right)
 		return _pose("idle", 0, "arrive")
 	if busy():

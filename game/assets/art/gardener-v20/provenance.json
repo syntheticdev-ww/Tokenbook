@@ -1,0 +1,27 @@
+{
+  "version": 20,
+  "mode": "built-in image_gen edit",
+  "scope": "Departure only; v19 walking and v18 stopping retained. Three authored first-step drawings, offline upper-body preservation above y768 and skin palette calibration, intact sprites at runtime.",
+  "preparation": [
+    "swiftc tools/pixel_cleanup/Raster.swift tools/pixel_cleanup/Palette.swift tools/pixel_cleanup/Patch.swift tools/pixel_cleanup/departure.swift -o /tmp/tokenbook-departure-v20",
+    "/tmp/tokenbook-departure-v20 game game/assets/art/gardener-v20",
+    ".tools/godot-4.7.2/Godot.app/Contents/MacOS/Godot --headless --path game --script tests/finalize_departure_art.gd"
+  ],
+  "prompts": [
+    {
+      "name": "depart-01",
+      "prompt": "Use case: precise-object-edit. Make one very specific edit to this pixel-art sprite. Bring BOTH FEET CLOSE TOGETHER under her body, ankles almost touching side by side, knees softly together. Her near leg, currently on the RIGHT side of the image, steps inward toward the LEFT, bringing its boot beside the other boot. Her two boots are SIDE BY SIDE at the center under her shorts, with a very narrow stance, NOT CROSSED, NOT spread apart, NOT one behind the other. Both toes point diagonally left as in the original. This is a gentle intermediate pose before a first walking step. Change ONLY the legs below the shorts hems. All original upper body face hair arms hands torso clothes remain absolutely unchanged. Keep 1254x1254 transparent canvas, exact same head/body position and size, original warm skin tone and fine pixel detail. No background, shadow, text, or crop.",
+      "source": "exec-b55247f9-db38-4f5d-8400-d3749caa7200.png"
+    },
+    {
+      "name": "depart-02",
+      "prompt": "Use case: precise-object-edit. Draw the animation IN-BETWEEN of these two images, halfway from image 1's legs-together pose to image 2's crossed walking legs. The character's near thigh (attached to the shorts opening on the RIGHT of the image) tilts down-left IN FRONT of the other thigh, but only HALF AS MUCH as in image 2. The near knee and boot should be CENTRAL beneath the crotch, with the near boot covering half of the far boot. The far leg moves behind toward the RIGHT. Keep the two ankles overlapping, no wide separation. Do not just copy either endpoint. The near leg must pass in FRONT of the far leg, not the reverse. Only redraw legs below shorts hems. Keep all of image 2's upper body head hair face arms hands size and position unchanged. Same 1254x1254 transparent canvas, same warm skin color and fine pixel style, no recentering, no shadow or background.",
+      "source": "exec-14e80bef-b822-426f-8905-fd6efe7f3bf2.png"
+    },
+    {
+      "name": "depart-03",
+      "prompt": "Use case: precise-object-edit. Asset type: single full-body fine pixel-art farm game animation sprite, early walk departure.\nInput image 1 is edit target; image 2 is idle identity reference; image 3 is the exact eventual first walking pose.\nEdit ONLY the legs and bottom edge of shorts below pixel y768 of image 1. Keep all face, head, hair, ponytail, bow, torso, hands, arm pose, belt, bag, scale and placement absolutely unchanged. Preserve original 1254x1254 transparent RGBA canvas, no recentering, no resizing, no shadow, no background, no text.\nThird preparation drawing, 80% into the first step, close to final image 3 but not identical. The near leg attached to viewer-RIGHT shorts opening has moved FORWARD viewer-LEFT and is about to accept weight, boot center around (565,1060), sole y1120. The far leg attached to viewer-LEFT shorts is passing behind it with lifted heel, boot center around (690,1040), sole y1100. Only a small natural bend, no marching or exaggerated stride. This must smoothly precede the exact crossing pose image 3.\nPreserve original warm skin palette, boots, precise pixel shading and slim leg volume. Render complete coherent intact character, never detached parts. The original final walking pose has the near leg in front at viewer-LEFT; prepare that continuously instead of swinging it backward then swapping legs. Do not change or enlarge head; no blur, no skin lighting change.",
+      "source": "exec-5fb72347-8583-4ee8-b5eb-30f69c01c2fb.png"
+    }
+  ]
+}

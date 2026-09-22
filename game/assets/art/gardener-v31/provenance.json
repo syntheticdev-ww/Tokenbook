@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "status": "static_material_natural_face_refinement",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-84328a20-b9d5-4e12-8ac9-6d4e030dfeef.png",
+  "references": [
+    "res://assets/art/gardener-v30/idle.png",
+    "res://assets/art/gardener-v28/idle.png"
+  ],
+  "prompt": "Please perform a careful LOCAL FACIAL REDRAW on this exact existing full-body adult woman pixel-game sprite. Keep her identity and every non-face part unchanged: same warm light gray blouse, berry-red bow, chestnut ponytail, clothed figure, hands, stance, size, canvas placement and transparency. Same 1254x1254 canvas.\n\nThe previous fix removed a bad block mouth, but the face is still dominated by big nearly-black eye wedges and heavy eyebrow marks; at small gameplay scale it reads stiff and doll-like. The player asks for a MUCH more thoughtfully attractive face. Please actually improve the eyes and face contour rather than copying the old features untouched.\n\nWithin the exposed face around x494..643,y325..467 only:\n- Design smaller, gentler ALMOND-shaped brown eyes, about 15-20% shorter vertically than the current eyes. Calm smiling eyes with a relaxed slightly lifted outer corner, naturally balanced in 3/4 view. Keep both eyes open and gaze forward-left, not closed crescents or a wink.\n- Replace the solid jet-black wedges around the eyes with fine WARM DARK BROWN upper lids. Brown irises should dominate, only a very small ivory glint/eye-white accent. Do not enlarge whites or add eyelashes. No deep black filled eye blocks, no googly eyes, no eyeliner makeup.\n- Thin, softly curved warm-brown eyebrows, less dark and separated from the eyes, not angry diagonals or hard black triangles.\n- A softly rounded upper cheek flowing into a SHORT, gently tapered chin. Remove the long flat dark jaw shelf. Use restrained warm skin-shadow boundaries rather than a heavy black face border. Keep the same overall head scale, natural adult proportions; don't make a baby, chibi doll or sharply pointed anime chin.\n- A discreet, delicate small closed-lip smile with a lightly lifted corner and subtly smiling cheeks. The mouth is naturally small and integrated into the face. Do NOT enlarge it, do not make a geometric U, a big block symbol or broad lipstick smile.\n- Tiny understated nose, warm healthy peach skin; reduce the large round pink cheek spots to a very subtle few warm skin-shade pixels.\n- The overall expression is a pretty young adult heroine looking quietly happy and approachable, with natural coordinated eyes, cheeks and mouth.\n\nThis remains FINE PIXEL ART matching the current hair and costume, deliberate economical colored clusters with crisp stepped edges. Do not replace the face with a high-resolution painted/airbrushed anime portrait or blurry smooth shading. It must be pleasing when the entire body is only 84 game pixels high; avoid oversized black eye shapes or loud red mouth marks. Keep the current natural warm colors and lighting. Do not impose a literal 4-pixel smile pattern.\n\nOnly facial skin/features and local cheek/chin contour may change. Everything outside the face remains as nearly identical as possible, including the forehead hairline and ears. One complete transparent full-body sprite only, no captions, scenery, ground or shadow.",
+  "processing": "Exact generated PNG copy; original RGB sampled directly on the unchanged grid. No image rescaling, blur or recolor filters.",
+  "scope": "Face refinement only: remove the block-shaped mouth, use smaller warm brown eyes with finer lids and brows, softer cheeks and chin, and a restrained smile. Retain gray blouse, berry bow, body scale, stance, scene and motion.",
+  "palette": {
+    "selected_option": 2,
+    "blouse": "light warm gray oatmeal",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      405,
+      151,
+      490,
+      1022
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.3,
+      0.1
+    ],
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 169.51834130781498,
+    "comparison": "Previous v30 at the same grid, scene and foot anchor; v31 facial cells have independently calibrated sampling.",
+    "comparison_artifact": "artifacts/character-material-v31/pixel-grid/comparison.png",
+    "face_grid_region": [
+      44,
+      28,
+      13,
+      11
+    ],
+    "face_sample_offset": [
+      0.9,
+      0.9
+    ]
+  },
+  "acceptance": "Two face passes reviewed at source, integer enlarged pixel card and actual game size. User aesthetic acceptance pending; no animation integration.",
+  "sha256": "be0068983d1e69b46a24e797aec68290cafb002a907aa5389a0098f641fb6b3d",
+  "generation_history": [
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-dd300a98-24a0-4cab-8a0d-cd6075d00a80.png",
+      "prompt": "Edit ONLY THE FACE of reference image 1, the current full-body adult woman pixel-art game sprite. The player explicitly rejected this face as ugly. Its chunky red square U-shaped mouth looks like a pasted-on block emoji and MUST be removed completely. Reference image 2 is an earlier version whose gentle natural face the player liked; use its natural charm and identity as guidance, but keep ALL the clothes, berry bow, body silhouette and pose from image 1.\n\nReturn ONE full-body transparent RGBA sprite, EXACT same 1254x1254 canvas, same transparent padding, overall scale, on-canvas placement and feet location as image 1. Only local exposed facial skin and facial features (roughly x493..643, y326..464) may be thoughtfully redrawn. No changes to the hair, hairline, ponytail, ears, neck, light warm gray blouse, berry-red bow, body, hands, shorts, belt or boots.\n\nArt direction for the corrected face:\n- Restore a genuinely natural, pretty, gently smiling adult heroine, with a calm kind expression. Keep her recognizable, same head size and 3/4 gaze toward viewer-left.\n- Replace the huge red block mouth with a SMALL, delicate, understated closed-lip smile: a short fine warm rose-brown line with a subtly lifted corner. It should be integrated into the skin, NOT a red symbol, NOT a geometric four-block U, NOT wide lipstick, NOT a broad grin. Let relaxed eyes and a slight soft cheek lift carry the smile instead of enlarging the mouth.\n- Thoughtfully refine both eyes: smaller economical brown irises with tiny restrained ivory glints, fine warm dark-brown upper lids, balanced near/far eye perspective, a friendly relaxed gaze. Reduce big harsh black wedges and broad stark white eye shapes. Thin soft eyebrows with comfortable separation from eyelids, no angry triangles or exaggerated eyelashes.\n- A softly oval face: smooth STEPPED pixel transition from cheek to a short subtly tapered chin. Avoid the broad flat horizontal jaw shelf and dark black border. Do not make a sharply pointed chin or shrink the face oddly.\n- Tiny subtle nose, natural warm peach skin with very restrained blush. No large pink cheek stickers, no heavy makeup, no global whitening or color filter.\n- The face should remain recognizable and gently smiling at an 84-pixel-high full body. Use intentional delicate pixel clusters coherent with the surrounding hair, not giant square blocks imposed on the mouth. Do not force a literal smile icon or a prescribed number of red pixels. Visual beauty and coherent expression matter more than conspicuous mouth pixels.\n- Preserve the existing refined cozy pixel-art style. No smooth painted anime portrait, no blur, no anti-aliased vector smile, no plasticky skin. Crisp economical pixel craftsmanship, nuanced warm face shading using a small palette.\n\nImportant: leave all non-face areas of reference 1 as nearly pixel-identical as possible, including the approved light gray / muted berry palette and gently fuller clothed torso. No further body changes. No background, ground, caption or comparison sheet. One complete transparent sprite with a much more natural, carefully refined face."
+    },
+    {
+      "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-84328a20-b9d5-4e12-8ac9-6d4e030dfeef.png",
+      "prompt": "Please perform a careful LOCAL FACIAL REDRAW on this exact existing full-body adult woman pixel-game sprite. Keep her identity and every non-face part unchanged: same warm light gray blouse, berry-red bow, chestnut ponytail, clothed figure, hands, stance, size, canvas placement and transparency. Same 1254x1254 canvas.\n\nThe previous fix removed a bad block mouth, but the face is still dominated by big nearly-black eye wedges and heavy eyebrow marks; at small gameplay scale it reads stiff and doll-like. The player asks for a MUCH more thoughtfully attractive face. Please actually improve the eyes and face contour rather than copying the old features untouched.\n\nWithin the exposed face around x494..643,y325..467 only:\n- Design smaller, gentler ALMOND-shaped brown eyes, about 15-20% shorter vertically than the current eyes. Calm smiling eyes with a relaxed slightly lifted outer corner, naturally balanced in 3/4 view. Keep both eyes open and gaze forward-left, not closed crescents or a wink.\n- Replace the solid jet-black wedges around the eyes with fine WARM DARK BROWN upper lids. Brown irises should dominate, only a very small ivory glint/eye-white accent. Do not enlarge whites or add eyelashes. No deep black filled eye blocks, no googly eyes, no eyeliner makeup.\n- Thin, softly curved warm-brown eyebrows, less dark and separated from the eyes, not angry diagonals or hard black triangles.\n- A softly rounded upper cheek flowing into a SHORT, gently tapered chin. Remove the long flat dark jaw shelf. Use restrained warm skin-shadow boundaries rather than a heavy black face border. Keep the same overall head scale, natural adult proportions; don't make a baby, chibi doll or sharply pointed anime chin.\n- A discreet, delicate small closed-lip smile with a lightly lifted corner and subtly smiling cheeks. The mouth is naturally small and integrated into the face. Do NOT enlarge it, do not make a geometric U, a big block symbol or broad lipstick smile.\n- Tiny understated nose, warm healthy peach skin; reduce the large round pink cheek spots to a very subtle few warm skin-shade pixels.\n- The overall expression is a pretty young adult heroine looking quietly happy and approachable, with natural coordinated eyes, cheeks and mouth.\n\nThis remains FINE PIXEL ART matching the current hair and costume, deliberate economical colored clusters with crisp stepped edges. Do not replace the face with a high-resolution painted/airbrushed anime portrait or blurry smooth shading. It must be pleasing when the entire body is only 84 game pixels high; avoid oversized black eye shapes or loud red mouth marks. Keep the current natural warm colors and lighting. Do not impose a literal 4-pixel smile pattern.\n\nOnly facial skin/features and local cheek/chin contour may change. Everything outside the face remains as nearly identical as possible, including the forehead hairline and ears. One complete transparent full-body sprite only, no captions, scenery, ground or shadow."
+    }
+  ],
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11160,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_pixels": 169.518341307815,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 2,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.899999976158142,
+        0.899999976158142
+      ],
+      "grid_cells": [
+        112.0,
+        104.0
+      ],
+      "height_ratio_to_previous": 1.00491642084562,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9360,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.300000011920929,
+        0.100000001490116
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "be0068983d1e69b46a24e797aec68290cafb002a907aa5389a0098f641fb6b3d"
+    },
+    "face": {
+      "mouth_cells": [
+        [
+          48,
+          35
+        ],
+        [
+          49,
+          35
+        ]
+      ],
+      "left_eye_highlights": 1,
+      "right_eye_highlights": 3,
+      "both_pupils_visible": true
+    },
+    "review": "Selected warm brown eye construction and restrained smile after comparing sampling candidates. Removed the geometric block-U test that enforced the rejected facial design; retain feature-presence and exact rendered RGB checks.",
+    "scope_integrity": "Ten frozen scene, movement, companion and previous-art files unchanged. Static shader calibrates only facial cells; remaining cells keep the established sampling offset. No changed scene pixels outside the character comparison region."
+  }
+}

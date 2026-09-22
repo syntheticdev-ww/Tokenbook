@@ -1,0 +1,212 @@
+{
+  "production_eligible": false,
+  "scale": 0.0337768679631525,
+  "transition": [
+    {
+      "anchor": [
+        599.32568359375,
+        1113.02709960938
+      ],
+      "file": "res://assets/art/gardener-v18/frames/idle.png",
+      "sha256": "323fa249f657ea996eac72a0e700a9ee8fce940c039e53adf24dc9d3466749e9"
+    },
+    {
+      "anchor": [
+        600.245422363281,
+        1112.71765136719
+      ],
+      "file": "res://assets/art/gardener-v18/frames/depart-01.png",
+      "sha256": "56c1d20fc5c8b6672205ed036cd74b5c4013fbb16efbc68d95f8a065b513f835"
+    },
+    {
+      "anchor": [
+        598.935180664062,
+        1112.67272949219
+      ],
+      "file": "res://assets/art/gardener-v18/frames/depart-02.png",
+      "sha256": "62549b2c5d60736a23743065ad343a1e334793ede67c7ea0e8f8761773462c42"
+    },
+    {
+      "anchor": [
+        599.167846679688,
+        1113.04931640625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "sha256": "1c94040b89d3eca0d2300672265c9996d9b71d85e227f7de50081fe6ffce5c01"
+    }
+  ],
+  "version": 1,
+  "walk": [
+    {
+      "anchor": [
+        600.0,
+        1120.0
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-00.png",
+      "phase": 0.0,
+      "sha256": "a41948c586d275f65d85a20387fdde6667e92020f41b6e6b68fad01096d4e71a"
+    },
+    {
+      "anchor": [
+        600.676147460938,
+        1118.7705078125
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-01.png",
+      "phase": 1.0,
+      "sha256": "e70b57cf35e3674a9d78598ed780cfe43e21c3a50028f4edf5541116bbb4a185"
+    },
+    {
+      "anchor": [
+        600.746704101562,
+        1119.24536132812
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-02.png",
+      "phase": 2.0,
+      "sha256": "6aa0268d5211d7d24fd9eaac105215f5ed3efa7930a0b0a7e28470b148c566cb"
+    },
+    {
+      "anchor": [
+        601.778686523438,
+        1116.6015625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-03.png",
+      "phase": 3.0,
+      "sha256": "b5a667686b94d1ccd95b53ea35e3746282894fc590e7d439a8e136199ecd4781"
+    },
+    {
+      "anchor": [
+        599.52978515625,
+        1114.63842773438
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-04.png",
+      "phase": 4.0,
+      "sha256": "7d478d918e60f7056a43f348ea2c9ddcf9ec2925e5a7f2504630c92f51f1918e"
+    },
+    {
+      "anchor": [
+        599.167846679688,
+        1113.04931640625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-04a.png",
+      "phase": 4.5,
+      "sha256": "1c94040b89d3eca0d2300672265c9996d9b71d85e227f7de50081fe6ffce5c01"
+    },
+    {
+      "anchor": [
+        599.739013671875,
+        1113.82836914062
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-05.png",
+      "phase": 5.0,
+      "sha256": "cd5feec22d36974acfa998dc37472d91e46d7a62e49f94b921e1a80a3dee4892"
+    },
+    {
+      "anchor": [
+        600.06103515625,
+        1117.66027832031
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-06.png",
+      "phase": 6.0,
+      "sha256": "f2dd88bfa46b422324fbec6e5a6226a950f662e8af78505c92cb929d700385af"
+    },
+    {
+      "anchor": [
+        599.664184570312,
+        1116.65087890625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-07.png",
+      "phase": 7.0,
+      "sha256": "02395ef6ab6c2f6348291c25ad2b231f6ed6c1563c881e2b639255da90889e1a"
+    },
+    {
+      "anchor": [
+        601.95361328125,
+        1115.57397460938
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-08.png",
+      "phase": 8.0,
+      "sha256": "a21ae2c5d96c5d64cb9ad37c3f504231d3cff610238d67827375d1c65e105ae4"
+    },
+    {
+      "anchor": [
+        604.490539550781,
+        1114.30224609375
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-09.png",
+      "phase": 9.0,
+      "sha256": "71df9e4ee321fba5f420c3adbcba3b1812fc343471980e274024b395cecf9888"
+    },
+    {
+      "anchor": [
+        600.200561523438,
+        1116.28466796875
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-10.png",
+      "phase": 10.0,
+      "sha256": "44796c6fc593ec21d1146ace3b150aa85c14e4e4c431ee92c04e54a4b95c0895"
+    },
+    {
+      "anchor": [
+        598.976928710938,
+        1113.14575195312
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-10a.png",
+      "phase": 10.3333333333333,
+      "sha256": "4ecaafeaff4e480d161f980435253be144f131c548a79a0fb40c5a6409a0a14b"
+    },
+    {
+      "anchor": [
+        598.629516601562,
+        1113.48571777344
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-10b.png",
+      "phase": 10.6666666666667,
+      "sha256": "83473d86ef0ab8341c65a8daafb038f79b6540e92235612d50b9168245904e33"
+    },
+    {
+      "anchor": [
+        600.125,
+        1114.25561523438
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-11.png",
+      "phase": 11.0,
+      "sha256": "4d137e0b1999adbf9ce16413ffd1243d920e6dd016dd615245d51ea401c2eb57"
+    },
+    {
+      "anchor": [
+        597.215148925781,
+        1117.35852050781
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-12.png",
+      "phase": 12.0,
+      "sha256": "2a4c82225eec54b5f51928bbe596d3328140eeac4629ec20ff1036acf0a53e18"
+    },
+    {
+      "anchor": [
+        601.505737304688,
+        1114.87280273438
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-13.png",
+      "phase": 13.0,
+      "sha256": "53c3959b707cc43247e8f4b9edc058c6ca8f5558abf542f63e9a9819e6359477"
+    },
+    {
+      "anchor": [
+        603.402709960938,
+        1118.99462890625
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-14.png",
+      "phase": 14.0,
+      "sha256": "cd9db7c21114479cd20c9d0d4cfd61d4af662aaa71901e770b6027efa340da73"
+    },
+    {
+      "anchor": [
+        604.228515625,
+        1117.9111328125
+      ],
+      "file": "res://assets/art/gardener-v17/frames/front-15.png",
+      "phase": 15.0,
+      "sha256": "fc1bbc71712e2e4800fe0dd38471d955371179f94ccfe8ff18eecd76ac9c36fd"
+    }
+  ]
+}

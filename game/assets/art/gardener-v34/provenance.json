@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "status": "static_material_closed_smile_subtle_pixel_clusters",
+  "animation_integrated": false,
+  "source": "/Users/weilishuai.1/.codex/generated_images/01a0b8fe-1b95-7cb0-b939-4408fb9bf10d/exec-e56e6120-49bd-4327-b252-54c81fe7e4cd.png",
+  "references": [
+    "res://assets/art/gardener-v33/idle.png"
+  ],
+  "prompt": "Make a restrained refinement of this EXACT existing adult heroine game sprite. One complete transparent full-body sprite, same 1254x1254 canvas, exact same position, scale, pose and padding.\n\nTwo requested changes:\n1. Replace the open/toothy grin with a natural, gentle CLOSED-MOUTH SMILE. Lips together, softly raised corners, a fine warm rose-brown curved lip line, comfortable happy expression. Absolutely NO teeth, NO white mouth stripe, no opening between the lips, no black mouth cavity. Keep the mouth small, delicate and proportionate, not a pasted-on U, not a red block, not a big grin or a pout. Retain the same pretty oval face, both large OPEN brown eyes, bright eye catchlights and subtle cheek lift so she still looks softly happy. Do not make her blank-faced, sleepy or childlike.\n2. Strengthen the PIXEL ART feel only SLIGHTLY, around a 10-15% stylistic adjustment. Replace the remaining smooth/airbrushed skin and face transitions with tasteful deliberately drawn fine pixel color clusters, clean stepped contour corners and restrained 3-5 tone shade ramps. Match the face to the fine pixel-art hair and clothes. Make a few hair, ribbon, fabric and boot highlights more clearly shaped pixel clusters. Keep the lovely detailed premium cozy-game aesthetic. The FULL BODY renders about 170 physical pixels high, so use a coherent fine pixel cadence that reads clearly at that size. Crisp edges, gently simplified color planes, still detailed. Do NOT make large coarse mosaic blocks, do not reduce the overall resolution or make the eyes small, do not use blur, heavy dithering, random noise, thick new outlines or a sharpening filter.\n\nEverything else is preserved: current head and body proportions, single chestnut ponytail silhouette, berry rose red bow, cream-yellow button-front sleeveless blouse (#EACB76) and deep-indigo cuffed shorts (#46566F), skin palette, brown belt/gold buckle and buttons, green hip pouch, ivory socks, brown boots, hands, feet, neutral standing pose. No new costume, no color palette shift, no background, no ground shadow, no captions, no extra poses. Only the closed smile and subtle authored pixel-art styling refinement.\n",
+  "processing": "Exact generated PNG copy. Original source texels sampled at physical display resolution with hard alpha. No bitmap processing, sharpening, blur or global recoloring.",
+  "scope": "Closed-mouth gentle smile and a restrained increase in authored pixel clusters on skin, hair, ribbon and clothing. Preserve palette, size, pose and background.",
+  "palette": {
+    "selected_option": 1,
+    "blouse": "cream yellow #EACB76",
+    "shorts": "deep indigo #46566F",
+    "hair_bow": "muted berry red"
+  },
+  "static_registration": {
+    "anchor": [
+      644.75341796875,
+      1160.8876953125
+    ],
+    "source_bounds": [
+      405,
+      152,
+      489,
+      1021
+    ],
+    "active_walk_manifest": "res://assets/art/gardener-v24/character.json"
+  },
+  "pixel_preview": {
+    "grid_canvas_at_retina": [
+      224,
+      208
+    ],
+    "logical_canvas": [
+      112,
+      104
+    ],
+    "sample_offset": [
+      0.5,
+      0.5
+    ],
+    "face_sampling_override_at_retina": false,
+    "command": "npm run game:material-preview",
+    "static_only": true,
+    "body_screen_pixels_at_retina": 169.3524720893142,
+    "comparison_artifact": "artifacts/character-material-v34/pixel-grid/comparison.png",
+    "one_x_display": {
+      "grid": [
+        112,
+        104
+      ],
+      "sample_offset": [
+        0.3,
+        0.1
+      ],
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.2,
+        0.8
+      ]
+    }
+  },
+  "acceptance": "Reviewed source, integer-enlarged fine-grid card and actual scene comparison. Closed lips and gently raised corners remain visible, with slightly stronger pixel clusters in hair, clothing and skin. Awaiting user aesthetic feedback; static material only.",
+  "sha256": "a6eb116d26a85551b1ccb914c7fdcb43903af9fb7c43b1472b7b968c2267921b",
+  "background": {
+    "asset": "res://assets/art/farm-background-landscape-v1.png",
+    "bitmap_changed": false,
+    "rendering_change": "None in v34; preserve v33 physical-pixel sampling and existing scene."
+  },
+  "verification": {
+    "command": "npm run game:material-test",
+    "rendered": {
+      "background_checked_pixels": 11403,
+      "background_grid_density": 2.0,
+      "background_grid_errors": 0,
+      "background_source_color_errors": 0,
+      "body_logical_pixels": 84.6762360446571,
+      "body_pixels": 169.352472089314,
+      "canvas_pixels": [
+        224.0,
+        208.0
+      ],
+      "cell_screen_pixels": 1,
+      "changed_pixels_outside_character_area": 0,
+      "face_grid_region": [
+        44,
+        28,
+        13,
+        11
+      ],
+      "face_sample_offset": [
+        0.200000002980232,
+        0.800000011920929
+      ],
+      "face_sampling_override": false,
+      "grid_cells": [
+        224.0,
+        208.0
+      ],
+      "height_ratio_to_previous": 0.998044965786901,
+      "motion_distance": 0.0,
+      "motion_kind": "idle",
+      "physical_top_left": [
+        1027.0,
+        359.0
+      ],
+      "real_scene_checked_colors": 9300,
+      "real_scene_color_errors": 0,
+      "sample_offset": [
+        0.5,
+        0.5
+      ],
+      "scope": "static material preview only",
+      "source_sha256": "a6eb116d26a85551b1ccb914c7fdcb43903af9fb7c43b1472b7b968c2267921b",
+      "window_physical_size": [
+        2240,
+        1480
+      ]
+    },
+    "feature_checks": {
+      "density_1": {
+        "grid_errors": 0,
+        "color_errors": 0,
+        "eye_highlights": [
+          2,
+          4
+        ],
+        "eye_pupils": [
+          8,
+          8
+        ],
+        "lip_cells": 1,
+        "tooth_cells": 0
+      },
+      "density_2": {
+        "grid_errors": 0,
+        "color_errors": 0,
+        "eye_highlights": [
+          5,
+          11
+        ],
+        "eye_pupils": [
+          36,
+          36
+        ],
+        "lip_cells": 4,
+        "tooth_cells": 0
+      }
+    },
+    "scope_integrity": "Background, window geometry, rendering shader, animation and previous sprite hashes preserved. Zero changed real-scene pixels outside the character comparison area."
+  }
+}

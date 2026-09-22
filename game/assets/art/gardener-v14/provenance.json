@@ -1,0 +1,219 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "edit",
+  "date": "2026-09-18",
+  "status": "candidate_not_accepted",
+  "production_eligible": false,
+  "purpose": "Whole-body authored arm-swing exploration, no detached limb assembly or single-image deformation.",
+  "selection": "game/tests/whole_body_selection.gd",
+  "source_processing": "Generated PNGs copied byte-for-byte. Godot inspection applies a uniform scale and whole-body translation only. No bitmap pixels altered by scripts.",
+  "qa": {
+    "entrypoint": "game/tests/whole_body_art_tests.gd",
+    "playback": "game/tests/whole_body_visual.gd",
+    "note": "Continuity gates and human visual review are separate; passing playback checks never grants production approval.",
+    "known_issues": [
+      "Some successive skin shades still vary.",
+      "Near-hand trajectory still has an abrupt passing interval.",
+      "Far-arm occlusion and phase coordination need authored review.",
+      "Rear, start and stop clips are not provided by this candidate."
+    ]
+  },
+  "assets": [
+    {
+      "asset": "front-00.png",
+      "source_output": "exec-60629cfb-1f06-4276-a93e-f264b2997bcc.png",
+      "sha256": "bb9e646d57b4ba070686a842b1b86e8771c033d4d50cc8b5d9124520fd1a621f",
+      "prompt": "Use case: precise-object-edit. Input1 is the exact whole-body pixel sprite to edit.\nCreate the opposite contact pose of the SAME farmer in the SAME fixed front-left three-quarter camera. Keep canvas 1254x1254, the entire head/face/neck/hair/bow pixels, torso, clothing design, body size, original warm colors and crisp pixel clusters unchanged. Do not redesign, move or resize the head.\nChange the limbs into CONTACT A: the NEAR leg (emerging from the right side of shorts) reaches FORWARD toward viewer-left, in front of the other leg; the FAR leg extends BACK toward viewer-right, visible behind. Low relaxed walking, not high kicks.\nOpposing arms: the NEAR arm from the right shoulder now swings BACK/down toward viewer-right, with relaxed hand beside and slightly behind the hip pouch. Elbow softly flexed. The FAR arm from left shoulder swings FORWARD/down toward viewer-left, relaxed hand at upper-thigh height. This must be the opposite arm position from the input, but same natural full-size arm thickness and shoulder attachment. No detached joints, no arm shortening or straight soldier arms.\nKeep normal coherent pixel-art volume and exact original face. Soles align to original ground baseline; no whole-body bounce or height change. One complete person, genuine transparent alpha background, no shadow, no glow, no text, no extra figures.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-01.png",
+      "source_output": "exec-361db29a-0043-4299-9101-1cca46ab3178.png",
+      "sha256": "fbd9dbe973d12dc170df00467a5805c5609c2e2cc9ec782d4d59d840be073806",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep input1's complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The NEAR planted boot is halfway back between its long forward contact in image1 and its under-hip support in image2; FAR trailing heel begins lifting. Arms are only slightly closer to neutral than image1. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-02.png",
+      "source_output": "exec-8fc4604c-f988-4d8c-9bb1-3121aa13e856.png",
+      "sha256": "de897562f30e378d37f6a7b49b7824bd797531aa170667a656f4d9a054d491c3",
+      "prompt": "Use case: precise-object-edit. Edit input1 into ONE different whole-body animation pose of the EXACT SAME pixel farmer. Preserve canvas1254x1254, complete head/face/hair/bow pixels and their position, original compact proportions, body volume, clothing, warm palette, and crisp pixel clusters. Do not redraw or rescale the head, torso or character. Fixed front-left three-quarter camera.\nCHANGE ONLY limb pose and necessary natural occlusion: Down/support pose A, immediately after the input contact. NEAR leg (attached to shorts on viewer-right, the leg currently crossing in front) has accepted weight: bring its planted boot moderately back toward below the hip, knee only slightly flexed. FAR leg behind has heel rising and knee beginning to bend, trailing toe near ground. NEAR arm at viewer-right swings back only halfway as far as input, moving gently toward hanging beside hip; FAR arm at viewer-left swings forward only halfway as far, also easing toward hip. Keep the full leg/arm alternation and low relaxed step. Do not put the rear leg in front.\nNatural cohesive anatomy, same arm/leg thickness and size, softly flexed elbows, hands relaxed LOW near upper thighs, no fist on belly, no isolated limb pieces or shoulder sockets, no paper deformation, no running or high knees. Head and waist steady. One complete person, genuine transparent alpha background, no scenery, glow, shadows, extra figures, text or grid. Keep original detail, not a new design.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-03.png",
+      "source_output": "exec-6cb6c36a-dcc2-44cc-aa7a-5a3bab08a77f.png",
+      "sha256": "3b78388d3d7c46a7575770fda70f47aaa8daa69a910d73225650d2287b19b85c",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep input1's complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The near leg keeps supporting, far foot bends/passes a little forward from image1 toward image2. Both hands ease down toward the passing positions; no sudden arm change. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-04.png",
+      "source_output": "exec-e8a79e39-822f-426e-b7ab-433112509069.png",
+      "sha256": "6e759feda82ef3485be00d34c2baa579e7904dbf56754a481893ecab227333ba",
+      "prompt": "Use case: precise-object-edit. Edit input1 into ONE different whole-body animation pose of the EXACT SAME pixel farmer. Preserve canvas1254x1254, complete head/face/hair/bow pixels and their position, original compact proportions, body volume, clothing, warm palette, and crisp pixel clusters. Do not redraw or rescale the head, torso or character. Fixed front-left three-quarter camera.\nCHANGE ONLY limb pose and necessary natural occlusion: PASSING pose A, halfway between two foot contacts. NEAR leg (attached to viewer-right side of shorts) is the straight weight-support leg with its boot planted directly below the pelvis. FAR leg bends gently and passes beside it: far knee slightly ahead, far boot lifted just a little near the support ankle, not a high knee. Both arms are at NEUTRAL passing positions: hands relaxed almost straight below shoulders beside upper thighs, elbows softly bent, neither arm thrust forward or backward. Keep the forearms low and normal length. All head/face/torso pixels remain fixed.\nNatural cohesive anatomy, same arm/leg thickness and size, softly flexed elbows, hands relaxed LOW near upper thighs, no fist on belly, no isolated limb pieces or shoulder sockets, no paper deformation, no running or high knees. Head and waist steady. One complete person, genuine transparent alpha background, no scenery, glow, shadows, extra figures, text or grid. Keep original detail, not a new design.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-05.png",
+      "source_output": "exec-dc8abe83-a9dd-4a6a-8f84-fa918315810e.png",
+      "sha256": "b8be4954a58133c7b636afab495951337d3228eb765f496f8af12487486873d1",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep input1's complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The FAR swing foot is now passing ahead of the support leg, but only HALFWAY out toward the extended far foot in image2. The NEAR hand must sit halfway between beside-the-pouch position in image1 and forward-across-shorts position in image2: upper arm down, forearm angled gently down-left, low hand in front of the outer right shorts edge. This is a crucial gradual transition, not already the extreme of image2. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-06.png",
+      "source_output": "exec-13bf9b6c-e375-483c-92a3-dafb67ca2db6.png",
+      "sha256": "42a3970f506c0e0230b501d9615a82c82dd687eead73589f73606af325c1ff57",
+      "prompt": "Use case: precise-object-edit. Edit input1 into ONE different whole-body animation pose of the EXACT SAME pixel farmer. Preserve canvas1254x1254, complete head/face/hair/bow pixels and their position, original compact proportions, body volume, clothing, warm palette, and crisp pixel clusters. Do not redraw or rescale the head, torso or character. Fixed front-left three-quarter camera.\nCHANGE ONLY limb pose and necessary natural occlusion: UP/REACH pose A just before the opposite foot makes contact. The FAR leg (attached at viewer-left edge of shorts, behind the near thigh) has swung FORWARD toward viewer-left, knee modestly flexed, boot just above the ground and ahead of body; the NEAR leg (viewer-right attachment) stays BACK with heel lifting, toe on ground. Make the far thigh the forward leg, not the near thigh. NEAR arm from right shoulder is swinging FORWARD halfway to its extreme, forearm sloping down-left, hand low in front of near hip, only partially overlapping shorts. FAR arm is behind torso, partially occluded. Low step, relaxed counter-swing, no high knee.\nNatural cohesive anatomy, same arm/leg thickness and size, softly flexed elbows, hands relaxed LOW near upper thighs, no fist on belly, no isolated limb pieces or shoulder sockets, no paper deformation, no running or high knees. Head and waist steady. One complete person, genuine transparent alpha background, no scenery, glow, shadows, extra figures, text or grid. Keep original detail, not a new design.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-07.png",
+      "source_output": "exec-2dba54c1-8164-4b1c-9d5a-19fbbdfb4eaf.png",
+      "sha256": "7dfc5ce345ea513aa3502f97c9c80844220fbf96253394940de1d2668cd3b841",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep input1's complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The FAR forward boot is lowering gently to the ground; the NEAR leg remains trailing and rooted. The near arm settles slightly farther forward toward its maximum, with very small elbow change; far arm stays naturally behind torso. Preserve the head of image1, ignore any head differences in image2. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-08.png",
+      "source_output": "exec-6fecd4d6-0d24-4fa3-a11c-40095e50c797.png",
+      "sha256": "dff452caf75a5e2616d88a50a0875b267eb1d34f594849922e09c415a0c32a0d",
+      "prompt": "Use case: precise-object-edit. Single animation key drawing, NOT a sprite sheet.\nImage1 is the source. Isolate exactly ONE complete figure: row2 column3 (the ninth figure, counting from1), which has the camera-near leg trailing behind and the far leg extended forward. Keep this original person's compact proportions, detailed pixel shading, face, hair, bow, teal vest, tan shorts, pouch, leg/boot stance and warm colors. No redesign.\nCHANGE ONLY THE TWO ARMS to the opposite arm-swing extreme:\nThe NEAR arm starts at the shoulder on VIEWER RIGHT. Swing it FORWARD toward VIEWER LEFT, naturally crossing in front of the outer edge of the shorts. Its upper arm slopes down-left from the same shoulder; elbow softly bent; forearm continues down-left; relaxed hand hangs in FRONT of the shorts at upper thigh height. This arm must NO LONGER extend down-right beside the pouch. Keep natural thickness and full volume, not a skinny stick, no shoulder socket.\nThe FAR arm at viewer-left shoulder swings BACK behind the torso, mostly occluded, with just a little elbow/hand visible at the far hip. Arms are opposite, not both forward.\nThis is a low relaxed arm swing, NOT a fist on belly, NOT folded arms. Body posture, head, face and legs EXACTLY the original pose. Naturally connected shoulder anatomy and occlusion, one fully drawn complete person.\nOutput one centered full-body sprite only, generous padding, same pixel-art rendering as the source, genuine transparent alpha background. No background color, glow, scenery, shadow, text, duplicate figure or grid.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-09.png",
+      "source_output": "exec-12a6e2f4-2250-40e3-a579-b0acfb1369aa.png",
+      "sha256": "849531f5124371c39c71a040e44eecff1e0b39a2e54fbb9129e3e4aacd6f8b77",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep the complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The FAR forward boot is accepting weight and drawing back a little toward the hip; the NEAR trailing heel is lifting. Keep near hand LOW and forward near the front shorts edge, only slightly returning. Preserve image2's head proportions/color, the head in image1 must not make her head larger or change skin. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-10.png",
+      "source_output": "exec-ee21ff0e-33e0-4771-9796-7f9b4309e95f.png",
+      "sha256": "504e615ca5577e6ee0b187a8a704034fb61ee3645862507532be44f1eda05fae",
+      "prompt": "Use case: precise-object-edit. Edit input1 into ONE different whole-body animation pose of the EXACT SAME pixel farmer. Preserve canvas1254x1254, complete head/face/hair/bow pixels and their position, original compact proportions, body volume, clothing, warm palette, and crisp pixel clusters. Do not redraw or rescale the head, torso or character. Fixed front-left three-quarter camera.\nCHANGE ONLY limb pose and necessary natural occlusion: DOWN/SUPPORT pose B, opposite foot from input supports weight. The FAR leg attached at VIEWER-LEFT shorts edge is in FRONT and planted closer under the pelvis, accepting weight. The NEAR leg attached at VIEWER-RIGHT shorts edge is BEHIND, its heel lifting and knee softly bending backward; near boot trailing viewer-right. NEAR arm from right shoulder is swung FORWARD, low hand in front of left/front side of shorts; move it halfway toward vertical neutral from its forward extreme. FAR arm is swung back, mostly behind torso. This is the opposite support leg from input. Keep the two thigh attachments anatomically clear.\nNatural cohesive anatomy, same arm/leg thickness and size, softly flexed elbows, hands relaxed LOW near upper thighs, no fist on belly, no isolated limb pieces or shoulder sockets, no paper deformation, no running or high knees. Head and waist steady. One complete person, genuine transparent alpha background, no scenery, glow, shadows, extra figures, text or grid. Keep original detail, not a new design.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-11.png",
+      "source_output": "exec-f8408594-264a-4415-9db5-d83af503e578.png",
+      "sha256": "8024da60fc1846372bd68ec94c201bf2e86ac3cc74ffeffcb3e7387934963cbf",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep the complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The NEAR hand MUST be halfway along its returning arc: hand hangs DIRECTLY BELOW the right/near shoulder (around x665,y750 on this1254x1254 image), NOT crossed all the way over to the left thigh and NOT yet far out beside pouch. Upper arm mostly down, gentle elbow bend. Far arm passes behind the torso toward far thigh. Near knee bends forward and the near boot lifts halfway toward image2; far planted leg supports. This is a genuine intermediate pose, not a copy of either endpoint. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-12.png",
+      "source_output": "exec-f77f01f8-6c84-414f-9227-aa7f600efd64.png",
+      "sha256": "cf220e5cba030749a665f7be7a988e5e2fb4619c89b8b2262d2ac71b077cdb81",
+      "prompt": "Use case: precise-object-edit. Edit input1 into ONE different whole-body animation pose of the EXACT SAME pixel farmer. Preserve canvas1254x1254, complete head/face/hair/bow pixels and their position, original compact proportions, body volume, clothing, warm palette, and crisp pixel clusters. Do not redraw or rescale the head, torso or character. Fixed front-left three-quarter camera.\nCHANGE ONLY limb pose and necessary natural occlusion: PASSING pose B, opposite support leg from the input. The FAR leg attached at VIEWER-LEFT shorts edge is straight and planted almost directly beneath the pelvis. The NEAR leg attached at VIEWER-RIGHT shorts edge swings FORWARD beside it: near knee softly bent, raised only a little, shin angled back under knee, boot lifted a little next to the planted ankle. Show the NEAR thigh in front at the overlap. BOTH arms are at NEUTRAL passing position, hands below shoulders beside thighs, right/near forearm no longer crossing shorts or swinging behind pouch; left/far hand visible at far thigh. No high knee or foot planted out to the right.\nNatural cohesive anatomy, same arm/leg thickness and size, softly flexed elbows, hands relaxed LOW near upper thighs, no fist on belly, no isolated limb pieces or shoulder sockets, no paper deformation, no running or high knees. Head and waist steady. One complete person, genuine transparent alpha background, no scenery, glow, shadows, extra figures, text or grid. Keep original detail, not a new design.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-13.png",
+      "source_output": "exec-5ad7dd00-799a-4be8-b294-464a1c59c726.png",
+      "sha256": "dc377435b4453fed405fd2a5b4402d3e9f5aab5a1f7dec758b2eb6c8396bf774",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep input1's complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The NEAR lower leg moves from the bent passing pose toward the forward-reaching pose, but is ONLY halfway extended. Near knee stays modestly bent, boot is ahead of planted far shin and slightly above ground. Near hand is easing just a little back beside pouch; far hand just a little forward. Do not jump directly to the long forward step. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-14.png",
+      "source_output": "exec-22300058-e9da-4bc0-95e2-3af001f68140.png",
+      "sha256": "2da8090b56a9b5dfede15988ca95ad04f0c109a2f520d30fd7d9003c3c8bd263",
+      "prompt": "Use case: precise-object-edit. Edit input1 into ONE different whole-body animation pose of the EXACT SAME pixel farmer. Preserve canvas1254x1254, complete head/face/hair/bow pixels and their position, original compact proportions, body volume, clothing, warm palette, and crisp pixel clusters. Do not redraw or rescale the head, torso or character. Fixed front-left three-quarter camera.\nCHANGE ONLY limb pose and necessary natural occlusion: UP/REACH pose B immediately before the original contact pose. The NEAR leg attached at viewer-right shorts edge reaches forward toward viewer-left, crossing in FRONT of far leg, knee softly flexed, boot just above ground, not extended as far as input. FAR leg extends BACK toward viewer-right, heel lifting with toe grounded. NEAR arm from right shoulder swings BACK/down halfway toward the input backward extreme, relaxed hand beside the right hip/pouch; FAR arm swings FORWARD/down halfway toward the input forward extreme, hand low near far thigh. A small low flowing stride, no high kick.\nNatural cohesive anatomy, same arm/leg thickness and size, softly flexed elbows, hands relaxed LOW near upper thighs, no fist on belly, no isolated limb pieces or shoulder sockets, no paper deformation, no running or high knees. Head and waist steady. One complete person, genuine transparent alpha background, no scenery, glow, shadows, extra figures, text or grid. Keep original detail, not a new design.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-15.png",
+      "source_output": "exec-015f7e5d-d735-4a70-ba1e-beddccfdc601.png",
+      "sha256": "c6c66972878eabdcc309533319da12ec1320ae1c97ac2d341031aad409bbcb78",
+      "prompt": "Use case: precise-object-edit. Make ONE whole-body pixel-art in-between drawing exactly HALFWAY IN POSE between input1 and input2. These are consecutive poses of the same person, NOT two people. Keep input1's complete head/face/hair/bow pixels, torso position, size, original pixel style and palette unchanged. Do not blend images, ghost outlines, stretch parts or redesign anything. Draw the natural intermediate limb pose with proper occlusion, same full-size rounded arms and legs. The NEAR forward heel approaches the ground, halfway from the slightly lifted/reaching input1 to the grounded contact input2. FAR trailing leg remains behind. Arms are near their backward/forward extremes respectively and change very slightly, ensuring a seamless loop back to image2. Keep subtle low relaxed walking, soft elbows, no high knee. Same1254x1254 canvas, same character scale and head position; genuinely transparent alpha background; one cohesive complete person, no shadows, text, other objects or duplicate limbs.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-04-repair.png",
+      "source_output": "exec-d68252cf-5b7a-4c90-8ab2-b1aba8b75daa.png",
+      "sha256": "4ea5ff1ba78396733d983a0a58b7e5663250240d9815746fd5003df5f45ae12a",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the near arm in input1. Preserve entire head/face/hair/bow, far arm, torso, shorts, legs, boots, body scale, canvas1254x1254, colors and transparent alpha exactly unchanged.\nThe near arm connects to the viewer-right shoulder. Move its hand slightly FORWARD toward viewer-left, to overlap just the RIGHT EDGE OF THE TEAL POUCH. The bag's gold button stays visible just to the left of the hand. Palm center aligned with the pouch's outer/right seam, fingers below the flap. Low relaxed backward-to-down passing swing, soft elbow. Hand is not far outside bag and not covering the gold button. Full natural arm thickness, unchanged shoulder; one cohesive whole-body character, no floating limb, no guide/text/other characters or relighting.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-05-repair.png",
+      "source_output": "exec-82cf13cf-3446-401c-914c-7a3a17f00c35.png",
+      "sha256": "83715932d3e5656977f14781c635a0b6ca7704ac8c5f4c9e27ad8881b67bc434",
+      "prompt": "Use case: precise-object-edit. Edit ONLY arm placement in this single pixel sprite. Keep the entire head/face/hair/bow, torso, shorts, legs, boots, body scale, colors, canvas and transparent background EXACTLY unchanged.\nPut the NEAR hand (connected to viewer-right shoulder) IN FRONT OF THE TEAL HIP POUCH, directly COVERING THE POUCH'S GOLD BUTTON and lower flap. The hand is not left over the groin and not outside the pouch on the right. Its palm sits over the front of the bag; fingers hang just below the bag flap near upper-thigh height. This is a low relaxed passing arm swing, not deliberately grabbing the bag. The upper arm slopes almost straight down from the unchanged shoulder, elbow soft; forearm gently angles inward to naturally place that full-size hand in front of the bag. Do not shrink or detach the arm. Allow the proper near-arm occlusion over the bag.\nThe FAR arm hangs relaxed almost straight down from its left-side shoulder, wrist beside the left hip, not thrust forward, partly occluded if needed. Retain its original size.\nOne complete cohesive pixel character; change ONLY the natural two arm poses and what they reveal/occlude. No text, marker, outline guide, recoloring, new lighting, changed legs, isolated parts, shoulder sockets or ghosting. Genuine transparent alpha.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-06-repair.png",
+      "source_output": "exec-a255d2cd-1be8-40c0-afe9-604359a6da87.png",
+      "sha256": "8895309c4d04e0d93221cc692df7b0ce79dac0ff08d92d4a79b104c39c12154b",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the near arm in input1. Keep the entire head/face/hair/bow, far arm, torso, shorts, legs, boots, scale, canvas1254x1254, palette and genuine transparent background unchanged.\nNear arm is connected to the viewer-right shoulder. Move its hand slightly BACK toward the viewer-right relative to its current over-groin position, so its palm rests over the short seam BETWEEN THE TEAL POUCH AND THE CENTRAL SHORTS FLY (not touching anything intentionally). Hand overlaps the right edge of the shorts just left of the bag, fingers hanging at the same height. This is halfway from the hand covering the bag's gold button to the hand covering the central shorts fly. Soft elbow, relaxed low forward swing. Do not shrink arm or hand. Keep volume and shoulder connection. Whole single sprite, no outline guide, text, ghosting, changes to head or other body parts.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-08-repair.png",
+      "source_output": "exec-70561b12-af65-461d-84a4-3a0090a65703.png",
+      "sha256": "cf8058bd076e7fd41f7d646eed3d90f9173ad282f7883f8809a5447c66ed8b55",
+      "prompt": "Use case: precise-object-edit. Input 1 is the exact source pixel character. Output ONE full-body pose, same 1254x1254 canvas, transparent alpha. Preserve all head, hair, eyes, teal bow, face, shirt, shoulder, arms, hand locations, belt and pouch pixels and colors as closely as possible. Do not redesign, shrink, stretch or brighten anything.\nChange ONLY the legs/boots from this pre-contact walk drawing to the next contact key pose: the far leg (its thigh visible at viewer-left shorts opening) finishes extending a little farther toward the viewer-left foreground, its heel touches the ground at roughly x430 y1105. The camera-near leg (thigh from the viewer-right shorts opening under the pouch) trails behind to viewer right, toes planted around x800 y1040 with heel slightly raised. Knees stay softly flexed, pelvis and torso steady. Maintain leg volume, boots, exposed skin color and low relaxed walking stride; no knee lift, running or marching.\nThe upper body and BOTH arms are unchanged. Same original pixel clusters. Full single cohesive person only, no guide/text/shadow/scenery/second character.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-09-repair.png",
+      "source_output": "exec-d79ef598-ce12-463e-b7fd-2b18f0805176.png",
+      "sha256": "0482958cbb69668c1270c9457b538a51c60c11ebb1be24e7ded4ddaee12b054c",
+      "prompt": "Use case: precise-object-edit. Input1 is the exact source character, only one complete sprite. Preserve head, hair, face, eyes, bow, shirt, waist, arms, hands, pouch, color palette, body volume and camera unchanged. Same 1254x1254 transparent canvas. Change ONLY the lower walking pose slightly toward the next passing phase: bring the viewer-left foreground supporting boot a little backward under the body, from x420 to x470, keeping its sole at the same y1110. Its leg becomes a little more upright. Bend the trailing leg at viewer-right knee a little and lift that heel just slightly, toe still low. This is a very small in-between, not a new step or higher knee. Same crisp detailed pixel shading, same skin colors, no stretch, no head drift, no added figure or text.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-10-repair.png",
+      "source_output": "exec-6047d576-cb9e-40d1-a324-6bc6f2468524.png",
+      "sha256": "ccb15d6b19048aa64702b779164ac7184b4c901e4d25a484263dd055bc63a623",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the near arm in input1. Keep the entire head/face/hair/bow, far arm, torso, shorts, legs, boots, scale, canvas1254x1254, palette and genuine transparent background unchanged.\nNear arm is connected to the viewer-right shoulder. Move its hand slightly BACK toward the viewer-right relative to its current over-groin position, so its palm rests over the short seam BETWEEN THE TEAL POUCH AND THE CENTRAL SHORTS FLY (not touching anything intentionally). Hand overlaps the right edge of the shorts just left of the bag, fingers hanging at the same height. This is halfway from the hand covering the bag's gold button to the hand covering the central shorts fly. Soft elbow, relaxed low forward swing. Do not shrink arm or hand. Keep volume and shoulder connection. Whole single sprite, no outline guide, text, ghosting, changes to head or other body parts.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-11-repair.png",
+      "source_output": "exec-286b6ae1-db1b-48bd-b58a-a1d48cb3f2ff.png",
+      "sha256": "2f778814ba50d194f1dd88f8ddf8146ea5c7d93149006ad22eedb808aff28d5e",
+      "prompt": "Use case: precise-object-edit. Edit ONLY arm placement in this single pixel sprite. Keep the entire head/face/hair/bow, torso, shorts, legs, boots, body scale, colors, canvas and transparent background EXACTLY unchanged.\nPut the NEAR hand (connected to viewer-right shoulder) IN FRONT OF THE TEAL HIP POUCH, directly COVERING THE POUCH'S GOLD BUTTON and lower flap. The hand is not left over the groin and not outside the pouch on the right. Its palm sits over the front of the bag; fingers hang just below the bag flap near upper-thigh height. This is a low relaxed passing arm swing, not deliberately grabbing the bag. The upper arm slopes almost straight down from the unchanged shoulder, elbow soft; forearm gently angles inward to naturally place that full-size hand in front of the bag. Do not shrink or detach the arm. Allow the proper near-arm occlusion over the bag.\nThe FAR arm hangs relaxed almost straight down from its left-side shoulder, wrist beside the left hip, not thrust forward, partly occluded if needed. Retain its original size.\nOne complete cohesive pixel character; change ONLY the natural two arm poses and what they reveal/occlude. No text, marker, outline guide, recoloring, new lighting, changed legs, isolated parts, shoulder sockets or ghosting. Genuine transparent alpha.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-12-repair.png",
+      "source_output": "exec-9285ff21-ab52-4185-b83e-acf057a2c3e1.png",
+      "sha256": "148023ff68bd1a0ccd2a949e37f34e56141832388bdcc68f512d64ae08c0b506",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the near arm in input1. Preserve entire head/face/hair/bow, far arm, torso, shorts, legs, boots, body scale, canvas1254x1254, colors and transparent alpha exactly unchanged.\nThe near arm connects to the viewer-right shoulder. Move its hand slightly FORWARD toward viewer-left, to overlap just the RIGHT EDGE OF THE TEAL POUCH. The bag's gold button stays visible just to the left of the hand. Palm center aligned with the pouch's outer/right seam, fingers below the flap. Low relaxed backward-to-down passing swing, soft elbow. Hand is not far outside bag and not covering the gold button. Full natural arm thickness, unchanged shoulder; one cohesive whole-body character, no floating limb, no guide/text/other characters or relighting.",
+      "selected_for_internal_inspection": true
+    },
+    {
+      "asset": "front-13-repair.png",
+      "source_output": "exec-66f86ca7-32bd-48f5-9058-611eae1f8d42.png",
+      "sha256": "b1fcd7a818d12618a37514e27d40976c9ee26086c1aa9a7800228480e8a32fc9",
+      "prompt": "Use case: precise-object-edit. Input 1 is the exact source character. ONE single full-body pixel pose, unchanged 1254x1254 canvas and genuine transparent alpha.\nKeep every pixel of the head/hair/face/bow and torso, shirt, arms, pouch, belt, shorts and thigh positions unchanged. Change ONLY the low legs and boots to put this walking pose's support foot back on the ground. The boot at VIEWER RIGHT beneath the hip is the planted support foot: lower its sole from around y1060 to y1110, naturally extend the knee enough without stretching the foot or making the shin thinner. Keep the boot size. The viewer-left boot is the swinging foot, slightly above the ground and angled naturally heel-first. Do not raise the pelvis, no hopping. Total head position and body height must not change.\nSame detailed rounded pixel-art anatomy and warm palette, no redesign/lighting changes/blur/new outlines/isolated body pieces/text/other figures.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-05-variant.png",
+      "source_output": "exec-d6fd5f35-7712-4fe9-b282-edf23a4fcfc0.png",
+      "sha256": "a2ed09f6a9f31d3782338efcacc419f37ac2101cdfc3a3d4d43937ab93aae8e7",
+      "prompt": "Use case: precise-object-edit. Edit ONLY arm placement in this single pixel sprite. Keep the entire head/face/hair/bow, torso, shorts, legs, boots, body scale, colors, canvas and transparent background EXACTLY unchanged.\nPut the NEAR hand (connected to viewer-right shoulder) IN FRONT OF THE TEAL HIP POUCH, directly COVERING THE POUCH'S GOLD BUTTON and lower flap. The hand is not left over the groin and not outside the pouch on the right. Its palm sits over the front of the bag; fingers hang just below the bag flap near upper-thigh height. This is a low relaxed passing arm swing, not deliberately grabbing the bag. The upper arm slopes almost straight down from the unchanged shoulder, elbow soft; forearm gently angles inward to naturally place that full-size hand in front of the bag. Do not shrink or detach the arm. Allow the proper near-arm occlusion over the bag.\nThe FAR arm hangs relaxed almost straight down from its left-side shoulder, wrist beside the left hip, not thrust forward, partly occluded if needed. Retain its original size.\nOne complete cohesive pixel character; change ONLY the natural two arm poses and what they reveal/occlude. No text, marker, outline guide, recoloring, new lighting, changed legs, isolated parts, shoulder sockets or ghosting. Genuine transparent alpha. Critical: keep face/skin/hair colors and all existing pixel clusters from this source, do not soften or lighten the character. ONLY move near hand to cover the gold bag button; preserve legs.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-11-variant.png",
+      "source_output": "exec-fdef4f7d-c0ab-4cb1-90f3-df3da3c61144.png",
+      "sha256": "de16f242a026ab6e3abd7910b55d81c808e5ed759a0d272cb8c2deaed3e63702",
+      "prompt": "Use case: precise-object-edit. Edit ONLY arm placement in this single pixel sprite. Keep the entire head/face/hair/bow, torso, shorts, legs, boots, body scale, colors, canvas and transparent background EXACTLY unchanged.\nPut the NEAR hand (connected to viewer-right shoulder) IN FRONT OF THE TEAL HIP POUCH, directly COVERING THE POUCH'S GOLD BUTTON and lower flap. The hand is not left over the groin and not outside the pouch on the right. Its palm sits over the front of the bag; fingers hang just below the bag flap near upper-thigh height. This is a low relaxed passing arm swing, not deliberately grabbing the bag. The upper arm slopes almost straight down from the unchanged shoulder, elbow soft; forearm gently angles inward to naturally place that full-size hand in front of the bag. Do not shrink or detach the arm. Allow the proper near-arm occlusion over the bag.\nThe FAR arm hangs relaxed almost straight down from its left-side shoulder, wrist beside the left hip, not thrust forward, partly occluded if needed. Retain its original size.\nOne complete cohesive pixel character; change ONLY the natural two arm poses and what they reveal/occlude. No text, marker, outline guide, recoloring, new lighting, changed legs, isolated parts, shoulder sockets or ghosting. Genuine transparent alpha. Critical: keep face/skin/hair colors and all existing pixel clusters from this source, do not soften or lighten the character. ONLY move near hand to cover the gold bag button; preserve legs.",
+      "selected_for_internal_inspection": false
+    },
+    {
+      "asset": "front-13-grounded.png",
+      "source_output": "exec-364fdd8a-614d-490a-9201-6cf9b7a863f7.png",
+      "sha256": "9a445642bb30be39347ae0aa49251edcda1b54a88a9aa139dd76c2db683efc06",
+      "prompt": "Use case: precise-object-edit. One sprite edit. Input1 is the exact target. Keep all pixels above the knees unchanged, including hair face shirt shorts arms and thigh pose, same size and canvas1254x1254. ONLY fix support-foot reach:\nThe supporting lower leg and boot are on VIEWER RIGHT. That planted boot is currently TOO HIGH and must move DOWN by about ONE QUARTER OF ITS OWN HEIGHT (roughly forty pixels). Straighten the lower part of this right-side support leg to reach the ground, shift its whole boot downward with its original size and shape. The new lowest sole is level with y1120 rather than y1080. Do not move torso or hips downward. Do not resize the entire person. Do not raise the swinging left boot. Only extend this supporting shin enough to place its boot lower. Same warm palette and detailed pixel shading, genuine transparent alpha. No new pose, no redraw face, no extra figures/text.",
+      "selected_for_internal_inspection": true
+    }
+  ]
+}
